@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="EF3DB8A7E3238AB043C30BAC9B795365C0101717381D573784A6EE478F8A357561777EBBA126949A4F3CF78935E9A1A3A93B1535A02C782F50E185856B0960C9" Timestamp="1DA6FB839E8FD1F" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="9.10.0.49845" FeatureSetName="Configuration Based Software Core" Name="http://www.ni.com/ConfigurationBasedSoftware.Core" OldestCompatibleVersion="6.3.0.49152" Version="9.8.1.49152" />
+		<ParsableNamespace AssemblyFileVersion="9.10.0.49845" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="23.8.0.49845" FeatureSetName="InstrumentStudio Measurement UI" Name="http://www.ni.com/InstrumentFramework/ScreenDocument" OldestCompatibleVersion="22.1.0.1" Version="22.1.0.1" />
+		<ParsableNamespace AssemblyFileVersion="9.10.0.49845" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="9.10.0.49845" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="23.8.0.49845" Name="MeasurementLink UI Editor" Version="23.8.0.49845" />
+	</SourceModelFeatureSet>
+	<Screen ClientId="{c652bbf0-7148-496d-85fe-06653cd41eaf}" DisplayName="audio_ac" Id="951ada7311244fc186690f66be50fe48" ServiceClass="audio_ac_Python" xmlns="http://www.ni.com/InstrumentFramework/ScreenDocument">
+		<ScreenSurface BackgroundColor="[SMSolidColorBrush]#00ffffff" Height="[float]1000" Id="98b2ef21e0a14a49bdce21ce0e6ffd5d" Left="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]1400" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+			<TabControl BaseName="[string]Tab" Height="[float]967" Id="986e09df735406fb779e99468cb50d2" Label="[UIModel]c9e46dc2d2ff492da941b128409c4842" Left="[float]0" SelectedIndex="[int]1" Top="[float]20" Width="[float]1409" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<TabItem Header="[string]Frequency Domain" Id="e3f1665852884092816b26e137e2c459" Left="[float]0" Top="[float]0">
+					<Canvas Height="[float]938" Id="e8f1417dcab647c8ab60ae634b23ab25" Left="[float]5" Top="[float]25" Width="[float]1399" xmlns="http://www.ni.com/PlatformFramework">
+						<ArrayGraph Background="[SMSolidColorBrush]#00000000" BaseName="[string]Array Graph" Height="[float]467" Id="82fb85c06b7486cb55248f636f76a4f" Label="[UIModel]69e9d156fbc944bebbbf5f805a3954a9" Left="[float]18" MinWidth="[float]230" PlotAreaMargin="[SMThickness]68,26,21,27" PreferIndexData="[bool]False" RenderMode="[RenderMode]Hardware" SuppressScaleLayout="[bool]False" Top="[float]23" Width="[float]1000" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+							<ArrayGraphAxis Adjuster="[RangeAdjuster]FitExactly" Id="59813ee960de40d29294aa6acf4fd9a8" IsInverted="[bool]False" Label="[string]Index" LabelVisibility="[SMVisibility]Collapsed" MajorDivisions="[UIModel]3a96253a9af24373ad799a0e0efdb1ea" MajorGridLines="[UIModel]d95045e3ee9449b1b32f37b084ab2be0" MinorGridLinesColor="[SMColor]#ffffffff" MinorTickVisibility="[SMVisibility]Collapsed" Orientation="[SMOrientation]Horizontal" Range="[IRange]20, 20001, System.Double" ScaleColor="[SMColor]#ff000000" ValueType="[Type]Double">
+								<RangeLabeledDivisions Id="3a96253a9af24373ad799a0e0efdb1ea" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+									<p.LabelPresenter Format="G6" />
+								</RangeLabeledDivisions>
+								<GridLines Color="[SMColor]#ffa39de0" Id="d95045e3ee9449b1b32f37b084ab2be0" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							</ArrayGraphAxis>
+							<ArrayGraphAxis Adjuster="[RangeAdjuster]FitExactly" Id="387306d2ccde4251a898c7945720029a" IsInverted="[bool]False" Label="[string]Value" LabelVisibility="[SMVisibility]Collapsed" MajorDivisions="[UIModel]d3ba1e6507b54963a5b2612febd4fb72" Orientation="[SMOrientation]Vertical" Range="[IRange]-189.69386744261146, 0, System.Double" ValueType="[Type]Double">
+								<RangeLabeledDivisions Id="d3ba1e6507b54963a5b2612febd4fb72" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+									<p.LabelPresenter Format="G6" />
+								</RangeLabeledDivisions>
+							</ArrayGraphAxis>
+							<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="1786a773c78c478693d9cc5b1e47e4e6" LineStroke="[SMSolidColorBrush]#ff962428" PointShape="[PointShape]Ellipse" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="680034108654495e91b90adec4ee7a9d" LineStroke="[SMSolidColorBrush]#ff008ee4" PointShape="[PointShape]Rectangle" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="8a4223061a75417297bfbb1cb35c5ee2" LineStroke="[SMSolidColorBrush]#ffe2b683" PointShape="[PointShape]Diamond" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="90314900e47471b8a1a20bcd8c91bec" LineStroke="[SMSolidColorBrush]#ffb7ac1f" PointShape="[PointShape]Cross" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="cdba6d2ec07046b881cb9c8cc9341af5" LineStroke="[SMSolidColorBrush]#ffaedcef" PointShape="[PointShape]Ellipse" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="fee949424eb447f8ba4d619b25a20dbf" LineStroke="[SMSolidColorBrush]#ffa08bb0" PointShape="[PointShape]Rectangle" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="66e67839c2ad41e19dac3ec1256bb479" LineStroke="[SMSolidColorBrush]#ff7f7f7f" PointShape="[PointShape]Diamond" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="388d32a27d024187b00c4010fe07c66a" LineStroke="[SMSolidColorBrush]#ff91685c" PointShape="[PointShape]Cross" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<HmiGraphPlot Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Output/Spectrum" HorizontalScale="[UIModel]59813ee960de40d29294aa6acf4fd9a8" Id="d9fcb78f6a6f49c6bff6268fdd36fd40" IsDefaultPlot="[bool]False" Label="[string]Spectrum" VerticalScale="[UIModel]387306d2ccde4251a898c7945720029a">
+								<PlotRenderer Id="9a4f2ef91f84b60a7bbc848afef910e" LineStroke="[SMSolidColorBrush]#ffea4225" LineThickness="[double]1" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							</HmiGraphPlot>
+						</ArrayGraph>
+						<HmiChartPlotLegend Graph="[UIModel]82fb85c06b7486cb55248f636f76a4f" Height="[float]28" Id="220c8225402848c6bf13e05b58f0a7b3" Left="[float]1025" Top="[float]23" Visible="[bool]False" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core" />
+						<HmiChartCursorLegend Graph="[UIModel]82fb85c06b7486cb55248f636f76a4f" Height="[float]80" Id="1dfb9de6f56847adadd8098c26f79d81" Left="[float]23" MinHeight="[float]80" Top="[float]519" Visible="[bool]False" Width="[float]316" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core" />
+						<HmiChartScaleLegend Graph="[UIModel]82fb85c06b7486cb55248f636f76a4f" Height="[float]54" Id="2519dd8f62e04a5ebc77b07d1ecb6c7f" Left="[float]943" Top="[float]497" Visible="[bool]False" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core" />
+						<ArrayGraphTools BackgroundColor="[SMSolidColorBrush]#fff7f7f7" Graph="[UIModel]82fb85c06b7486cb55248f636f76a4f" Height="[float]26" Id="4b9c4a8c6f1541e38c37b4314905fbe1" Left="[float]864" OffsetX="[float]846" OffsetY="[float]0" Top="[float]23" Width="[float]122" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+							<ComposableButton BackingCanDelete="[bool]False" BaseName="[string]Horizontal Zoom" BorderBrush="[SMSolidColorBrush]#00ffffff" Content="[UIModel]b10cc8da52014e0ba3b80b482e131e60" Enabled="[bool]True" FalseBackground="[SMSolidColorBrush]#00ffffff" Height="[float]22" Id="57ccd62cbb5945c5a021519708cb6cb5" IsMomentary="[bool]False" Label="[UIModel]91313c1714bb420faefced40734e9e82" Left="[float]2" PartName="[string]PART_ZoomHorizontalButton" Top="[float]2" Value="[bool]False" Width="[float]28">
+								<Image BaseName="[string]Image" Id="b10cc8da52014e0ba3b80b482e131e60" Left="[float]0" Source="[string]pack://application:,,,/NationalInstruments.Hmi.Core;component/Resources/ZoomHorizontal.png" Stretch="[SMStretch]Uniform" Top="[float]0" xmlns="http://www.ni.com/PlatformFramework" />
+							</ComposableButton>
+							<ComposableButton BackingCanDelete="[bool]False" BaseName="[string]Vertical Zoom" BorderBrush="[SMSolidColorBrush]#00ffffff" Content="[UIModel]f73dca8f20064bb2a702518b4a47dde3" Enabled="[bool]True" FalseBackground="[SMSolidColorBrush]#00ffffff" Height="[float]22" Id="31e9b592428f4d5d8530c25b373cba9c" IsMomentary="[bool]False" Label="[UIModel]646b7015e3414d84b33fe8ea17542a8d" Left="[float]32" PartName="[string]PART_ZoomVerticalButton" Top="[float]2" Value="[bool]False" Width="[float]28">
+								<Image BaseName="[string]Image" Id="f73dca8f20064bb2a702518b4a47dde3" Left="[float]0" Source="[string]pack://application:,,,/NationalInstruments.Hmi.Core;component/Resources/ZoomVertical.png" Stretch="[SMStretch]Uniform" Top="[float]0" xmlns="http://www.ni.com/PlatformFramework" />
+							</ComposableButton>
+							<ComposableButton BackingCanDelete="[bool]False" BaseName="[string]Pan" BorderBrush="[SMSolidColorBrush]#00ffffff" Content="[UIModel]4d4b5c6780264f50ab4a6c33c4fe420d" Enabled="[bool]True" FalseBackground="[SMSolidColorBrush]#00ffffff" Height="[float]22" Id="944a3a5218154c3fb2538605592f2255" IsMomentary="[bool]False" Label="[UIModel]2b39afc5b9f6449d94c6a21f3a62bbed" Left="[float]62" PartName="[string]PART_PanButton" Top="[float]2" Value="[bool]False" Width="[float]28">
+								<Image BaseName="[string]Image" Id="4d4b5c6780264f50ab4a6c33c4fe420d" Left="[float]0" Source="[string]pack://application:,,,/NationalInstruments.Hmi.Core;component/Resources/ZoomPan.png" Stretch="[SMStretch]Uniform" Top="[float]0" xmlns="http://www.ni.com/PlatformFramework" />
+							</ComposableButton>
+							<ComposableButton BackingCanDelete="[bool]False" BaseName="[string]Reset" BorderBrush="[SMSolidColorBrush]#00ffffff" Content="[UIModel]b26733eda72b4a6e9b597976c391e79f" Enabled="[bool]True" FalseBackground="[SMSolidColorBrush]#00ffffff" Height="[float]22" Id="de892f4644c74a52ae11d6e0fb8a1746" IsMomentary="[bool]True" Label="[UIModel]327f0bc3fd3a4b5cb6c753e3a9266655" Left="[float]92" PartName="[string]PART_ResetButton" Top="[float]2" Value="[bool]False" Width="[float]28">
+								<Image BaseName="[string]Image" Id="b26733eda72b4a6e9b597976c391e79f" Left="[float]0" Source="[string]pack://application:,,,/NationalInstruments.Hmi.Core;component/Resources/ZoomExtents.png" Stretch="[SMStretch]Uniform" Top="[float]0" xmlns="http://www.ni.com/PlatformFramework" />
+							</ComposableButton>
+							<Label Id="91313c1714bb420faefced40734e9e82" LabelOwner="[UIModel]57ccd62cbb5945c5a021519708cb6cb5" Left="[float]2" Text="[string]Horizontal Zoom" Top="[float]-18" Visible="[bool]False" xmlns="http://www.ni.com/PanelCommon" />
+							<Label Id="646b7015e3414d84b33fe8ea17542a8d" LabelOwner="[UIModel]31e9b592428f4d5d8530c25b373cba9c" Left="[float]32" Text="[string]Vertical Zoom" Top="[float]-18" Visible="[bool]False" xmlns="http://www.ni.com/PanelCommon" />
+							<Label Id="2b39afc5b9f6449d94c6a21f3a62bbed" LabelOwner="[UIModel]944a3a5218154c3fb2538605592f2255" Left="[float]62" Text="[string]Pan" Top="[float]-18" Visible="[bool]False" xmlns="http://www.ni.com/PanelCommon" />
+							<Label Id="327f0bc3fd3a4b5cb6c753e3a9266655" LabelOwner="[UIModel]de892f4644c74a52ae11d6e0fb8a1746" Left="[float]92" Text="[string]Reset" Top="[float]-18" Visible="[bool]False" xmlns="http://www.ni.com/PanelCommon" />
+						</ArrayGraphTools>
+						<Label Height="[float]0" Id="69e9d156fbc944bebbbf5f805a3954a9" LabelOwner="[UIModel]82fb85c06b7486cb55248f636f76a4f" Left="[float]18" Text="[string]Array Graph" Top="[float]3" Visible="[bool]False" Width="[float]0" xmlns="http://www.ni.com/PanelCommon" />
+						<ChannelEnumSelector AdaptsToType="[bool]True" AllowNonSequentialValues="[bool]True" BaseName="[string]Enum" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Configuration/WEIGHTING FILTER" Enabled="[bool]True" Height="[float]23" Id="d0edbc44156849e3bbdc3c3f70243cda" IsLabelBoundToChannel="[bool]False" Label="[UIModel]bfcf7823088242718f0d820b5457cbf7" Left="[float]1085" Top="[float]145" Value="[int]0" Width="[float]110" xmlns="http://www.ni.com/InstrumentFramework/ScreenDocument">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="94407b6c9ec84a0a9638d23fb41e249a" xmlns="http://www.ni.com/PlatformFramework" />
+							<RingSelectorInfo DisplayValue="[string]Linear" IsEnabled="[bool]True" Value="[int]0" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<RingSelectorInfo DisplayValue="[string]A_weighting" IsEnabled="[bool]True" Value="[int]1" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<RingSelectorInfo DisplayValue="[string]B_weighting" IsEnabled="[bool]True" Value="[int]2" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<RingSelectorInfo DisplayValue="[string]C_weighting" IsEnabled="[bool]True" Value="[int]3" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						</ChannelEnumSelector>
+						<Label Height="[float]15" Id="bfcf7823088242718f0d820b5457cbf7" LabelOwner="[UIModel]d0edbc44156849e3bbdc3c3f70243cda" Left="[float]1085" Text="[string]WEIGHTING FILTER" Top="[float]126" Width="[float]90" xmlns="http://www.ni.com/PanelCommon">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="1f097c2871084f1ba186490d6ea59cb7" xmlns="http://www.ni.com/PlatformFramework" />
+						</Label>
+						<Text Height="[float]16" Id="17a842068554d7294bcafe746d0517d" Left="[float]1085" Text="[string]Measurement settings" TextWrapping="[TextWrapping]Wrap" Top="[float]43" Width="[float]118" />
+						<Line ArrowLocation="[ArrowLocation]None" Data="[PathGeometry]M 0.666687012,517.333374 L 0,0" Fill="[SMSolidColorBrush]#ff2b3033" Height="[float]517.3334" Id="adbd664794f5460fa22e3bbe309267d9" Left="[float]1068" ShapeBuilder="[string]" Stroke="[SMSolidColorBrush]#ffffffff" StrokeThickness="[float]2" Top="[float]38.666626" Width="[float]0.666687" />
+						<Text Height="[float]16" Id="bf2fa1551b814abebcfcdcca90b888bd" Left="[float]1085" Text="[string]Analog source" TextWrapping="[TextWrapping]Wrap" Top="[float]244" Width="[float]76" />
+						<ChannelNumericText AdaptsToType="[bool]True" BaseName="[string]Numeric" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Configuration/DATA LINE" Enabled="[bool]True" Height="[float]24" Id="49b9917f5f5c41369c3c13c1a82ce0b6" Interval="[int]1" IsLabelBoundToChannel="[bool]False" Label="[UIModel]a1362646bf034cfea627b24eea138e1b" Left="[float]1195" MinHeight="[float]24" TabIndex="[int]0" Top="[float]437" UnitAnnotation="[string]" ValueFormatter="[string]DisplayFormat=Automatic:Digits=0:DigitDisplayType=DigitsOfPrecision:MinimumFieldWidth=0:AlwaysShowSign=False:ShowThousandsSeparator=False" ValueType="[Type]Int32" Width="[float]58" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="adf0d4488fa463b8948f9aaa431c054" xmlns="http://www.ni.com/PlatformFramework" />
+						</ChannelNumericText>
+						<Label Height="[float]15" Id="a1362646bf034cfea627b24eea138e1b" LabelOwner="[UIModel]49b9917f5f5c41369c3c13c1a82ce0b6" Left="[float]1195" Text="[string]DATA LINE" Top="[float]418" Width="[float]50" xmlns="http://www.ni.com/PanelCommon">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="5ec96c9f20ed4318a774fef3258f56d2" xmlns="http://www.ni.com/PlatformFramework" />
+						</Label>
+						<ChannelNumericText AdaptsToType="[bool]True" BaseName="[string]Numeric" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Configuration/CHANNEL" Enabled="[bool]True" Height="[float]24" Id="4768f908fa984eb0b7367f8bbd30fa99" Interval="[int]1" IsLabelBoundToChannel="[bool]False" Label="[UIModel]bfaadb19fa3d443dbac773505379b66b" Left="[float]1276" MinHeight="[float]24" TabIndex="[int]1" Top="[float]437" UnitAnnotation="[string]" ValueFormatter="[string]DisplayFormat=Automatic:Digits=0:DigitDisplayType=DigitsOfPrecision:MinimumFieldWidth=0:AlwaysShowSign=False:ShowThousandsSeparator=False" ValueType="[Type]Int32" Width="[float]58" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="5204c02ac64b4604a4cf7fcb7af236fa" xmlns="http://www.ni.com/PlatformFramework" />
+						</ChannelNumericText>
+						<Label Height="[float]15" Id="bfaadb19fa3d443dbac773505379b66b" LabelOwner="[UIModel]4768f908fa984eb0b7367f8bbd30fa99" Left="[float]1276" Text="[string]CHANNEL" Top="[float]418" Width="[float]48" xmlns="http://www.ni.com/PanelCommon">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="229f8193febd41a48e93b01ba3e4fd2d" xmlns="http://www.ni.com/PlatformFramework" />
+						</Label>
+						<Text Height="[float]16" Id="b19bdacb52d043e693b331493c83beec" Left="[float]1084" SizeMode="[TextModelSizeMode]Fixed" Text="[string]Protocol settings" TextWrapping="[TextWrapping]Wrap" Top="[float]386" Width="[float]112" />
+						<Text Height="[float]16" Id="d3636303abe14c55acaab9cbdfb5d5b0" Left="[float]495" Text="[string]Frequency (Hz)" TextWrapping="[TextWrapping]Wrap" Top="[float]492" Width="[float]80" />
+						<Text Height="[float]16" Id="85611bb168764a0d988c8a80bd0f15b2" Left="[float]24" Text="[string]Amplitude (dB)" TextWrapping="[TextWrapping]Wrap" Top="[float]23" Width="[float]80" />
+						<ChannelNumericText AdaptsToType="[bool]True" BaseName="[string]Numeric" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Configuration/BAND START" Enabled="[bool]True" Height="[float]24" Id="c7b1e095e63e488c8b64802799f00fdd" IsLabelBoundToChannel="[bool]False" Label="[UIModel]cea64bbb51c44884b41fab1bcd4827c6" Left="[float]1085" MinHeight="[float]24" TabIndex="[int]2" Top="[float]92" UnitAnnotation="[string]" ValueFormatter="[string]LV:G5" ValueType="[Type]Double" Width="[float]110" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="57d380a670014f998ec4cbb6ec9c4071" xmlns="http://www.ni.com/PlatformFramework" />
+						</ChannelNumericText>
+						<Label Height="[float]15" Id="cea64bbb51c44884b41fab1bcd4827c6" LabelOwner="[UIModel]c7b1e095e63e488c8b64802799f00fdd" Left="[float]1085" Text="[string]BAND START (Hz)" Top="[float]73" Width="[float]83" xmlns="http://www.ni.com/PanelCommon">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="aa027583b1904eed85abe28edf497529" xmlns="http://www.ni.com/PlatformFramework" />
+						</Label>
+						<ChannelNumericText AdaptsToType="[bool]True" BaseName="[string]Numeric" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Configuration/BAND STOP" Enabled="[bool]True" Height="[float]24" Id="e681cc9d4a3f4e1ca7a0e5d54ed49f9f" IsLabelBoundToChannel="[bool]False" Label="[UIModel]b37c9591a05a4665a80d4e224a71a6c8" Left="[float]1218" MinHeight="[float]24" TabIndex="[int]3" Top="[float]92" UnitAnnotation="[string]" ValueFormatter="[string]LV:G5" ValueType="[Type]Double" Width="[float]107" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="64e3a1007f794e27beeb6deddf5d39f2" xmlns="http://www.ni.com/PlatformFramework" />
+						</ChannelNumericText>
+						<Label Height="[float]15" Id="b37c9591a05a4665a80d4e224a71a6c8" LabelOwner="[UIModel]e681cc9d4a3f4e1ca7a0e5d54ed49f9f" Left="[float]1218" Text="[string]BAND STOP (Hz)" Top="[float]73" Width="[float]78" xmlns="http://www.ni.com/PanelCommon">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="bae68a3ee6b64fbbb76696168cc80990" xmlns="http://www.ni.com/PlatformFramework" />
+						</Label>
+						<ChannelNumericText AdaptsToType="[bool]True" BaseName="[string]Numeric" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Configuration/FULL SCALE RANGE" Enabled="[bool]True" Height="[float]24" Id="aea053f467f549dead21d662de3bf9a3" IsLabelBoundToChannel="[bool]False" Label="[UIModel]d4094f4edd3d4d94928fa98b5a692ef1" Left="[float]1218" MinHeight="[float]24" TabIndex="[int]4" Top="[float]144" UnitAnnotation="[string]" ValueFormatter="[string]LV:G5" ValueType="[Type]Double" Width="[float]107" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="2e35b5fa97264e6bb8e44448643e922d" xmlns="http://www.ni.com/PlatformFramework" />
+						</ChannelNumericText>
+						<Label Height="[float]15" Id="d4094f4edd3d4d94928fa98b5a692ef1" LabelOwner="[UIModel]aea053f467f549dead21d662de3bf9a3" Left="[float]1218" Text="[string]FULL SCALE RANGE (V)" Top="[float]125" Width="[float]108" xmlns="http://www.ni.com/PanelCommon">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="81111e73362947c5b8d64e12fa6d4370" xmlns="http://www.ni.com/PlatformFramework" />
+						</Label>
+						<ChannelStringControl AcceptsReturn="[bool]False" BaseName="[string]String" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Configuration/CHANNEL NAME" Enabled="[bool]True" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="8189fcebc0234dc686cb156642b39999" Label="[UIModel]9b4770104194751ba4f22fef94a5145" Left="[float]1087" Text="[string]Channel -1" Top="[float]202" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]134" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core" />
+						<Label Height="[float]16" Id="9b4770104194751ba4f22fef94a5145" LabelOwner="[UIModel]8189fcebc0234dc686cb156642b39999" Left="[float]1087" Text="[string]CHANNEL NAME" Top="[float]182" Width="[float]91" xmlns="http://www.ni.com/PanelCommon" />
+						<ChannelNumericText AdaptsToType="[bool]True" BaseName="[string]Numeric" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Configuration/Frequency" Enabled="[bool]True" Height="[float]24" Id="cef0bb3be82440daaeb8374b0ca352df" IsLabelBoundToChannel="[bool]False" Label="[UIModel]dd438a913c84bd5b403922d4f74f3a1" Left="[float]1087" MinHeight="[float]24" TabIndex="[int]5" Top="[float]344" UnitAnnotation="[string]" ValueFormatter="[string]LV:G5" ValueType="[Type]Double" Width="[float]102" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="514dc13dd2a74e0e91b552dc8b231ced" xmlns="http://www.ni.com/PlatformFramework" />
+						</ChannelNumericText>
+						<Label Height="[float]15" Id="dd438a913c84bd5b403922d4f74f3a1" LabelOwner="[UIModel]cef0bb3be82440daaeb8374b0ca352df" Left="[float]1087" Text="[string]FREQUENCY (Hz)" Top="[float]325" Width="[float]81" xmlns="http://www.ni.com/PanelCommon">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="be51392835c743f9b86b650ebfad24f2" xmlns="http://www.ni.com/PlatformFramework" />
+						</Label>
+						<ChannelNumericText AdaptsToType="[bool]True" BaseName="[string]Numeric" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Configuration/Amplitude" Enabled="[bool]True" Height="[float]24" Id="a1089e6200d647fa8979b03b418abe27" IsLabelBoundToChannel="[bool]False" Label="[UIModel]2523a71dee2344168e9c1e67cef5d2cd" Left="[float]1224" MinHeight="[float]24" TabIndex="[int]6" Top="[float]344" UnitAnnotation="[string]" ValueFormatter="[string]LV:G5" ValueType="[Type]Double" Width="[float]106" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="5c7c8a7123c94eddab97e390674b20ab" xmlns="http://www.ni.com/PlatformFramework" />
+						</ChannelNumericText>
+						<Label Height="[float]15" Id="2523a71dee2344168e9c1e67cef5d2cd" LabelOwner="[UIModel]a1089e6200d647fa8979b03b418abe27" Left="[float]1224" Text="[string]AMPLITUDE (dB)" Top="[float]325" Width="[float]78" xmlns="http://www.ni.com/PanelCommon">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="66ff9996f6dc4e11b02a449c725b9447" xmlns="http://www.ni.com/PlatformFramework" />
+						</Label>
+						<ChannelNumericText AdaptsToType="[bool]True" BaseName="[string]Numeric" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Configuration/SAMPLE RATE" Enabled="[bool]True" Height="[float]24" Id="1a79e11a7ca744e9b5332290a3a1e86c" Interval="[int]1" IsLabelBoundToChannel="[bool]False" Label="[UIModel]ad46d49e13714fbaa3915553aacf78b9" Left="[float]1084" MinHeight="[float]24" TabIndex="[int]7" Top="[float]504" UnitAnnotation="[string]" ValueFormatter="[string]DisplayFormat=Automatic:Digits=0:DigitDisplayType=DigitsOfPrecision:MinimumFieldWidth=0:AlwaysShowSign=False:ShowThousandsSeparator=False" ValueType="[Type]Int32" Width="[float]97" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="24f4cbd637954d1e8f925a4b4181062b" xmlns="http://www.ni.com/PlatformFramework" />
+						</ChannelNumericText>
+						<Label Height="[float]15" Id="ad46d49e13714fbaa3915553aacf78b9" LabelOwner="[UIModel]1a79e11a7ca744e9b5332290a3a1e86c" Left="[float]1084" Text="[string]SAMPLE RATE (Hz)" Top="[float]485" Width="[float]87" xmlns="http://www.ni.com/PanelCommon">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="eff10d4ccf4f4b7aad2407902783b53d" xmlns="http://www.ni.com/PlatformFramework" />
+						</Label>
+						<ChannelNumericText AdaptsToType="[bool]True" BaseName="[string]Numeric" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Configuration/MEASUREMENT DURATION" Enabled="[bool]True" Height="[float]24" Id="bb91d1e7a24c48ce927662670c4f5a80" IsLabelBoundToChannel="[bool]False" Label="[UIModel]5db2fd8b4bfa44249b76814fdeb893b8" Left="[float]1207" MinHeight="[float]24" TabIndex="[int]8" Top="[float]504" UnitAnnotation="[string]" ValueFormatter="[string]LV:G5" ValueType="[Type]Double" Width="[float]109" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="eb33fb5d68ef48fd882675716302e842" xmlns="http://www.ni.com/PlatformFramework" />
+						</ChannelNumericText>
+						<Label Height="[float]15" Id="5db2fd8b4bfa44249b76814fdeb893b8" LabelOwner="[UIModel]bb91d1e7a24c48ce927662670c4f5a80" Left="[float]1207" Text="[string]MEASUREMENT DURATION (s)" Top="[float]485" Width="[float]144" xmlns="http://www.ni.com/PanelCommon">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="a9cb3a0c6574819b0dad325ec9c2245" xmlns="http://www.ni.com/PlatformFramework" />
+						</Label>
+						<ChannelStringControl AcceptsReturn="[bool]False" BaseName="[string]String" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Configuration/Resource Name" Enabled="[bool]True" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="ac92c1acaf1d4f88abc50dde6b0b78aa" IsLabelBoundToChannel="[bool]False" Label="[UIModel]5068d5b3eac04854b87b8a940377f857" Left="[float]1084" Text="[string]7820" Top="[float]437" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]87" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core" />
+						<Label Height="[float]16" Id="5068d5b3eac04854b87b8a940377f857" LabelOwner="[UIModel]ac92c1acaf1d4f88abc50dde6b0b78aa" Left="[float]1084" Text="[string]RESOURCE NAME" Top="[float]417" Width="[float]95" xmlns="http://www.ni.com/PanelCommon" />
+						<ChannelStringControl AcceptsReturn="[bool]False" BaseName="[string]String" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Output/ChannelU" Height="[float]23" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="77547a5c068e4f9c82c10c093056c457" IsLabelBoundToChannel="[bool]False" IsReadOnly="[bool]True" Label="[UIModel]70eae138de5c4f06a5be72376cf1a961" Left="[float]54" Top="[float]540" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]85" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="aab11a02830e4bed9039066c4cbe3190" xmlns="http://www.ni.com/PlatformFramework" />
+						</ChannelStringControl>
+						<Label Height="[float]15" Id="70eae138de5c4f06a5be72376cf1a961" LabelOwner="[UIModel]77547a5c068e4f9c82c10c093056c457" Left="[float]54" Text="[string]Channel" Top="[float]521" Width="[float]39" xmlns="http://www.ni.com/PanelCommon">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="a58fb4b5d55a416dba5b5392c6b496cf" xmlns="http://www.ni.com/PlatformFramework" />
+						</Label>
+						<ChannelNumericText AdaptsToType="[bool]True" BaseName="[string]Numeric" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Output/Calculated frequency" Height="[float]24" Id="b48817c00c894df1acedab4019837d98" IsLabelBoundToChannel="[bool]False" IsReadOnly="[bool]True" Label="[UIModel]d3f506dec3a9426b8834a8127d7ad623" Left="[float]160" MinHeight="[float]24" TabIndex="[int]9" Top="[float]540" UnitAnnotation="[string]" ValueFormatter="[string]LV:G5" ValueType="[Type]Double" Width="[float]90" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="690e905ffef04b06985cb30bce2ff0a9" xmlns="http://www.ni.com/PlatformFramework" />
+						</ChannelNumericText>
+						<Label Height="[float]15" Id="d3f506dec3a9426b8834a8127d7ad623" LabelOwner="[UIModel]b48817c00c894df1acedab4019837d98" Left="[float]160" Text="[string]Frequency (Hz) " Top="[float]521" Width="[float]74" xmlns="http://www.ni.com/PanelCommon">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="c34e2464376d4e368ff3897343e36284" xmlns="http://www.ni.com/PlatformFramework" />
+						</Label>
+						<ChannelNumericText AdaptsToType="[bool]True" BaseName="[string]Numeric" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Output/Calculated amplitude" Height="[float]24" Id="1ced77799e9a48c9b90b21b6bd1c15dd" IsLabelBoundToChannel="[bool]False" IsReadOnly="[bool]True" Label="[UIModel]505cc66b7eaf4f29bf736c69e5dddf2d" Left="[float]284" MinHeight="[float]24" TabIndex="[int]10" Top="[float]540" UnitAnnotation="[string]" ValueFormatter="[string]LV:G5" ValueType="[Type]Double" Width="[float]84" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="a67e1da5a6a04ba98948bc33bd315584" xmlns="http://www.ni.com/PlatformFramework" />
+						</ChannelNumericText>
+						<Label Height="[float]15" Id="505cc66b7eaf4f29bf736c69e5dddf2d" LabelOwner="[UIModel]1ced77799e9a48c9b90b21b6bd1c15dd" Left="[float]284" Text="[string]Amplitude (dB) " Top="[float]521" Width="[float]74" xmlns="http://www.ni.com/PanelCommon">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="822b905805c14960a75d9f79a7bf61d6" xmlns="http://www.ni.com/PlatformFramework" />
+						</Label>
+						<ChannelNumericText AdaptsToType="[bool]True" BaseName="[string]Numeric" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Output/SNR" Height="[float]24" Id="acee78a23c34003a9a552708ae40026" IsLabelBoundToChannel="[bool]False" IsReadOnly="[bool]True" Label="[UIModel]dd38a8ba370344549e1da42436a96f89" Left="[float]388" MinHeight="[float]24" TabIndex="[int]11" Top="[float]540" UnitAnnotation="[string]" ValueFormatter="[string]LV:G5" ValueType="[Type]Double" Width="[float]85" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="78707db5ec1244a4ac1f25551f9726ba" xmlns="http://www.ni.com/PlatformFramework" />
+						</ChannelNumericText>
+						<Label Height="[float]15" Id="dd38a8ba370344549e1da42436a96f89" LabelOwner="[UIModel]acee78a23c34003a9a552708ae40026" Left="[float]388" Text="[string]SNR (dB)" Top="[float]521" Width="[float]42" xmlns="http://www.ni.com/PanelCommon">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="67cfb747625e4f40b5a2ac6b7791d684" xmlns="http://www.ni.com/PlatformFramework" />
+						</Label>
+						<ChannelNumericText AdaptsToType="[bool]True" BaseName="[string]Numeric" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Output/THD+N" Height="[float]24" Id="fcd6aaec574a44b682f2adaa99c6d5d7" IsLabelBoundToChannel="[bool]False" IsReadOnly="[bool]True" Label="[UIModel]afab5491e584466e829d0c0475731256" Left="[float]493" MinHeight="[float]24" TabIndex="[int]12" Top="[float]540" UnitAnnotation="[string]" ValueFormatter="[string]LV:G5" ValueType="[Type]Double" Width="[float]84" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="8b3e474e6641405b9d326c59c09665ba" xmlns="http://www.ni.com/PlatformFramework" />
+						</ChannelNumericText>
+						<Label Height="[float]15" Id="afab5491e584466e829d0c0475731256" LabelOwner="[UIModel]fcd6aaec574a44b682f2adaa99c6d5d7" Left="[float]493" Text="[string]THD+N (dB)" Top="[float]521" Width="[float]58" xmlns="http://www.ni.com/PanelCommon">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="e71dba72d6a24ed3bb9fce0aad62b300" xmlns="http://www.ni.com/PlatformFramework" />
+						</Label>
+						<ChannelNumericText AdaptsToType="[bool]True" BaseName="[string]Numeric" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Output/THD" Height="[float]24" Id="ac38bf04ff89494c8c93dfea48b0eac5" IsLabelBoundToChannel="[bool]False" IsReadOnly="[bool]True" Label="[UIModel]51f5d3fd129e475692728e164d437119" Left="[float]601" MinHeight="[float]24" TabIndex="[int]13" Top="[float]540" UnitAnnotation="[string]" ValueFormatter="[string]LV:G5" ValueType="[Type]Double" Width="[float]85" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="834f68cce24d40ada9a1dcf506380e90" xmlns="http://www.ni.com/PlatformFramework" />
+						</ChannelNumericText>
+						<Label Height="[float]15" Id="51f5d3fd129e475692728e164d437119" LabelOwner="[UIModel]ac38bf04ff89494c8c93dfea48b0eac5" Left="[float]601" Text="[string]THD (dB)" Top="[float]521" Width="[float]43" xmlns="http://www.ni.com/PanelCommon">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="61236dc32d1b4c898021ac0464a08f77" xmlns="http://www.ni.com/PlatformFramework" />
+						</Label>
+						<ChannelNumericText AdaptsToType="[bool]True" BaseName="[string]Numeric" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Output/Dynamic Range" Height="[float]24" Id="bf871497329f4fe3b43bd8d3b0ae99a9" IsLabelBoundToChannel="[bool]False" IsReadOnly="[bool]True" Label="[UIModel]23d5d23b838242a799a5fef09a4c34b1" Left="[float]707" MinHeight="[float]24" TabIndex="[int]14" Top="[float]540" UnitAnnotation="[string]" ValueFormatter="[string]LV:G5" ValueType="[Type]Double" Width="[float]90" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="f0a3434d2c8046ca980a929f60d7506a" xmlns="http://www.ni.com/PlatformFramework" />
+						</ChannelNumericText>
+						<Label Height="[float]15" Id="23d5d23b838242a799a5fef09a4c34b1" LabelOwner="[UIModel]bf871497329f4fe3b43bd8d3b0ae99a9" Left="[float]707" Text="[string]Dynamic Range (dB)" Top="[float]521" Width="[float]96" xmlns="http://www.ni.com/PanelCommon">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="c9fa00266e0245b39cbf5f2cadd8ce09" xmlns="http://www.ni.com/PlatformFramework" />
+						</Label>
+						<ChannelNumericText AdaptsToType="[bool]True" BaseName="[string]Numeric" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Output/Gain error" Height="[float]24" Id="793e03eb1fd437892fa1c93b8c47ebf" IsLabelBoundToChannel="[bool]False" IsReadOnly="[bool]True" Label="[UIModel]153f5677d67740a2880b7a461d81d0ce" Left="[float]831" MinHeight="[float]24" TabIndex="[int]15" Top="[float]540" UnitAnnotation="[string]" ValueFormatter="[string]LV:G5" ValueType="[Type]Double" Width="[float]69" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="281cd80b3a2944568ad300a87309f2b4" xmlns="http://www.ni.com/PlatformFramework" />
+						</ChannelNumericText>
+						<Label Height="[float]15" Id="153f5677d67740a2880b7a461d81d0ce" LabelOwner="[UIModel]793e03eb1fd437892fa1c93b8c47ebf" Left="[float]831" Text="[string]Gain error (dB)" Top="[float]521" Width="[float]70" xmlns="http://www.ni.com/PanelCommon">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="2b9618b6bd354a2c8c83fd4f5b6b42f9" xmlns="http://www.ni.com/PlatformFramework" />
+						</Label>
+						<ChannelNumericText AdaptsToType="[bool]True" BaseName="[string]Numeric" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Output/SFDR" Height="[float]24" Id="625835b23191416b8cc28aafe8ae30ea" IsLabelBoundToChannel="[bool]False" IsReadOnly="[bool]True" Label="[UIModel]562909b7af85427d95af01aa084c2dee" Left="[float]923" MinHeight="[float]24" TabIndex="[int]16" Top="[float]540" UnitAnnotation="[string]" ValueFormatter="[string]LV:G5" ValueType="[Type]Double" Width="[float]77" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="e36ccb8069b84436851940527fef7b10" xmlns="http://www.ni.com/PlatformFramework" />
+						</ChannelNumericText>
+						<Label Height="[float]15" Id="562909b7af85427d95af01aa084c2dee" LabelOwner="[UIModel]625835b23191416b8cc28aafe8ae30ea" Left="[float]923" Text="[string]SFDR (dB)" Top="[float]521" Width="[float]47" xmlns="http://www.ni.com/PanelCommon">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="d6091b26ef404120aab2943e5a84ca89" xmlns="http://www.ni.com/PlatformFramework" />
+						</Label>
+						<ChannelStringControl AcceptsReturn="[bool]False" BaseName="[string]String" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Configuration/Analog source resource name" Enabled="[bool]True" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="e12339e4c0af47fcb8d3cf8ef9e48532" IsLabelBoundToChannel="[bool]False" Label="[UIModel]cd27fe95aa849b58bff8852dcab3700" Left="[float]1087" Text="[string]4468/ao0" Top="[float]290" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]166" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core" />
+						<Label Height="[float]16" Id="cd27fe95aa849b58bff8852dcab3700" LabelOwner="[UIModel]e12339e4c0af47fcb8d3cf8ef9e48532" Left="[float]1087" Text="[string]RESOURCE NAME" Top="[float]270" Width="[float]95" xmlns="http://www.ni.com/PanelCommon" />
+					</Canvas>
+				</TabItem>
+				<TabItem Header="[string]Time Domain" Id="c04b60382622480e8cd19743fa8dd71e" Left="[float]0" Top="[float]0">
+					<Canvas Height="[float]938" Id="23c09444cb0346c389b5eb8aff1760fc" Left="[float]5" Top="[float]25" Width="[float]1399" xmlns="http://www.ni.com/PlatformFramework">
+						<ArrayGraph Background="[SMSolidColorBrush]#00000000" BaseName="[string]Array Graph" Height="[float]426" Id="e7a81996573e401b9ce0cdb826ae4b8f" Label="[UIModel]3c94e25f60314922aa9e2574f33d197d" Left="[float]21" MinWidth="[float]230" PlotAreaMargin="[SMThickness]62,26,28,27" PreferIndexData="[bool]False" RenderMode="[RenderMode]Hardware" SuppressScaleLayout="[bool]False" Top="[float]49" Width="[float]1054" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+							<ArrayGraphAxis Adjuster="[RangeAdjuster]FitExactly" Id="b8349734ffaf4b8881c6dc6f5db766db" Label="[string]Index" LabelVisibility="[SMVisibility]Collapsed" MajorDivisions="[UIModel]b2b9ee98fde54372b7d0189b1d1028f3" MinorTickVisibility="[SMVisibility]Collapsed" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 0.10000000000000002, System.Double" ValueType="[Type]Double">
+								<RangeLabeledDivisions Id="b2b9ee98fde54372b7d0189b1d1028f3" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+									<p.LabelPresenter Format="G6" />
+								</RangeLabeledDivisions>
+							</ArrayGraphAxis>
+							<ArrayGraphAxis Adjuster="[RangeAdjuster]FitExactly" Id="ccd450a4b410496185398c146a4dfb8e" IsInverted="[bool]False" Label="[string]Value" LabelVisibility="[SMVisibility]Collapsed" MajorDivisions="[UIModel]9d3a26b07ffa4daf81219bd7f33c478e" Orientation="[SMOrientation]Vertical" Range="[IRange]-1.237426750129667, 1.2375956254566491, System.Double" ValueType="[Type]Double">
+								<RangeLabeledDivisions Id="9d3a26b07ffa4daf81219bd7f33c478e" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+									<p.LabelPresenter Format="G6" />
+								</RangeLabeledDivisions>
+							</ArrayGraphAxis>
+							<HmiGraphPlot Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Output/Time Domain" HorizontalScale="[UIModel]b8349734ffaf4b8881c6dc6f5db766db" Id="467e407a8432446cad0ceb15e7f78fb5" IsDefaultPlot="[bool]False" Label="[string]Time Domain" VerticalScale="[UIModel]ccd450a4b410496185398c146a4dfb8e">
+								<PlotRenderer Id="ae2a04c62e8c419c86e30821ed26d4ab" LineStroke="[SMSolidColorBrush]#ffea4225" LineThickness="[double]1" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							</HmiGraphPlot>
+						</ArrayGraph>
+						<HmiChartPlotLegend Graph="[UIModel]e7a81996573e401b9ce0cdb826ae4b8f" Height="[float]28" Id="febb8e2711164b98808a4f18b6e4d730" Left="[float]1082" Top="[float]49" Visible="[bool]False" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core" />
+						<HmiChartCursorLegend Graph="[UIModel]e7a81996573e401b9ce0cdb826ae4b8f" Height="[float]80" Id="a59a613a4dae45f691ce37b94432080e" Left="[float]26" MinHeight="[float]80" Top="[float]504" Visible="[bool]False" Width="[float]316" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core" />
+						<HmiChartScaleLegend Graph="[UIModel]e7a81996573e401b9ce0cdb826ae4b8f" Height="[float]54" Id="e9f7c90e2a742658882acbcf007dfd0" Left="[float]1000" Top="[float]482" Visible="[bool]False" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core" />
+						<ArrayGraphTools BackgroundColor="[SMSolidColorBrush]#fff7f7f7" Graph="[UIModel]e7a81996573e401b9ce0cdb826ae4b8f" Height="[float]26" Id="dd1dc01c714c419c9587402de8985fa9" Left="[float]921" OffsetX="[float]900" OffsetY="[float]0" Top="[float]49" Width="[float]122" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+							<ComposableButton BackingCanDelete="[bool]False" BaseName="[string]Horizontal Zoom" BorderBrush="[SMSolidColorBrush]#00ffffff" Content="[UIModel]958a40ea5c52494dab793d48e685dce1" Enabled="[bool]True" FalseBackground="[SMSolidColorBrush]#00ffffff" Height="[float]22" Id="15c9802246f4426592fb2f4d3fd6122f" IsMomentary="[bool]False" Label="[UIModel]cd630c8b6ca64c4caedd2caab788eb14" Left="[float]2" PartName="[string]PART_ZoomHorizontalButton" Top="[float]2" Value="[bool]False" Width="[float]28">
+								<Image BaseName="[string]Image" Id="958a40ea5c52494dab793d48e685dce1" Left="[float]0" Source="[string]pack://application:,,,/NationalInstruments.Hmi.Core;component/Resources/ZoomHorizontal.png" Stretch="[SMStretch]Uniform" Top="[float]0" xmlns="http://www.ni.com/PlatformFramework" />
+							</ComposableButton>
+							<ComposableButton BackingCanDelete="[bool]False" BaseName="[string]Vertical Zoom" BorderBrush="[SMSolidColorBrush]#00ffffff" Content="[UIModel]c17121b081934b3cae8d42f28a7aa893" Enabled="[bool]True" FalseBackground="[SMSolidColorBrush]#00ffffff" Height="[float]22" Id="3a6693f61d494e4395e6db7a71188187" IsMomentary="[bool]False" Label="[UIModel]7cd0660bfe25476a8e81a9eaeebbf5dd" Left="[float]32" PartName="[string]PART_ZoomVerticalButton" Top="[float]2" Value="[bool]False" Width="[float]28">
+								<Image BaseName="[string]Image" Id="c17121b081934b3cae8d42f28a7aa893" Left="[float]0" Source="[string]pack://application:,,,/NationalInstruments.Hmi.Core;component/Resources/ZoomVertical.png" Stretch="[SMStretch]Uniform" Top="[float]0" xmlns="http://www.ni.com/PlatformFramework" />
+							</ComposableButton>
+							<ComposableButton BackingCanDelete="[bool]False" BaseName="[string]Pan" BorderBrush="[SMSolidColorBrush]#00ffffff" Content="[UIModel]6d004605ad1a46ecb855bcb4d4c434ed" Enabled="[bool]True" FalseBackground="[SMSolidColorBrush]#00ffffff" Height="[float]22" Id="bcc7a94a223e4934aedc656232aec31f" IsMomentary="[bool]False" Label="[UIModel]bcf16dafc1af420bbdb8097ef27453b4" Left="[float]62" PartName="[string]PART_PanButton" Top="[float]2" Value="[bool]False" Width="[float]28">
+								<Image BaseName="[string]Image" Id="6d004605ad1a46ecb855bcb4d4c434ed" Left="[float]0" Source="[string]pack://application:,,,/NationalInstruments.Hmi.Core;component/Resources/ZoomPan.png" Stretch="[SMStretch]Uniform" Top="[float]0" xmlns="http://www.ni.com/PlatformFramework" />
+							</ComposableButton>
+							<ComposableButton BackingCanDelete="[bool]False" BaseName="[string]Reset" BorderBrush="[SMSolidColorBrush]#00ffffff" Content="[UIModel]1dac621f2f31424096750c3157b47d77" Enabled="[bool]True" FalseBackground="[SMSolidColorBrush]#00ffffff" Height="[float]22" Id="e95962fd016245c59883dad821cb3539" IsMomentary="[bool]True" Label="[UIModel]beeb6a3bd92540788bc3d813b5eccb31" Left="[float]92" PartName="[string]PART_ResetButton" Top="[float]2" Value="[bool]False" Width="[float]28">
+								<Image BaseName="[string]Image" Id="1dac621f2f31424096750c3157b47d77" Left="[float]0" Source="[string]pack://application:,,,/NationalInstruments.Hmi.Core;component/Resources/ZoomExtents.png" Stretch="[SMStretch]Uniform" Top="[float]0" xmlns="http://www.ni.com/PlatformFramework" />
+							</ComposableButton>
+							<Label Id="cd630c8b6ca64c4caedd2caab788eb14" LabelOwner="[UIModel]15c9802246f4426592fb2f4d3fd6122f" Left="[float]2" Text="[string]Horizontal Zoom_2" Top="[float]-18" Visible="[bool]False" xmlns="http://www.ni.com/PanelCommon" />
+							<Label Id="7cd0660bfe25476a8e81a9eaeebbf5dd" LabelOwner="[UIModel]3a6693f61d494e4395e6db7a71188187" Left="[float]32" Text="[string]Vertical Zoom_2" Top="[float]-18" Visible="[bool]False" xmlns="http://www.ni.com/PanelCommon" />
+							<Label Id="bcf16dafc1af420bbdb8097ef27453b4" LabelOwner="[UIModel]bcc7a94a223e4934aedc656232aec31f" Left="[float]62" Text="[string]Pan_2" Top="[float]-18" Visible="[bool]False" xmlns="http://www.ni.com/PanelCommon" />
+							<Label Id="beeb6a3bd92540788bc3d813b5eccb31" LabelOwner="[UIModel]e95962fd016245c59883dad821cb3539" Left="[float]92" Text="[string]Reset_2" Top="[float]-18" Visible="[bool]False" xmlns="http://www.ni.com/PanelCommon" />
+						</ArrayGraphTools>
+						<Label Height="[float]0" Id="3c94e25f60314922aa9e2574f33d197d" LabelOwner="[UIModel]e7a81996573e401b9ce0cdb826ae4b8f" Left="[float]21" Text="[string]Array Graph_2" Top="[float]29" Visible="[bool]False" Width="[float]0" xmlns="http://www.ni.com/PanelCommon" />
+						<Line ArrowLocation="[ArrowLocation]None" Data="[PathGeometry]M 0.666687012,517.333374 L 0,0" Fill="[SMSolidColorBrush]#ff2b3033" Height="[float]517.3334" Id="a5d62f6bbf44416fa806530e2efbadf5" Left="[float]1066" ShapeBuilder="[string]" Stroke="[SMSolidColorBrush]#ffffffff" StrokeThickness="[float]2" Top="[float]43" Width="[float]0.666687" />
+						<Text Height="[float]21" Id="650a5af4442d46829bf346a7b05738a8" Left="[float]11" SizeMode="[TextModelSizeMode]Fixed" Text="[string]Amplitude (V)" TextWrapping="[TextWrapping]Wrap" Top="[float]25" Width="[float]76" />
+						<Text Height="[float]16" Id="dc16947bdd24469bffd975e4c3be405" Left="[float]512" SizeMode="[TextModelSizeMode]Fixed" Text="[string]Time (s)" TextWrapping="[TextWrapping]Wrap" Top="[float]475" Width="[float]42" />
+						<ChannelStringControl AcceptsReturn="[bool]False" BaseName="[string]String" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Output/ChannelU" Height="[float]23" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="cddebd5205c141df81171b517376c9a2" IsLabelBoundToChannel="[bool]False" IsReadOnly="[bool]True" Label="[UIModel]c7387069a4c048948eeec29841185b25" Left="[float]53" Top="[float]537" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]85" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="d06a9876ca864a8eb61791e616e171ac" xmlns="http://www.ni.com/PlatformFramework" />
+						</ChannelStringControl>
+						<ChannelNumericText AdaptsToType="[bool]True" BaseName="[string]Numeric" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Output/Calculated frequency" Height="[float]24" Id="a76eeba2ebe340ec90b4bfc1fed5b9a0" IsLabelBoundToChannel="[bool]False" IsReadOnly="[bool]True" Label="[UIModel]56f04b74d9054708b9a724f055d25636" Left="[float]159" MinHeight="[float]24" TabIndex="[int]0" Top="[float]537" UnitAnnotation="[string]" ValueFormatter="[string]LV:G5" ValueType="[Type]Double" Width="[float]95" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="3e98438b21224635be615c7c10986a4b" xmlns="http://www.ni.com/PlatformFramework" />
+						</ChannelNumericText>
+						<ChannelNumericText AdaptsToType="[bool]True" BaseName="[string]Numeric" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Output/Calculated amplitude" Height="[float]24" Id="1a86ec885ee14e11b9b16716a80d4c66" IsLabelBoundToChannel="[bool]False" IsReadOnly="[bool]True" Label="[UIModel]d6b844a65aca482ab1cec3e03c66ba88" Left="[float]279" MinHeight="[float]24" TabIndex="[int]1" Top="[float]537" UnitAnnotation="[string]" ValueFormatter="[string]LV:G5" ValueType="[Type]Double" Width="[float]77" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="7c6c5009f451480e89b5c62d1f0bce9e" xmlns="http://www.ni.com/PlatformFramework" />
+						</ChannelNumericText>
+						<ChannelNumericText AdaptsToType="[bool]True" BaseName="[string]Numeric" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Output/SNR" Height="[float]24" Id="a0306ad79b1647b3aa481896c4493d29" IsLabelBoundToChannel="[bool]False" IsReadOnly="[bool]True" Label="[UIModel]e930f1e5ba8d4131a667997d331245a9" Left="[float]381" MinHeight="[float]24" TabIndex="[int]2" Top="[float]537" UnitAnnotation="[string]" ValueFormatter="[string]LV:G5" ValueType="[Type]Double" Width="[float]86" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="64890699a9404887b37ffbefba68431d" xmlns="http://www.ni.com/PlatformFramework" />
+						</ChannelNumericText>
+						<ChannelNumericText AdaptsToType="[bool]True" BaseName="[string]Numeric" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Output/THD+N" Height="[float]24" Id="656fd5341d2347459da9b4d7a92dd184" IsLabelBoundToChannel="[bool]False" IsReadOnly="[bool]True" Label="[UIModel]cd5a4c08779b4e3684cb221824785306" Left="[float]492" MinHeight="[float]24" TabIndex="[int]3" Top="[float]537" UnitAnnotation="[string]" ValueFormatter="[string]LV:G5" ValueType="[Type]Double" Width="[float]96" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="44bfe6092c40417f9dd6db715a514a1d" xmlns="http://www.ni.com/PlatformFramework" />
+						</ChannelNumericText>
+						<ChannelNumericText AdaptsToType="[bool]True" BaseName="[string]Numeric" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Output/THD" Height="[float]24" Id="702d97ad04b349a6aebed21c769fba88" IsLabelBoundToChannel="[bool]False" IsReadOnly="[bool]True" Label="[UIModel]75efeb8f33c34aa3a6aedc27a2b057ec" Left="[float]612" MinHeight="[float]24" TabIndex="[int]4" Top="[float]536" UnitAnnotation="[string]" ValueFormatter="[string]LV:G5" ValueType="[Type]Double" Width="[float]80" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="fc0bf2da01f54408b1c800d92ff0afcd" xmlns="http://www.ni.com/PlatformFramework" />
+						</ChannelNumericText>
+						<ChannelNumericText AdaptsToType="[bool]True" BaseName="[string]Numeric" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Output/Dynamic Range" Height="[float]24" Id="9451feb7baf346878d88c4cd5118f09f" IsLabelBoundToChannel="[bool]False" IsReadOnly="[bool]True" Label="[UIModel]8ea0a228e9554b9f8bd67a6b5aee621c" Left="[float]712" MinHeight="[float]24" TabIndex="[int]5" Top="[float]536" UnitAnnotation="[string]" ValueFormatter="[string]LV:G5" ValueType="[Type]Double" Width="[float]103" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="aa1f30444c054a20a71184fd05ad5684" xmlns="http://www.ni.com/PlatformFramework" />
+						</ChannelNumericText>
+						<ChannelNumericText AdaptsToType="[bool]True" BaseName="[string]Numeric" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Output/Gain error" Height="[float]24" Id="3b7548da529f430d8d3eb4d8e9f5ccb0" IsLabelBoundToChannel="[bool]False" IsReadOnly="[bool]True" Label="[UIModel]62a6aa47b07944379273f4b06c2f156e" Left="[float]835" MinHeight="[float]24" TabIndex="[int]6" Top="[float]536" UnitAnnotation="[string]" ValueFormatter="[string]LV:G5" ValueType="[Type]Double" Width="[float]84" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="ec5032a5e8aa4489be7f822b841059cf" xmlns="http://www.ni.com/PlatformFramework" />
+						</ChannelNumericText>
+						<ChannelNumericText AdaptsToType="[bool]True" BaseName="[string]Numeric" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Output/SFDR" Height="[float]24" Id="8d2acf1e141b4e35983ac58d8acd349c" IsLabelBoundToChannel="[bool]False" IsReadOnly="[bool]True" Label="[UIModel]6e708ae74734e83b552c20eef5cf272" Left="[float]939" MinHeight="[float]24" TabIndex="[int]7" Top="[float]536" UnitAnnotation="[string]" ValueFormatter="[string]LV:G5" ValueType="[Type]Double" Width="[float]88" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="82897a6007da401f8e3b7b2cfb2d298f" xmlns="http://www.ni.com/PlatformFramework" />
+						</ChannelNumericText>
+						<Label Height="[float]15" Id="c7387069a4c048948eeec29841185b25" LabelOwner="[UIModel]cddebd5205c141df81171b517376c9a2" Left="[float]53" Text="[string]Channel" Top="[float]518" Width="[float]39" xmlns="http://www.ni.com/PanelCommon">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="bee597bc86944c4d9ef5390d37a77cb2" xmlns="http://www.ni.com/PlatformFramework" />
+						</Label>
+						<Label Height="[float]15" Id="56f04b74d9054708b9a724f055d25636" LabelOwner="[UIModel]a76eeba2ebe340ec90b4bfc1fed5b9a0" Left="[float]159" Text="[string]Frequency (Hz)" Top="[float]518" Width="[float]71" xmlns="http://www.ni.com/PanelCommon">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="e4833b13ce114ce7aab46ef7e3e48521" xmlns="http://www.ni.com/PlatformFramework" />
+						</Label>
+						<Label Height="[float]15" Id="d6b844a65aca482ab1cec3e03c66ba88" LabelOwner="[UIModel]1a86ec885ee14e11b9b16716a80d4c66" Left="[float]279" Text="[string]Amplitude (dB)" Top="[float]518" Width="[float]71" xmlns="http://www.ni.com/PanelCommon">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="b76f5e03bfec45c798e7841f063bb087" xmlns="http://www.ni.com/PlatformFramework" />
+						</Label>
+						<Label Height="[float]15" Id="e930f1e5ba8d4131a667997d331245a9" LabelOwner="[UIModel]a0306ad79b1647b3aa481896c4493d29" Left="[float]381" Text="[string]SNR (dB)" Top="[float]518" Width="[float]42" xmlns="http://www.ni.com/PanelCommon">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="5e43164bbc1143949e31b2b7e2039e76" xmlns="http://www.ni.com/PlatformFramework" />
+						</Label>
+						<Label Height="[float]15" Id="cd5a4c08779b4e3684cb221824785306" LabelOwner="[UIModel]656fd5341d2347459da9b4d7a92dd184" Left="[float]492" Text="[string]THD+N (dB)" Top="[float]518" Width="[float]58" xmlns="http://www.ni.com/PanelCommon">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="90a9c52004a74940821bab469f723344" xmlns="http://www.ni.com/PlatformFramework" />
+						</Label>
+						<Label Height="[float]15" Id="75efeb8f33c34aa3a6aedc27a2b057ec" LabelOwner="[UIModel]702d97ad04b349a6aebed21c769fba88" Left="[float]612" Text="[string]THD (dB)" Top="[float]517" Width="[float]43" xmlns="http://www.ni.com/PanelCommon">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="3ef61491ce324409a151f417762b34d0" xmlns="http://www.ni.com/PlatformFramework" />
+						</Label>
+						<Label Height="[float]15" Id="8ea0a228e9554b9f8bd67a6b5aee621c" LabelOwner="[UIModel]9451feb7baf346878d88c4cd5118f09f" Left="[float]712" Text="[string]Dynamic Range (dB)" Top="[float]517" Width="[float]96" xmlns="http://www.ni.com/PanelCommon">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="b4a32720f2e74164b092841cb65ee88f" xmlns="http://www.ni.com/PlatformFramework" />
+						</Label>
+						<Label Height="[float]15" Id="62a6aa47b07944379273f4b06c2f156e" LabelOwner="[UIModel]3b7548da529f430d8d3eb4d8e9f5ccb0" Left="[float]835" Text="[string]Gain error (dB)" Top="[float]517" Width="[float]70" xmlns="http://www.ni.com/PanelCommon">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="356575b079c041329f5740c4e0cf8e10" xmlns="http://www.ni.com/PlatformFramework" />
+						</Label>
+						<Label Height="[float]15" Id="6e708ae74734e83b552c20eef5cf272" LabelOwner="[UIModel]8d2acf1e141b4e35983ac58d8acd349c" Left="[float]939" Text="[string]SFDR (dB)" Top="[float]517" Width="[float]47" xmlns="http://www.ni.com/PanelCommon">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="1efb218a1de143d7ac3e4f8b86a11781" xmlns="http://www.ni.com/PlatformFramework" />
+						</Label>
+						<ChannelEnumSelector AdaptsToType="[bool]True" AllowNonSequentialValues="[bool]True" BaseName="[string]Enum" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Configuration/WEIGHTING FILTER" Enabled="[bool]True" Height="[float]23" Id="2824bd1857947eabd332ed336b36723" IsLabelBoundToChannel="[bool]False" Label="[UIModel]3d1102d1017f42a9b1eb697794f06722" Left="[float]1083" Top="[float]151" Value="[int]0" Width="[float]110" xmlns="http://www.ni.com/InstrumentFramework/ScreenDocument">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="67ae1d3d14384f9cb3864e201c605b49" xmlns="http://www.ni.com/PlatformFramework" />
+							<RingSelectorInfo DisplayValue="[string]Linear" IsEnabled="[bool]True" Value="[int]0" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<RingSelectorInfo DisplayValue="[string]A_weighting" IsEnabled="[bool]True" Value="[int]1" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<RingSelectorInfo DisplayValue="[string]B_weighting" IsEnabled="[bool]True" Value="[int]2" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<RingSelectorInfo DisplayValue="[string]C_weighting" IsEnabled="[bool]True" Value="[int]3" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						</ChannelEnumSelector>
+						<Text Height="[float]16" Id="6a1ae81515824925b975656b4a1b56f1" Left="[float]1083" Text="[string]Measurement settings" TextWrapping="[TextWrapping]Wrap" Top="[float]49" Width="[float]118" />
+						<Text Height="[float]16" Id="b66549ac644941dd8cfec9b2b62e025f" Left="[float]1083" Text="[string]Analog source" TextWrapping="[TextWrapping]Wrap" Top="[float]250" Width="[float]76" />
+						<ChannelNumericText AdaptsToType="[bool]True" BaseName="[string]Numeric" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Configuration/DATA LINE" Enabled="[bool]True" Height="[float]24" Id="28b038ac5ae94d8492c2c9ae2cdacae7" Interval="[int]1" IsLabelBoundToChannel="[bool]False" Label="[UIModel]25424cc314f84d168e2dcbb0241291d0" Left="[float]1184" MinHeight="[float]24" TabIndex="[int]8" Top="[float]442" UnitAnnotation="[string]" ValueFormatter="[string]DisplayFormat=Automatic:Digits=0:DigitDisplayType=DigitsOfPrecision:MinimumFieldWidth=0:AlwaysShowSign=False:ShowThousandsSeparator=False" ValueType="[Type]Int32" Width="[float]58" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="7c0b6fed15994204a14fdba3e1dec9fd" xmlns="http://www.ni.com/PlatformFramework" />
+						</ChannelNumericText>
+						<ChannelNumericText AdaptsToType="[bool]True" BaseName="[string]Numeric" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Configuration/CHANNEL" Enabled="[bool]True" Height="[float]24" Id="5e7f7701884b4b448818219fee343472" Interval="[int]1" IsLabelBoundToChannel="[bool]False" Label="[UIModel]4066f588559147e9954659fd4466d4d3" Left="[float]1265" MinHeight="[float]24" TabIndex="[int]9" Top="[float]442" UnitAnnotation="[string]" ValueFormatter="[string]DisplayFormat=Automatic:Digits=0:DigitDisplayType=DigitsOfPrecision:MinimumFieldWidth=0:AlwaysShowSign=False:ShowThousandsSeparator=False" ValueType="[Type]Int32" Width="[float]58" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="77cf59cd15e7415a83d26991444ab515" xmlns="http://www.ni.com/PlatformFramework" />
+						</ChannelNumericText>
+						<Text Height="[float]16" Id="1a4f00b6e90e4b56a40d8b1ee455d729" Left="[float]1082" SizeMode="[TextModelSizeMode]Fixed" Text="[string]Protocol settings" TextWrapping="[TextWrapping]Wrap" Top="[float]392" Width="[float]112" />
+						<ChannelNumericText AdaptsToType="[bool]True" BaseName="[string]Numeric" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Configuration/BAND START" Enabled="[bool]True" Height="[float]24" Id="9b03b53bba69407fadcfb1e97e72b2ff" IsLabelBoundToChannel="[bool]False" Label="[UIModel]24b2087008ff43f88345f6665a49fcc1" Left="[float]1083" MinHeight="[float]24" TabIndex="[int]10" Top="[float]98" UnitAnnotation="[string]" ValueFormatter="[string]LV:G5" ValueType="[Type]Double" Width="[float]110" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="1220c95e3270446d88a7ca58965c7707" xmlns="http://www.ni.com/PlatformFramework" />
+						</ChannelNumericText>
+						<ChannelNumericText AdaptsToType="[bool]True" BaseName="[string]Numeric" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Configuration/BAND STOP" Enabled="[bool]True" Height="[float]24" Id="2b86f9dba3374666af1c972bbfdaaf14" IsLabelBoundToChannel="[bool]False" Label="[UIModel]661dc486f4324181b892e1b7c5be30ed" Left="[float]1216" MinHeight="[float]24" TabIndex="[int]11" Top="[float]98" UnitAnnotation="[string]" ValueFormatter="[string]LV:G5" ValueType="[Type]Double" Width="[float]107" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="74d3e0c41a6d4c59bbd1cf309f38133b" xmlns="http://www.ni.com/PlatformFramework" />
+						</ChannelNumericText>
+						<ChannelNumericText AdaptsToType="[bool]True" BaseName="[string]Numeric" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Configuration/FULL SCALE RANGE" Enabled="[bool]True" Height="[float]24" Id="42e8692b87b54529aae7018df7bfbd6b" IsLabelBoundToChannel="[bool]False" Label="[UIModel]15abaa976da44444b93f104ecbc31745" Left="[float]1216" MinHeight="[float]24" TabIndex="[int]12" Top="[float]150" UnitAnnotation="[string]" ValueFormatter="[string]LV:G5" ValueType="[Type]Double" Width="[float]107" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="690ae757373f49a68370ea322df2a1f6" xmlns="http://www.ni.com/PlatformFramework" />
+						</ChannelNumericText>
+						<ChannelStringControl AcceptsReturn="[bool]False" BaseName="[string]String" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Configuration/CHANNEL NAME" Enabled="[bool]True" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="7fdd7953416343ebae433b48cdc8b0c4" Label="[UIModel]26c8323954e74acea328e87c902308b4" Left="[float]1085" Text="[string] A1" Top="[float]208" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]116" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core" />
+						<ChannelNumericText AdaptsToType="[bool]True" BaseName="[string]Numeric" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Configuration/Frequency" Enabled="[bool]True" Height="[float]24" Id="c1e42e86525f48f5bc2f0939878e756a" IsLabelBoundToChannel="[bool]False" Label="[UIModel]2ce7a5646bac4b1893d87dfa6e14c86c" Left="[float]1085" MinHeight="[float]24" TabIndex="[int]13" Top="[float]350" UnitAnnotation="[string]" ValueFormatter="[string]LV:G5" ValueType="[Type]Double" Width="[float]102" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="2e41526c236438599364093f3c838e4" xmlns="http://www.ni.com/PlatformFramework" />
+						</ChannelNumericText>
+						<ChannelNumericText AdaptsToType="[bool]True" BaseName="[string]Numeric" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Configuration/Amplitude" Enabled="[bool]True" Height="[float]24" Id="738138e3a69f439caccab5b1dc0972f8" IsLabelBoundToChannel="[bool]False" Label="[UIModel]4c39b4d7839849318a723859eb82c879" Left="[float]1222" MinHeight="[float]24" TabIndex="[int]14" Top="[float]350" UnitAnnotation="[string]" ValueFormatter="[string]LV:G5" ValueType="[Type]Double" Width="[float]106" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="ce83c1e91c994cfe8c140f36f8dcef27" xmlns="http://www.ni.com/PlatformFramework" />
+						</ChannelNumericText>
+						<ChannelNumericText AdaptsToType="[bool]True" BaseName="[string]Numeric" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Configuration/SAMPLE RATE" Enabled="[bool]True" Height="[float]24" Id="8e2139aa1fad4d59b7be7e314b0d8fb7" Interval="[int]1" IsLabelBoundToChannel="[bool]False" Label="[UIModel]6b34bc5376a45e4a828cc70bcb2f7b4" Left="[float]1082" MinHeight="[float]24" TabIndex="[int]15" Top="[float]510" UnitAnnotation="[string]" ValueFormatter="[string]DisplayFormat=Automatic:Digits=0:DigitDisplayType=DigitsOfPrecision:MinimumFieldWidth=0:AlwaysShowSign=False:ShowThousandsSeparator=False" ValueType="[Type]Int32" Width="[float]97" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="f8a639431e2640e4a4324b4539689b3c" xmlns="http://www.ni.com/PlatformFramework" />
+						</ChannelNumericText>
+						<ChannelNumericText AdaptsToType="[bool]True" BaseName="[string]Numeric" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Configuration/MEASUREMENT DURATION" Enabled="[bool]True" Height="[float]24" Id="6a0be780ae564b95affe7333c6548cee" IsLabelBoundToChannel="[bool]False" Label="[UIModel]da7b4b27dabd456fb285cc64ecb60925" Left="[float]1205" MinHeight="[float]24" TabIndex="[int]16" Top="[float]510" UnitAnnotation="[string]" ValueFormatter="[string]LV:G5" ValueType="[Type]Double" Width="[float]109" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="18b97376089a4b49a9e8b50170877473" xmlns="http://www.ni.com/PlatformFramework" />
+						</ChannelNumericText>
+						<ChannelStringControl AcceptsReturn="[bool]False" BaseName="[string]String" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Configuration/Resource Name" Enabled="[bool]True" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="d7027f6b994a48c99905f7a1b48fa244" Label="[UIModel]532cfd6377284639a66ed012c4e52b3e" Left="[float]1082" Text="[string]7820" Top="[float]443" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]77" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core" />
+						<Label Height="[float]15" Id="3d1102d1017f42a9b1eb697794f06722" LabelOwner="[UIModel]2824bd1857947eabd332ed336b36723" Left="[float]1083" Text="[string]WEIGHTING FILTER" Top="[float]132" Width="[float]90" xmlns="http://www.ni.com/PanelCommon">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="c670b24e5e9348dc8c08305b8e116fa4" xmlns="http://www.ni.com/PlatformFramework" />
+						</Label>
+						<Label Height="[float]15" Id="25424cc314f84d168e2dcbb0241291d0" LabelOwner="[UIModel]28b038ac5ae94d8492c2c9ae2cdacae7" Left="[float]1184" Text="[string]DATA LINE" Top="[float]423" Width="[float]50" xmlns="http://www.ni.com/PanelCommon">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="a1abd825b61e4379903b2e8fc90c2320" xmlns="http://www.ni.com/PlatformFramework" />
+						</Label>
+						<Label Height="[float]15" Id="4066f588559147e9954659fd4466d4d3" LabelOwner="[UIModel]5e7f7701884b4b448818219fee343472" Left="[float]1265" Text="[string]CHANNEL" Top="[float]423" Width="[float]48" xmlns="http://www.ni.com/PanelCommon">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="eebfb2a499244ccb1a86bfeee3c98aa" xmlns="http://www.ni.com/PlatformFramework" />
+						</Label>
+						<Label Height="[float]15" Id="24b2087008ff43f88345f6665a49fcc1" LabelOwner="[UIModel]9b03b53bba69407fadcfb1e97e72b2ff" Left="[float]1083" Text="[string]BAND START (Hz)" Top="[float]79" Width="[float]83" xmlns="http://www.ni.com/PanelCommon">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="3aae808f244448578b35d7198aab02f3" xmlns="http://www.ni.com/PlatformFramework" />
+						</Label>
+						<Label Height="[float]15" Id="661dc486f4324181b892e1b7c5be30ed" LabelOwner="[UIModel]2b86f9dba3374666af1c972bbfdaaf14" Left="[float]1216" Text="[string]BAND STOP (Hz)" Top="[float]79" Width="[float]78" xmlns="http://www.ni.com/PanelCommon">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="271e701f953b47d5a8c113054d636323" xmlns="http://www.ni.com/PlatformFramework" />
+						</Label>
+						<Label Height="[float]15" Id="15abaa976da44444b93f104ecbc31745" LabelOwner="[UIModel]42e8692b87b54529aae7018df7bfbd6b" Left="[float]1216" Text="[string]FULL SCALE RANGE (V)" Top="[float]131" Width="[float]108" xmlns="http://www.ni.com/PanelCommon">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="e0e5b1ab565f4122a96585712c39c466" xmlns="http://www.ni.com/PlatformFramework" />
+						</Label>
+						<Label Height="[float]16" Id="26c8323954e74acea328e87c902308b4" LabelOwner="[UIModel]7fdd7953416343ebae433b48cdc8b0c4" Left="[float]1085" Text="[string]CHANNEL NAME" Top="[float]188" Width="[float]91" xmlns="http://www.ni.com/PanelCommon" />
+						<Label Height="[float]15" Id="2ce7a5646bac4b1893d87dfa6e14c86c" LabelOwner="[UIModel]c1e42e86525f48f5bc2f0939878e756a" Left="[float]1085" Text="[string]Frequency (Hz)" Top="[float]331" Width="[float]71" xmlns="http://www.ni.com/PanelCommon">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="c214a0b599a444488e00a2f423cf736b" xmlns="http://www.ni.com/PlatformFramework" />
+						</Label>
+						<Label Height="[float]15" Id="4c39b4d7839849318a723859eb82c879" LabelOwner="[UIModel]738138e3a69f439caccab5b1dc0972f8" Left="[float]1222" Text="[string]Amplitude (dB)" Top="[float]331" Width="[float]71" xmlns="http://www.ni.com/PanelCommon">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="deb89412eae14c0b904a692573cc4e96" xmlns="http://www.ni.com/PlatformFramework" />
+						</Label>
+						<Label Height="[float]15" Id="6b34bc5376a45e4a828cc70bcb2f7b4" LabelOwner="[UIModel]8e2139aa1fad4d59b7be7e314b0d8fb7" Left="[float]1082" Text="[string]SAMPLE RATE (Hz)" Top="[float]491" Width="[float]87" xmlns="http://www.ni.com/PanelCommon">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="5d734a63f7064bb5830b51c97721d8c8" xmlns="http://www.ni.com/PlatformFramework" />
+						</Label>
+						<Label Height="[float]15" Id="da7b4b27dabd456fb285cc64ecb60925" LabelOwner="[UIModel]6a0be780ae564b95affe7333c6548cee" Left="[float]1205" Text="[string]MEASUREMENT DURATION (s) " Top="[float]491" Width="[float]147" xmlns="http://www.ni.com/PanelCommon">
+							<FontSetting FontFamily="Segoe UI" FontSize="8" Id="fb084e97817f4c52926d047dfa0c94e7" xmlns="http://www.ni.com/PlatformFramework" />
+						</Label>
+						<Label Height="[float]16" Id="532cfd6377284639a66ed012c4e52b3e" LabelOwner="[UIModel]d7027f6b994a48c99905f7a1b48fa244" Left="[float]1082" Text="[string]Resource Name" Top="[float]423" Width="[float]83" xmlns="http://www.ni.com/PanelCommon" />
+						<ChannelStringControl AcceptsReturn="[bool]False" BaseName="[string]String" Channel="[string]{c652bbf0-7148-496d-85fe-06653cd41eaf}/Configuration/Analog source resource name" Enabled="[bool]True" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="d524ad860b849d69fa5582ebd3f6605" IsLabelBoundToChannel="[bool]False" Label="[UIModel]2ac1903d4e954db691deb488efc1dfae" Left="[float]1085" Text="[string]4468/ao0" Top="[float]296" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]116" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core" />
+						<Label Height="[float]16" Id="2ac1903d4e954db691deb488efc1dfae" LabelOwner="[UIModel]d524ad860b849d69fa5582ebd3f6605" Left="[float]1085" Text="[string]RESOURCE NAME" Top="[float]276" Width="[float]95" xmlns="http://www.ni.com/PanelCommon" />
+					</Canvas>
+				</TabItem>
+			</TabControl>
+			<Label Height="[float]0" Id="c9e46dc2d2ff492da941b128409c4842" LabelOwner="[UIModel]986e09df735406fb779e99468cb50d2" Left="[float]0" Text="[string]Tab" Top="[float]0" Visible="[bool]False" Width="[float]0" xmlns="http://www.ni.com/PanelCommon" />
+		</ScreenSurface>
+	</Screen>
+</SourceFile>

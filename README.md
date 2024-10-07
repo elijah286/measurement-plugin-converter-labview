@@ -1,15 +1,28 @@
-# GitHub Repo Template
+# Measurement migration tool for LabVIEW
 
-GitHub Repo Template is a template for creation of open source projects made
-available on GitHub. It includes a permissive open source license, a developer
-certificate of origin, and a pull request template. This provides everything
-necessary to have a properly licensed open source project.
+This repository contains the source code for the Measurement Migration tool which helps in migrating the native LabVIEW measurements to measurement plug-ins.
 
-## Using GitHub Repo Template
+## Table of content
 
-1. Clone or download this repository.
-2. Copy its contents into your project (including the hidden .github directory). 
-3. Customize each file to suit your project's needs (including the README). Look through the files for "TODO" and \<reponame\>, and replace with content appropriate to your project.
-4. (Optional) Check out [GitHub Template Guidelines](https://github.com/cezaraugusto/github-template-guidelines) for ideas about how to customize your project.
+- [Measurement migration tool for LabVIEW](#measurement-migration-tool-for-labview)
+  - [Overview](#overview)
+    - [Migration tool for LabVIEW](#migration-tool-for-labview)
+  - [Software Dependencies](#software-dependencies)
+  - [Getting Started](#getting-started)
 
-TODO: describe a project in detail, what it does, how to use it, etc.
+## Overview
+
+### Migration tool for LabVIEW
+
+The Measurement plug-in users find it difficult to migrate their existing measurements into the InstrumentStudio Pro measurement plug-ins. This migration tool helps them migrate the existing native LabVIEW measurements into measurement plug-ins.
+
+## Software Dependencies
+
+- [LabVIEW 2021 SP1 or later](https://www.ni.com/en/support/downloads/software-products/download.labview.html#443865)
+- [InstrumentStudio Professional 2024 Q3 or later](https://www.ni.com/en/support/downloads/software-products/download.instrumentstudio.html#544066)
+- [Measurement Plug-In SDK for LabVIEW 3.0.0.3](https://github.com/ni/measurement-plugin-labview/releases/tag/v3.0.0.3)
+- Optional: [TestStand 2021 SP1 or later](https://www.ni.com/en/support/downloads/software-products/download.teststand.html#494502)
+
+## Getting Started
+
+- You can refer to the [Measurement Migration User Manual](https://github.com/ni/measurement-migration-tool/releases/download/v2.0.0.2/Measurement_Migrator_Tool_User_Manual.pdf) to understand the workflow for migrating the existing simple LabVIEW measurements into measurement plug-ins.

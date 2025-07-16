@@ -12,7 +12,7 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="subVIs" Type="Folder">
-		<Item Name="Status of Migration.vi" Type="VI" URL="../subVIs/Status of Migration.vi"/>
+		<Item Name="Status of Conversion.vi" Type="VI" URL="../subVIs/Status of Conversion.vi"/>
 	</Item>
 	<Item Name="Logger Main.vi" Type="VI" URL="../Logger Main.vi"/>
 </Library>

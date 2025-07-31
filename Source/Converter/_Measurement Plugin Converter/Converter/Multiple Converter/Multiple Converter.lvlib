@@ -14,33 +14,30 @@
 	<Property Name="NI_IconEditor" Type="Str">50 49 48 49 56 48 48 54 13 0 0 0 0 1 23 21 76 111 97 100 32 38 32 85 110 108 111 97 100 46 108 118 99 108 97 115 115 0 0 1 0 0 0 0 0 9 0 0 4 47 1 100 1 100 80 84 72 48 0 0 0 4 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 15 13 76 97 121 101 114 46 108 118 99 108 97 115 115 0 0 1 0 0 0 0 0 7 0 0 3 189 0 0 0 0 0 0 0 0 0 0 3 162 0 40 0 0 3 156 0 0 3 96 0 0 0 0 0 9 0 32 0 24 0 0 0 0 0 255 255 255 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 0 0 0 0 0 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 0 0 0 0 0 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 0 0 0 0 0 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 0 0 0 0 0 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 0 0 0 0 0 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 0 0 0 0 0 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 255 255 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 0 0 0 7 86 73 32 73 99 111 110 100 1 0 0 0 0 0 6 77 32 67 111 110 118 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11 83 109 97 108 108 32 70 111 110 116 115 0 1 8 1 1
 
 </Property>
-	<Item Name="controls" Type="Folder">
-		<Item Name="Data Holder.ctl" Type="VI" URL="../controls/Data Holder.ctl"/>
-		<Item Name="Library Info.ctl" Type="VI" URL="../controls/Library Info.ctl"/>
+	<Item Name="SubVIs" Type="Folder">
+		<Item Name="Check Main Measurement for Instrument Drivers.vi" Type="VI" URL="../SubVIs/Check Main Measurement for Instrument Drivers.vi"/>
+		<Item Name="Classify Dependencies.vi" Type="VI" URL="../SubVIs/Classify Dependencies.vi"/>
+		<Item Name="Create Auto-Populating Folder.vi" Type="VI" URL="../SubVIs/Create Auto-Populating Folder.vi"/>
+		<Item Name="Create Directory for Dependency.vi" Type="VI" URL="../SubVIs/Create Directory for Dependency.vi"/>
+		<Item Name="Create Lib If Not Present.vi" Type="VI" URL="../SubVIs/Create Lib If Not Present.vi"/>
+		<Item Name="Get all Dependencies.vi" Type="VI" URL="../SubVIs/Get all Dependencies.vi"/>
+		<Item Name="Get Common Dependencies.vi" Type="VI" URL="../SubVIs/Get Common Dependencies.vi"/>
+		<Item Name="Get Dependencies.vi" Type="VI" URL="../SubVIs/Get Dependencies.vi"/>
+		<Item Name="Get Missing Dependencies.vi" Type="VI" URL="../SubVIs/Get Missing Dependencies.vi"/>
+		<Item Name="Get New Path of Instrument VIs.vi" Type="VI" URL="../SubVIs/Get New Path of Instrument VIs.vi"/>
+		<Item Name="Get SubVI Dependencies.vi" Type="VI" URL="../SubVIs/Get SubVI Dependencies.vi"/>
+		<Item Name="Migrate all Measurement Dependencies.vi" Type="VI" URL="../SubVIs/Migrate all Measurement Dependencies.vi"/>
+		<Item Name="Migrate Common Dependencies.vi" Type="VI" URL="../SubVIs/Migrate Common Dependencies.vi"/>
+		<Item Name="Migrate Measurement Dependencies.vi" Type="VI" URL="../SubVIs/Migrate Measurement Dependencies.vi"/>
+		<Item Name="Migrate Shared Dependencies.vi" Type="VI" URL="../SubVIs/Migrate Shared Dependencies.vi"/>
+		<Item Name="Replace Outside Items.vi" Type="VI" URL="../SubVIs/Replace Outside Items.vi"/>
+		<Item Name="Replace Outside Typedef Const.vi" Type="VI" URL="../SubVIs/Replace Outside Typedef Const.vi"/>
+		<Item Name="Replace Outside Typedef Control.vi" Type="VI" URL="../SubVIs/Replace Outside Typedef Control.vi"/>
+		<Item Name="Replace Outside VIs.vi" Type="VI" URL="../SubVIs/Replace Outside VIs.vi"/>
+		<Item Name="Save Project.vi" Type="VI" URL="../SubVIs/Save Project.vi"/>
 	</Item>
-	<Item Name="subVIs" Type="Folder">
-		<Item Name="Check Main Measurement for Instrument Drivers.vi" Type="VI" URL="../subVIs/Check Main Measurement for Instrument Drivers.vi"/>
-		<Item Name="Classify Dependencies.vi" Type="VI" URL="../subVIs/Classify Dependencies.vi"/>
-		<Item Name="Classify Instrument VIs.vi" Type="VI" URL="../subVIs/Classify Instrument VIs.vi"/>
-		<Item Name="Create Auto-Populating Folder.vi" Type="VI" URL="../subVIs/Create Auto-Populating Folder.vi"/>
-		<Item Name="Create Directory for Dependency.vi" Type="VI" URL="../subVIs/Create Directory for Dependency.vi"/>
-		<Item Name="Create Lib If Not Present.vi" Type="VI" URL="../subVIs/Create Lib If Not Present.vi"/>
-		<Item Name="Create Relative Path for Dependency.vi" Type="VI" URL="../subVIs/Create Relative Path for Dependency.vi"/>
-		<Item Name="Get all Dependencies.vi" Type="VI" URL="../subVIs/Get all Dependencies.vi"/>
-		<Item Name="Get Common Dependencies.vi" Type="VI" URL="../subVIs/Get Common Dependencies.vi"/>
-		<Item Name="Get Dependencies.vi" Type="VI" URL="../subVIs/Get Dependencies.vi"/>
-		<Item Name="Get Missing Dependencies.vi" Type="VI" URL="../subVIs/Get Missing Dependencies.vi"/>
-		<Item Name="Get Relative Path for Dependency.vi" Type="VI" URL="../subVIs/Get Relative Path for Dependency.vi"/>
-		<Item Name="Get SubVI Dependencies.vi" Type="VI" URL="../subVIs/Get SubVI Dependencies.vi"/>
-		<Item Name="Migrate all Measurement Dependencies.vi" Type="VI" URL="../subVIs/Migrate all Measurement Dependencies.vi"/>
-		<Item Name="Migrate Common Dependencies.vi" Type="VI" URL="../subVIs/Migrate Common Dependencies.vi"/>
-		<Item Name="Migrate Measurement Dependencies.vi" Type="VI" URL="../subVIs/Migrate Measurement Dependencies.vi"/>
-		<Item Name="Migrate Shared Dependencies.vi" Type="VI" URL="../subVIs/Migrate Shared Dependencies.vi"/>
-		<Item Name="Replace Outside Items.vi" Type="VI" URL="../subVIs/Replace Outside Items.vi"/>
-		<Item Name="Replace Outside Typedef Const.vi" Type="VI" URL="../subVIs/Replace Outside Typedef Const.vi"/>
-		<Item Name="Replace Outside Typedef Control.vi" Type="VI" URL="../subVIs/Replace Outside Typedef Control.vi"/>
-		<Item Name="Replace Outside VIs.vi" Type="VI" URL="../subVIs/Replace Outside VIs.vi"/>
-		<Item Name="Save Project.vi" Type="VI" URL="../subVIs/Save Project.vi"/>
+	<Item Name="TypeDef" Type="Folder">
+		<Item Name="Library Info.ctl" Type="VI" URL="../TypeDefs/Library Info.ctl"/>
 	</Item>
 	<Item Name="Migrate Dependencies.vi" Type="VI" URL="../Migrate Dependencies.vi"/>
 </Library>

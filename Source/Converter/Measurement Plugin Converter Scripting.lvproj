@@ -1,6 +1,7 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="21008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
+	<Property Name="NI.Project.Description" Type="Str"></Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
@@ -13,73 +14,69 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Measurement Plugin Converter" Type="Folder">
-			<Property Name="NI.SortType" Type="Int">3</Property>
+			<Property Name="NI.SortType" Type="Int">0</Property>
+			<Item Name="Converter" Type="Folder">
+				<Item Name="Conversion Logic" Type="Folder">
+					<Item Name="Converter.lvlib" Type="Library" URL="../_Measurement Plugin Converter/Converter/Conversion Logic/Converter.lvlib"/>
+				</Item>
+				<Item Name="Converter Reusables" Type="Folder">
+					<Item Name="Converter Reusables.lvlib" Type="Library" URL="../_Measurement Plugin Converter/Converter/Converter Reusables/Converter Reusables.lvlib"/>
+				</Item>
+				<Item Name="Multiple Converter" Type="Folder">
+					<Item Name="Multiple Converter.lvlib" Type="Library" URL="../_Measurement Plugin Converter/Converter/Multiple Converter/Multiple Converter.lvlib"/>
+				</Item>
+				<Item Name="Path Functions" Type="Folder">
+					<Item Name="Path Functions.lvlib" Type="Library" URL="../_Measurement Plugin Converter/Converter/Path Functions/Path Functions.lvlib"/>
+				</Item>
+				<Item Name="Queue Driver" Type="Folder">
+					<Item Name="Queue Driver.lvlib" Type="Library" URL="../_Measurement Plugin Converter/Converter/Queue Driver/Queue Driver.lvlib"/>
+				</Item>
+			</Item>
+			<Item Name="Measurement Plugin Generator" Type="Folder">
+				<Item Name="Generator Helpers" Type="Folder">
+					<Item Name="Generator Helpers.lvlib" Type="Library" URL="../_Measurement Plugin Converter/Measurement Plugin Generator/_Generator Helpers/Generator Helpers.lvlib"/>
+				</Item>
+				<Item Name="Service Generator" Type="Folder">
+					<Item Name="MeasurementService Editor.lvlib" Type="Library" URL="../_Measurement Plugin Converter/Measurement Plugin Generator/_MeasurementService Utility/MeasurementService Editor.lvlib"/>
+					<Item Name="NI_AB_API_EXE_Extensions.lvclass" Type="LVClass" URL="../_Measurement Plugin Converter/Measurement Plugin Generator/_MeasurementService Utility/NI_AB_API_EXE_Extensions/NI_AB_API_EXE_Extensions.lvclass"/>
+				</Item>
+			</Item>
 			<Item Name="Templates" Type="Folder">
-				<Item Name="Malleable VIs" Type="Folder">
-					<Item Name="Get Resource Details.vim" Type="VI" URL="../_Measurement Plugin Converter/Templates/Malleable VIs/Get Resource Details.vim"/>
+				<Item Name="Controls" Type="Folder">
+					<Item Name="Combo Box.ctl" Type="VI" URL="../_Measurement Plugin Converter/Templates/Controls/Combo Box.ctl"/>
+					<Item Name="String.ctl" Type="VI" URL="../_Measurement Plugin Converter/Templates/Controls/String.ctl"/>
+					<Item Name="System String.ctl" Type="VI" URL="../_Measurement Plugin Converter/Templates/Controls/System String.ctl"/>
 				</Item>
 				<Item Name="Docs" Type="Folder">
 					<Item Name="Error Logs.csv" Type="Document" URL="../_Measurement Plugin Converter/Templates/Docs/Error Logs.csv"/>
 					<Item Name="Event Logger.txt" Type="Document" URL="../_Measurement Plugin Converter/Templates/Docs/Event Logger.txt"/>
 					<Item Name="Folders to Ignore.txt" Type="Document" URL="../_Measurement Plugin Converter/Templates/Docs/Folders to Ignore.txt"/>
 				</Item>
-				<Item Name="Serializers" Type="Folder">
-					<Item Name="Serializer.vim" Type="VI" URL="../_Measurement Plugin Converter/Templates/Serializers/Serializer.vim"/>
-					<Item Name="Deserializer.vim" Type="VI" URL="../_Measurement Plugin Converter/Templates/Serializers/Deserializer.vim"/>
+				<Item Name="InstrumentStudio Project" Type="Folder">
+					<Item Name="Measurement.instudioproj" Type="Document" URL="../_Measurement Plugin Converter/Templates/InstrumentStudio Project/Measurement.instudioproj"/>
+					<Item Name="PinMap.pinmap" Type="Document" URL="../_Measurement Plugin Converter/Templates/InstrumentStudio Project/PinMap.pinmap"/>
+				</Item>
+				<Item Name="Malleable VIs" Type="Folder">
+					<Item Name="Get Resource Details.vim" Type="VI" URL="../_Measurement Plugin Converter/Templates/Malleable VIs/Get Resource Details.vim"/>
 				</Item>
 				<Item Name="Read Default Values" Type="Folder">
 					<Item Name="Read Default Values.vi" Type="VI" URL="../_Measurement Plugin Converter/Templates/Read Default Values/Read Default Values.vi"/>
 				</Item>
-				<Item Name="Controls" Type="Folder">
-					<Item Name="Combo box.ctl" Type="VI" URL="../_Measurement Plugin Converter/Templates/Controls/Combo box.ctl"/>
-					<Item Name="System String.ctl" Type="VI" URL="../_Measurement Plugin Converter/Templates/Controls/System String.ctl"/>
-					<Item Name="String.ctl" Type="VI" URL="../_Measurement Plugin Converter/Templates/Controls/String.ctl"/>
-				</Item>
-				<Item Name="InstrumentStudio Project" Type="Folder">
-					<Item Name="PinMap.pinmap" Type="Document" URL="../_Measurement Plugin Converter/Templates/InstrumentStudio Project/PinMap.pinmap"/>
-					<Item Name="Measurement.instudioproj" Type="Document" URL="../_Measurement Plugin Converter/Templates/InstrumentStudio Project/Measurement.instudioproj"/>
-				</Item>
-			</Item>
-			<Item Name="Measurement Plugin Generator" Type="Folder">
-				<Item Name="_Editor" Type="Folder">
-					<Item Name="NI_AB_API_EXE_Extensions" Type="Folder">
-						<Item Name="NI_AB_API_EXE_Extensions.lvclass" Type="LVClass" URL="../_Measurement Plugin Converter/Measurement Plugin Generator/_Editor/NI_AB_API_EXE_Extensions/NI_AB_API_EXE_Extensions.lvclass"/>
-					</Item>
-					<Item Name="MeasurementService Editor.lvlib" Type="Library" URL="../_Measurement Plugin Converter/Measurement Plugin Generator/_Editor/MeasurementService Editor.lvlib"/>
+				<Item Name="Serializers" Type="Folder">
+					<Item Name="Deserializer.vim" Type="VI" URL="../_Measurement Plugin Converter/Templates/Serializers/Deserializer.vim"/>
+					<Item Name="Serializer.vim" Type="VI" URL="../_Measurement Plugin Converter/Templates/Serializers/Serializer.vim"/>
 				</Item>
 			</Item>
 			<Item Name="Utilities" Type="Folder">
+				<Item Name="Event Logger" Type="Folder">
+					<Item Name="Event Logger.lvlib" Type="Library" URL="../_Measurement Plugin Converter/Utilities/Event Logger/Event Logger.lvlib"/>
+				</Item>
 				<Item Name="Sequence Creation" Type="Folder">
 					<Item Name="Create Sequence.lvlib" Type="Library" URL="../_Measurement Plugin Converter/Utilities/Sequence Creation/Create Sequence.lvlib"/>
 				</Item>
-				<Item Name="Logger Utilities" Type="Folder">
-					<Item Name="Error Logger" Type="Folder">
-						<Item Name="Error Logger.lvlib" Type="Library" URL="../_Measurement Plugin Converter/Utilities/Logger Utilities/Error Logger/Error Logger.lvlib"/>
-					</Item>
-					<Item Name="Event Logger" Type="Folder">
-						<Item Name="Event Logger.lvlib" Type="Library" URL="../_Measurement Plugin Converter/Utilities/Logger Utilities/Event Logger/Event Logger.lvlib"/>
-					</Item>
-				</Item>
-			</Item>
-			<Item Name="Converter" Type="Folder">
-				<Item Name="Path Functions" Type="Folder">
-					<Item Name="Path Functions.lvlib" Type="Library" URL="../_Measurement Plugin Converter/Converter/Path Functions/Path Functions.lvlib"/>
-				</Item>
-				<Item Name="Converter Reusables" Type="Folder">
-					<Item Name="Converter Reusables.lvlib" Type="Library" URL="../_Measurement Plugin Converter/Converter/Converter Reusables/Converter Reusables.lvlib"/>
-				</Item>
-				<Item Name="Queue Driver" Type="Folder">
-					<Item Name="Queue Driver.lvlib" Type="Library" URL="../_Measurement Plugin Converter/Converter/Queue Driver/Queue Driver.lvlib"/>
-				</Item>
-				<Item Name="Conversion Logic" Type="Folder">
-					<Item Name="Converter.lvlib" Type="Library" URL="../_Measurement Plugin Converter/Converter/Conversion Logic/Converter.lvlib"/>
-				</Item>
-				<Item Name="Multiple Converter" Type="Folder">
-					<Item Name="Multiple Converter.lvlib" Type="Library" URL="../_Measurement Plugin Converter/Converter/Multiple Converter/Multiple Converter.lvlib"/>
-				</Item>
 			</Item>
 		</Item>
-		<Item Name="Convert Measurement.vi" Type="VI" URL="../Convert Measurement.vi"/>
+		<Item Name="[Deprecated] Convert Measurement.vi" Type="VI" URL="../[Deprecated] Convert Measurement.vi"/>
 		<Item Name="Convert Measurements.vi" Type="VI" URL="../Convert Measurements.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -539,11 +536,9 @@
 				<Item Name="AB_RW_Project_EXE_SharedVar_LibInfo.ctl" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/RW_Project/AB_RW_Project_EXE_SharedVar_LibInfo.ctl"/>
 				<Item Name="AB_Engine_RTDEP_ProjURL_To_NetworkURL.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/Engine/AB_Engine_RTDEP_ProjURL_To_NetworkURL.vi"/>
 				<Item Name="NI_Variable.lvlib" Type="Library" URL="/&lt;vilib&gt;/variable/NI_Variable.lvlib"/>
-				<Item Name="NI_AB_API_EXE.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/AppBuilder/AB_API/EXE/NI_AB_API_EXE.lvclass"/>
 				<Item Name="AB_API Can Add.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Can Add.vi"/>
 				<Item Name="AB_API Add Source Item.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Add Source Item.vi"/>
 				<Item Name="AB_API Set Inclusion.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Set Inclusion.vi"/>
-				<Item Name="NI_AB_API_Application.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/AppBuilder/AB_API/Application/NI_AB_API_Application.lvclass"/>
 				<Item Name="NI_AB_API_Targetfile.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/AppBuilder/AB_API/Targetfile/NI_AB_API_Targetfile.lvclass"/>
 				<Item Name="AB_API Version Information.ctl" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Version Information.ctl"/>
 				<Item Name="Delimited String to 1D String Array.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/Delimited String to 1D String Array.vi"/>
@@ -556,20 +551,7 @@
 				<Item Name="AB_RW_Project_Packed_Lib_Info.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/RW_Project/AB_RW_Project_Packed_Lib_Info.vi"/>
 				<Item Name="AB_RW_Project_Packed_Lib_Data.ctl" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/RW_Project/AB_RW_Project_Packed_Lib_Data.ctl"/>
 				<Item Name="AB_API Link And Expand.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Link And Expand.vi"/>
-				<Item Name="TestStand API String Constants.ctl" Type="VI" URL="/&lt;vilib&gt;/addons/TestStand/_TSUtility.llb/TestStand API String Constants.ctl"/>
-				<Item Name="TestStand API String Constants.vi" Type="VI" URL="/&lt;vilib&gt;/addons/TestStand/_TSUtility.llb/TestStand API String Constants.vi"/>
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
-				<Item Name="nisyscfg.lvlib" Type="Library" URL="/&lt;vilib&gt;/nisyscfg/nisyscfg.lvlib"/>
-				<Item Name="Read Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet.vi"/>
-				<Item Name="Read Delimited Spreadsheet (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (DBL).vi"/>
-				<Item Name="Read Lines From File (with error IO).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Lines From File (with error IO).vi"/>
-				<Item Name="Open File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Open File+.vi"/>
-				<Item Name="Read File+ (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read File+ (string).vi"/>
-				<Item Name="compatReadText.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatReadText.vi"/>
-				<Item Name="Close File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Close File+.vi"/>
-				<Item Name="Find First Error.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find First Error.vi"/>
-				<Item Name="Read Delimited Spreadsheet (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (I64).vi"/>
-				<Item Name="Read Delimited Spreadsheet (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (string).vi"/>
 				<Item Name="Write Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet.vi"/>
 				<Item Name="Write Delimited Spreadsheet (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (DBL).vi"/>
 				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
@@ -598,8 +580,13 @@
 				<Item Name="Insert_Fix Node Terminals.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/QuickDropSupport/Insert_Fix Node Terminals.vi"/>
 				<Item Name="Insert_Reposition Node Vertically.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/QuickDropSupport/Insert_Reposition Node Vertically.vi"/>
 				<Item Name="Insert_Rewire Terminal.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/QuickDropSupport/Insert_Rewire Terminal.vi"/>
+				<Item Name="TestStand API String Constants.ctl" Type="VI" URL="/&lt;vilib&gt;/addons/TestStand/_TSUtility.llb/TestStand API String Constants.ctl"/>
+				<Item Name="TestStand API String Constants.vi" Type="VI" URL="/&lt;vilib&gt;/addons/TestStand/_TSUtility.llb/TestStand API String Constants.vi"/>
+				<Item Name="nisyscfg.lvlib" Type="Library" URL="/&lt;vilib&gt;/nisyscfg/nisyscfg.lvlib"/>
 				<Item Name="Remove and Rewire Objects_core.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/QuickDropSupport/Remove and Rewire Objects_core.vi"/>
 				<Item Name="lveventtype.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/lveventtype.ctl"/>
+				<Item Name="NI_AB_API_EXE.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/AppBuilder/AB_API/EXE/NI_AB_API_EXE.lvclass"/>
+				<Item Name="NI_AB_API_Application.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/AppBuilder/AB_API/Application/NI_AB_API_Application.lvclass"/>
 			</Item>
 			<Item Name="ItemRef.ctl" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/API/ItemRef.ctl"/>
 			<Item Name="provcom_CheckForInvalidCharacters.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Common/provcom_CheckForInvalidCharacters.vi"/>

@@ -11,19 +11,16 @@
 	<Property Name="NI.Lib.SourceVersion" Type="Int">553680896</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
-	<Item Name="subVIs" Type="Folder">
-		<Item Name="Code Conversion Paths.vi" Type="VI" URL="../subVIs/Code Conversion Paths.vi"/>
-		<Item Name="Create Directory for Dependent Items.vi" Type="VI" URL="../subVIs/Create Directory for Dependent Items.vi"/>
-		<Item Name="Create File if not present.vi" Type="VI" URL="../subVIs/Create File if not present.vi"/>
-		<Item Name="Error Logger Path.vi" Type="VI" URL="../subVIs/Error Logger Path.vi"/>
-		<Item Name="Get Default Project Path.vi" Type="VI" URL="../subVIs/Get Default Project Path.vi"/>
-		<Item Name="Get MeasLink API Path.vi" Type="VI" URL="../subVIs/Get MeasLink API Path.vi"/>
-		<Item Name="Get Measurement Paths.vi" Type="VI" URL="../subVIs/Get Measurement Paths.vi"/>
-		<Item Name="Get Path List.vi" Type="VI" URL="../subVIs/Get Path List.vi"/>
-		<Item Name="LabVIEW Dependencies Path.vi" Type="VI" URL="../subVIs/LabVIEW Dependencies Path.vi"/>
-		<Item Name="MeasLink Plugin Path.vi" Type="VI" URL="../subVIs/MeasLink Plugin Path.vi"/>
-		<Item Name="Measurement Plugin Path.vi" Type="VI" URL="../subVIs/Measurement Plugin Path.vi"/>
-		<Item Name="Remove Empty Path.vi" Type="VI" URL="../subVIs/Remove Empty Path.vi"/>
-		<Item Name="Validate Dir and Create Dir.vi" Type="VI" URL="../subVIs/Validate Dir and Create Dir.vi"/>
+	<Item Name="SubVIs" Type="Folder">
+		<Item Name="Code Conversion Paths.vi" Type="VI" URL="../SubVIs/Code Conversion Paths.vi"/>
+		<Item Name="Create Directory.vi" Type="VI" URL="../SubVIs/Create Directory.vi"/>
+		<Item Name="Create Relative Path for Dependency.vi" Type="VI" URL="../SubVIs/Create Relative Path for Dependency.vi"/>
+		<Item Name="Get Default Project Path.vi" Type="VI" URL="../SubVIs/Get Default Project Path.vi"/>
+		<Item Name="Get Measurement Paths.vi" Type="VI" URL="../SubVIs/Get Measurement Paths.vi"/>
+		<Item Name="Get Measurement Plug-in API Paths.vi" Type="VI" URL="../SubVIs/Get Measurement Plug-in API Paths.vi"/>
+		<Item Name="LabVIEW Dependencies Path.vi" Type="VI" URL="../SubVIs/LabVIEW Dependencies Path.vi"/>
+		<Item Name="Measurement Plugin Path - Multiple Converter.vi" Type="VI" URL="../SubVIs/Measurement Plugin Path - Multiple Converter.vi"/>
+		<Item Name="Measurement Plugin Path - Single Converter.vi" Type="VI" URL="../SubVIs/Measurement Plugin Path - Single Converter.vi"/>
+		<Item Name="Remove Empty Path.vi" Type="VI" URL="../SubVIs/Remove Empty Path.vi"/>
 	</Item>
 </Library>

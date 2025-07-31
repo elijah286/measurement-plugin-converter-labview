@@ -12,58 +12,57 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>
-	<Item Name="controls" Type="Folder">
-		<Item Name="Dictionary States.ctl" Type="VI" URL="../controls/Dictionary States.ctl"/>
-		<Item Name="ErrorInformation.ctl" Type="VI" URL="../controls/ErrorInformation.ctl"/>
-	</Item>
-	<Item Name="subVIs" Type="Folder">
+	<Item Name="SubVIs" Type="Folder">
 		<Item Name="Cleanup VIs" Type="Folder">
-			<Item Name="Call BD Cleanup.vi" Type="VI" URL="../subVIs/Cleanup VIs/Call BD Cleanup.vi"/>
-			<Item Name="Call FP Cleanup.vi" Type="VI" URL="../subVIs/Cleanup VIs/Call FP Cleanup.vi"/>
-			<Item Name="Dummy.vi" Type="VI" URL="../subVIs/Cleanup VIs/Dummy.vi"/>
-			<Item Name="Insert Node.vi" Type="VI" URL="../subVIs/Cleanup VIs/Insert Node.vi"/>
+			<Item Name="Call BD Cleanup.vi" Type="VI" URL="../SubVIs/Cleanup VIs/Call BD Cleanup.vi"/>
+			<Item Name="Call FP Cleanup.vi" Type="VI" URL="../SubVIs/Cleanup VIs/Call FP Cleanup.vi"/>
+			<Item Name="Dummy.vi" Type="VI" URL="../SubVIs/Cleanup VIs/Dummy.vi"/>
 		</Item>
-		<Item Name="constants" Type="Folder">
-			<Item Name="Default Value State Name.vi" Type="VI" URL="../subVIs/constants/Default Value State Name.vi"/>
-			<Item Name="Pin Name.vi" Type="VI" URL="../subVIs/constants/Pin Name.vi"/>
-			<Item Name="Loading option.vi" Type="VI" URL="../subVIs/constants/Loading option.vi"/>
-			<Item Name="DirectoriesToIgnore.vi" Type="VI" URL="../subVIs/constants/DirectoriesToIgnore.vi"/>
-			<Item Name="String Name.vi" Type="VI" URL="../subVIs/constants/String Name.vi"/>
+		<Item Name="Constants" Type="Folder">
+			<Item Name="Default Value State Name.vi" Type="VI" URL="../SubVIs/Constants/Default Value State Name.vi"/>
+			<Item Name="Directories to Ignore.vi" Type="VI" URL="../SubVIs/Constants/Directories to Ignore.vi"/>
+			<Item Name="Loading option.vi" Type="VI" URL="../SubVIs/Constants/Loading option.vi"/>
+			<Item Name="Pin Name.vi" Type="VI" URL="../SubVIs/Constants/Pin Name.vi"/>
+			<Item Name="String Name.vi" Type="VI" URL="../SubVIs/Constants/String Name.vi"/>
 		</Item>
 		<Item Name="Getter" Type="Folder">
-			<Item Name="Get Cluster Reference.vi" Type="VI" URL="../subVIs/Getter/Get Cluster Reference.vi"/>
-			<Item Name="Get Clusters String Name.vi" Type="VI" URL="../subVIs/Getter/Get Clusters String Name.vi"/>
-			<Item Name="Get Code Module Path.vi" Type="VI" URL="../subVIs/Getter/Get Code Module Path.vi"/>
-			<Item Name="Get DAQ Control Name.vi" Type="VI" URL="../subVIs/Getter/Get DAQ Control Name.vi"/>
-			<Item Name="Get Drivers List.vi" Type="VI" URL="../subVIs/Getter/Get Drivers List.vi"/>
-			<Item Name="Get Instrument VI Paths.vi" Type="VI" URL="../subVIs/Getter/Get Instrument VI Paths.vi"/>
-			<Item Name="Get IO Controls.vi" Type="VI" URL="../subVIs/Getter/Get IO Controls.vi"/>
-			<Item Name="Get IVIControls Name.vi" Type="VI" URL="../subVIs/Getter/Get IVIControls Name.vi"/>
-			<Item Name="Get LVClass Control Reference.vi" Type="VI" URL="../subVIs/Getter/Get LVClass Control Reference.vi"/>
-			<Item Name="Get Measurement Name.vi" Type="VI" URL="../subVIs/Getter/Get Measurement Name.vi"/>
-			<Item Name="Get PinNames List.vi" Type="VI" URL="../subVIs/Getter/Get PinNames List.vi"/>
-			<Item Name="Get Project Path.vi" Type="VI" URL="../subVIs/Getter/Get Project Path.vi"/>
-			<Item Name="Get Result Cluster Name.vi" Type="VI" URL="../subVIs/Getter/Get Result Cluster Name.vi"/>
-			<Item Name="Get SubroutineInfo.vi" Type="VI" URL="../subVIs/Getter/Get SubroutineInfo.vi"/>
+			<Item Name="Get Cluster Reference.vi" Type="VI" URL="../SubVIs/Getter/Get Cluster Reference.vi"/>
+			<Item Name="Get Clusters String Name.vi" Type="VI" URL="../SubVIs/Getter/Get Clusters String Name.vi"/>
+			<Item Name="Get Code Module Path.vi" Type="VI" URL="../SubVIs/Getter/Get Code Module Path.vi"/>
+			<Item Name="Get DAQ Control Name.vi" Type="VI" URL="../SubVIs/Getter/Get DAQ Control Name.vi"/>
+			<Item Name="Get Drivers List.vi" Type="VI" URL="../SubVIs/Getter/Get Drivers List.vi"/>
+			<Item Name="Get Instrument VI Paths.vi" Type="VI" URL="../SubVIs/Getter/Get Instrument VI Paths.vi"/>
+			<Item Name="Get IO Controls.vi" Type="VI" URL="../SubVIs/Getter/Get IO Controls.vi"/>
+			<Item Name="Get IVI Controls Name.vi" Type="VI" URL="../SubVIs/Getter/Get IVI Controls Name.vi"/>
+			<Item Name="Get LVClass Control Reference.vi" Type="VI" URL="../SubVIs/Getter/Get LVClass Control Reference.vi"/>
+			<Item Name="Get Measurement Name.vi" Type="VI" URL="../SubVIs/Getter/Get Measurement Name.vi"/>
+			<Item Name="Get Pin Names List.vi" Type="VI" URL="../SubVIs/Getter/Get Pin Names List.vi"/>
+			<Item Name="Get Project Path.vi" Type="VI" URL="../SubVIs/Getter/Get Project Path.vi"/>
+			<Item Name="Get Result Cluster Name.vi" Type="VI" URL="../SubVIs/Getter/Get Result Cluster Name.vi"/>
+			<Item Name="Get Subroutine Info.vi" Type="VI" URL="../SubVIs/Getter/Get Subroutine Info.vi"/>
 		</Item>
 		<Item Name="Setter" Type="Folder">
-			<Item Name="Set Clusters String Name.vi" Type="VI" URL="../subVIs/Setter/Set Clusters String Name.vi"/>
-			<Item Name="Set Code Module Path.vi" Type="VI" URL="../subVIs/Setter/Set Code Module Path.vi"/>
-			<Item Name="Set DAQ Control Name.vi" Type="VI" URL="../subVIs/Setter/Set DAQ Control Name.vi"/>
-			<Item Name="Set Drivers List.vi" Type="VI" URL="../subVIs/Setter/Set Drivers List.vi"/>
-			<Item Name="Set Instrument VI Paths.vi" Type="VI" URL="../subVIs/Setter/Set Instrument VI Paths.vi"/>
-			<Item Name="Set IO Controls.vi" Type="VI" URL="../subVIs/Setter/Set IO Controls.vi"/>
-			<Item Name="Set IVIControls Name.vi" Type="VI" URL="../subVIs/Setter/Set IVIControls Name.vi"/>
-			<Item Name="Set LogStatus.vi" Type="VI" URL="../subVIs/Setter/Set LogStatus.vi"/>
-			<Item Name="Set Measurement Name.vi" Type="VI" URL="../subVIs/Setter/Set Measurement Name.vi"/>
-			<Item Name="Set PinNames Label.vi" Type="VI" URL="../subVIs/Setter/Set PinNames Label.vi"/>
-			<Item Name="Set Project Path.vi" Type="VI" URL="../subVIs/Setter/Set Project Path.vi"/>
-			<Item Name="Set Result Cluster Name.vi" Type="VI" URL="../subVIs/Setter/Set Result Cluster Name.vi"/>
-			<Item Name="Set SubroutineInfo.vi" Type="VI" URL="../subVIs/Setter/Set SubroutineInfo.vi"/>
+			<Item Name="Set Clusters String Name.vi" Type="VI" URL="../SubVIs/Setter/Set Clusters String Name.vi"/>
+			<Item Name="Set Code Module Path.vi" Type="VI" URL="../SubVIs/Setter/Set Code Module Path.vi"/>
+			<Item Name="Set Cursor Icon.vi" Type="VI" URL="../SubVIs/Setter/Set Cursor Icon.vi"/>
+			<Item Name="Set DAQ Control Name.vi" Type="VI" URL="../SubVIs/Setter/Set DAQ Control Name.vi"/>
+			<Item Name="Set Drivers List.vi" Type="VI" URL="../SubVIs/Setter/Set Drivers List.vi"/>
+			<Item Name="Set Instrument VI Paths.vi" Type="VI" URL="../SubVIs/Setter/Set Instrument VI Paths.vi"/>
+			<Item Name="Set IO Controls.vi" Type="VI" URL="../SubVIs/Setter/Set IO Controls.vi"/>
+			<Item Name="Set IVI Controls Name.vi" Type="VI" URL="../SubVIs/Setter/Set IVI Controls Name.vi"/>
+			<Item Name="Set Log Status.vi" Type="VI" URL="../SubVIs/Setter/Set Log Status.vi"/>
+			<Item Name="Set Measurement Name.vi" Type="VI" URL="../SubVIs/Setter/Set Measurement Name.vi"/>
+			<Item Name="Set Pin Names Label.vi" Type="VI" URL="../SubVIs/Setter/Set Pin Names Label.vi"/>
+			<Item Name="Set Project Path.vi" Type="VI" URL="../SubVIs/Setter/Set Project Path.vi"/>
+			<Item Name="Set Result Cluster Name.vi" Type="VI" URL="../SubVIs/Setter/Set Result Cluster Name.vi"/>
+			<Item Name="Set Subroutine Info.vi" Type="VI" URL="../SubVIs/Setter/Set Subroutine Info.vi"/>
 		</Item>
-		<Item Name="Autosize Cluster.vi" Type="VI" URL="../subVIs/Autosize Cluster.vi"/>
-		<Item Name="Set Cursor Icon.vi" Type="VI" URL="../subVIs/Setter/Set Cursor Icon.vi"/>
-		<Item Name="Dictionary.vi" Type="VI" URL="../subVIs/Dictionary.vi"/>
-		<Item Name="Save VI and Close Refnum.vi" Type="VI" URL="../subVIs/Save VI and Close Refnum.vi"/>
+		<Item Name="Autosize Cluster.vi" Type="VI" URL="../SubVIs/Autosize Cluster.vi"/>
+		<Item Name="Dictionary.vi" Type="VI" URL="../SubVIs/Dictionary.vi"/>
+		<Item Name="Save VI and Close Refnum.vi" Type="VI" URL="../SubVIs/Save VI and Close Refnum.vi"/>
+	</Item>
+	<Item Name="TypeDefs" Type="Folder">
+		<Item Name="Dictionary States.ctl" Type="VI" URL="../TypeDefs/Dictionary States.ctl"/>
+		<Item Name="Error Information.ctl" Type="VI" URL="../TypeDefs/Error Information.ctl"/>
 	</Item>
 </Library>

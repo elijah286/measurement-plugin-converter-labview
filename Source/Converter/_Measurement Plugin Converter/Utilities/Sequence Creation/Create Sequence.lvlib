@@ -14,8 +14,8 @@
 		<Item Name="Add Labels in Setup Group.vi" Type="VI" URL="../SubVIs/Add Labels in Setup Group.vi"/>
 		<Item Name="Verify TestStand Availability.vi" Type="VI" URL="../SubVIs/Verify TestStand Availability.vi"/>
 	</Item>
-	<Item Name="TypeDef" Type="Folder">
-		<Item Name="Step Properties.ctl" Type="VI" URL="../TypeDef/Step Properties.ctl"/>
+	<Item Name="TypeDefs" Type="Folder">
+		<Item Name="Step Properties.ctl" Type="VI" URL="../TypeDefs/Step Properties.ctl"/>
 	</Item>
 	<Item Name="Create Sequence Main.vi" Type="VI" URL="../Create Sequence Main.vi"/>
 </Library>

@@ -11,8 +11,8 @@
 	<Property Name="NI.Lib.SourceVersion" Type="Int">553680896</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
-	<Item Name="TypeDef" Type="Folder">
-		<Item Name="Queue Operations.ctl" Type="VI" URL="../TypeDef/Queue Operations.ctl"/>
+	<Item Name="TypeDefs" Type="Folder">
+		<Item Name="Queue Operations.ctl" Type="VI" URL="../TypeDefs/Queue Operations.ctl"/>
 	</Item>
 	<Item Name="Queue Driver.vi" Type="VI" URL="../Queue Driver.vi"/>
 </Library>

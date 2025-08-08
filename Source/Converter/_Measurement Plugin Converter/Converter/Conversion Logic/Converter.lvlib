@@ -26,7 +26,7 @@
 			<Item Name="Launch InstrumentStudio.vi" Type="VI" URL="../SubVIs/Common/Launch InstrumentStudio.vi"/>
 			<Item Name="Open Logic VI.vi" Type="VI" URL="../SubVIs/Common/Open Logic VI.vi"/>
 			<Item Name="Open VI.vi" Type="VI" URL="../SubVIs/Common/Open VI.vi"/>
-			<Item Name="Remove Empty Strings.vi" Type="VI" URL="../SubVIs/Common/Remove Empty Strings.vi"/>
+			<Item Name="Remove DAQ Strings.vi" Type="VI" URL="../SubVIs/Common/Remove DAQ Strings.vi"/>
 			<Item Name="Save Libraries and Projects.vi" Type="VI" URL="../SubVIs/Common/Save Libraries and Projects.vi"/>
 			<Item Name="Start Service.vi" Type="VI" URL="../SubVIs/Common/Start Service.vi"/>
 		</Item>
@@ -47,31 +47,31 @@
 			<Item Name="Replace Outside VIs.vi" Type="VI" URL="../SubVIs/Dependency Migration/Replace Outside VIs.vi"/>
 		</Item>
 		<Item Name="Multiple Conversion" Type="Folder">
-			<Item Name="Check if Plugin Name in Library.vi" Type="VI" URL="../SubVIs/Multiple Migration/Check if Plugin Name in Library.vi"/>
-			<Item Name="Check Parent Folder Selection.vi" Type="VI" URL="../SubVIs/Multiple Migration/Check Parent Folder Selection.vi"/>
-			<Item Name="Check VI Version.vi" Type="VI" URL="../SubVIs/Multiple Migration/Check VI Version.vi"/>
-			<Item Name="Edit Warning.vi" Type="VI" URL="../SubVIs/Multiple Migration/Edit Warning.vi"/>
-			<Item Name="Get Folder Tag.vi" Type="VI" URL="../SubVIs/Multiple Migration/Get Folder Tag.vi"/>
-			<Item Name="Get Libraries in Project.vi" Type="VI" URL="../SubVIs/Multiple Migration/Get Libraries in Project.vi"/>
-			<Item Name="Get Measurements.vi" Type="VI" URL="../SubVIs/Multiple Migration/Get Measurements.vi"/>
-			<Item Name="Get Selected Measurements.vi" Type="VI" URL="../SubVIs/Multiple Migration/Get Selected Measurements.vi"/>
-			<Item Name="Get Warning Position.vi" Type="VI" URL="../SubVIs/Multiple Migration/Get Warning Position.vi"/>
-			<Item Name="Populate Tree.vi" Type="VI" URL="../SubVIs/Multiple Migration/Populate Tree.vi"/>
-			<Item Name="Remove Empty Folders.vi" Type="VI" URL="../SubVIs/Multiple Migration/Remove Empty Folders.vi"/>
-			<Item Name="Set Cursor Icon.vi" Type="VI" URL="../SubVIs/Multiple Migration/Set Cursor Icon.vi"/>
-			<Item Name="Set Plugin Name Warning.vi" Type="VI" URL="../SubVIs/Multiple Migration/Set Plugin Name Warning.vi"/>
-			<Item Name="Set Tree Item Icon.vi" Type="VI" URL="../SubVIs/Multiple Migration/Set Tree Item Icon.vi"/>
-			<Item Name="Tree Icons.vi" Type="VI" URL="../SubVIs/Multiple Migration/Tree Icons.vi"/>
-			<Item Name="Update File Icon.vi" Type="VI" URL="../SubVIs/Multiple Migration/Update File Icon.vi"/>
-			<Item Name="Update Tree Item Icon.vi" Type="VI" URL="../SubVIs/Multiple Migration/Update Tree Item Icon.vi"/>
-			<Item Name="Update Tree Item Selection.vi" Type="VI" URL="../SubVIs/Multiple Migration/Update Tree Item Selection.vi"/>
-			<Item Name="Validate File.vi" Type="VI" URL="../SubVIs/Multiple Migration/Validate File.vi"/>
-			<Item Name="Validate Measurement Path.vi" Type="VI" URL="../SubVIs/Multiple Migration/Validate Measurement Path.vi"/>
-			<Item Name="Validate Path.vi" Type="VI" URL="../SubVIs/Multiple Migration/Validate Path.vi"/>
-			<Item Name="Validate Plugin Name.vi" Type="VI" URL="../SubVIs/Multiple Migration/Validate Plugin Name.vi"/>
-			<Item Name="Validate Project Path.vi" Type="VI" URL="../SubVIs/Multiple Migration/Validate Project Path.vi"/>
-			<Item Name="Verify Select All.vi" Type="VI" URL="../SubVIs/Multiple Migration/Verify Select All.vi"/>
-			<Item Name="Warnings.vi" Type="VI" URL="../SubVIs/Multiple Migration/Warnings.vi"/>
+			<Item Name="Check if Plugin Name in Library.vi" Type="VI" URL="../SubVIs/Multiple Conversion/Check if Plugin Name in Library.vi"/>
+			<Item Name="Check Parent Folder Selection.vi" Type="VI" URL="../SubVIs/Multiple Conversion/Check Parent Folder Selection.vi"/>
+			<Item Name="Check VI Version.vi" Type="VI" URL="../SubVIs/Multiple Conversion/Check VI Version.vi"/>
+			<Item Name="Edit Warning.vi" Type="VI" URL="../SubVIs/Multiple Conversion/Edit Warning.vi"/>
+			<Item Name="Get Folder Tag.vi" Type="VI" URL="../SubVIs/Multiple Conversion/Get Folder Tag.vi"/>
+			<Item Name="Get Libraries in Project.vi" Type="VI" URL="../SubVIs/Multiple Conversion/Get Libraries in Project.vi"/>
+			<Item Name="Get Measurements.vi" Type="VI" URL="../SubVIs/Multiple Conversion/Get Measurements.vi"/>
+			<Item Name="Get Selected Measurements.vi" Type="VI" URL="../SubVIs/Multiple Conversion/Get Selected Measurements.vi"/>
+			<Item Name="Get Warning Position.vi" Type="VI" URL="../SubVIs/Multiple Conversion/Get Warning Position.vi"/>
+			<Item Name="Populate Tree.vi" Type="VI" URL="../SubVIs/Multiple Conversion/Populate Tree.vi"/>
+			<Item Name="Remove Empty Folders.vi" Type="VI" URL="../SubVIs/Multiple Conversion/Remove Empty Folders.vi"/>
+			<Item Name="Set Cursor Icon.vi" Type="VI" URL="../SubVIs/Multiple Conversion/Set Cursor Icon.vi"/>
+			<Item Name="Set Plugin Name Warning.vi" Type="VI" URL="../SubVIs/Multiple Conversion/Set Plugin Name Warning.vi"/>
+			<Item Name="Set Tree Item Icon.vi" Type="VI" URL="../SubVIs/Multiple Conversion/Set Tree Item Icon.vi"/>
+			<Item Name="Tree Icons.vi" Type="VI" URL="../SubVIs/Multiple Conversion/Tree Icons.vi"/>
+			<Item Name="Update File Icon.vi" Type="VI" URL="../SubVIs/Multiple Conversion/Update File Icon.vi"/>
+			<Item Name="Update Tree Item Icon.vi" Type="VI" URL="../SubVIs/Multiple Conversion/Update Tree Item Icon.vi"/>
+			<Item Name="Update Tree Item Selection.vi" Type="VI" URL="../SubVIs/Multiple Conversion/Update Tree Item Selection.vi"/>
+			<Item Name="Validate File.vi" Type="VI" URL="../SubVIs/Multiple Conversion/Validate File.vi"/>
+			<Item Name="Validate Measurement Path.vi" Type="VI" URL="../SubVIs/Multiple Conversion/Validate Measurement Path.vi"/>
+			<Item Name="Validate Path.vi" Type="VI" URL="../SubVIs/Multiple Conversion/Validate Path.vi"/>
+			<Item Name="Validate Plugin Name.vi" Type="VI" URL="../SubVIs/Multiple Conversion/Validate Plugin Name.vi"/>
+			<Item Name="Validate Project Path.vi" Type="VI" URL="../SubVIs/Multiple Conversion/Validate Project Path.vi"/>
+			<Item Name="Verify Select All.vi" Type="VI" URL="../SubVIs/Multiple Conversion/Verify Select All.vi"/>
+			<Item Name="Warnings.vi" Type="VI" URL="../SubVIs/Multiple Conversion/Warnings.vi"/>
 		</Item>
 		<Item Name="Scripting VIs" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">0</Property>
@@ -182,8 +182,8 @@
 	</Item>
 	<Item Name="TypeDefs" Type="Folder">
 		<Item Name="Multiple Conversion" Type="Folder">
-			<Item Name="Multiple Conversion Data Holder.ctl" Type="VI" URL="../TypeDefs/Multiple Migration/Multiple Conversion Data Holder.ctl"/>
-			<Item Name="Tree Items.ctl" Type="VI" URL="../TypeDefs/Multiple Migration/Tree Items.ctl"/>
+			<Item Name="Multiple Conversion Data Holder.ctl" Type="VI" URL="../TypeDefs/Multiple Conversion/Multiple Conversion Data Holder.ctl"/>
+			<Item Name="Tree Items.ctl" Type="VI" URL="../TypeDefs/Multiple Conversion/Tree Items.ctl"/>
 		</Item>
 		<Item Name="Data Holder.ctl" Type="VI" URL="../TypeDefs/Data Holder.ctl"/>
 		<Item Name="Input Data.ctl" Type="VI" URL="../TypeDefs/Input Data.ctl"/>

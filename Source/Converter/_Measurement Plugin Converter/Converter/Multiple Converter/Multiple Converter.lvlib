@@ -36,7 +36,7 @@
 		<Item Name="Replace Outside VIs.vi" Type="VI" URL="../SubVIs/Replace Outside VIs.vi"/>
 		<Item Name="Save Project.vi" Type="VI" URL="../SubVIs/Save Project.vi"/>
 	</Item>
-	<Item Name="TypeDef" Type="Folder">
+	<Item Name="TypeDefs" Type="Folder">
 		<Item Name="Library Info.ctl" Type="VI" URL="../TypeDefs/Library Info.ctl"/>
 	</Item>
 	<Item Name="Migrate Dependencies.vi" Type="VI" URL="../Migrate Dependencies.vi"/>

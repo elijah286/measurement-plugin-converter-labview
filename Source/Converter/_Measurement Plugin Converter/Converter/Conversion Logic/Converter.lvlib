@@ -20,6 +20,7 @@
 			<Item Name="Add VI to Library.vi" Type="VI" URL="../SubVIs/Common/Add VI to Library.vi"/>
 			<Item Name="Build Type Specialization Value.vi" Type="VI" URL="../SubVIs/Common/Build Type Specialization Value.vi"/>
 			<Item Name="Check if Error or Channel Controls.vi" Type="VI" URL="../SubVIs/Common/Check if Error or Channel Controls.vi"/>
+			<Item Name="Cleanup Measurement.vi" Type="VI" URL="../SubVIs/Common/Cleanup Measurement.vi"/>
 			<Item Name="Copy InstrumentStudio Template.vi" Type="VI" URL="../SubVIs/Common/Copy InstrumentStudio Template.vi"/>
 			<Item Name="Create and Save Project.vi" Type="VI" URL="../SubVIs/Common/Create and Save Project.vi"/>
 			<Item Name="Generate Error for Combo Box not Found.vi" Type="VI" URL="../SubVIs/Common/Generate Error for Combo Box not Found.vi"/>

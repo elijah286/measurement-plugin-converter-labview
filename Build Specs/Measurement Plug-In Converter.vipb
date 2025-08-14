@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2024-06-21 20:03:51" Modified_Date="2025-07-11 08:27:40" Creator="sabthagiri.murugan" Comments="" ID="23d737a08b6350da5f68082313a3d56a">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2024-06-21 20:03:51" Modified_Date="2025-08-14 15:12:38" Creator="lvadmin" Comments="" ID="6c304942c7e19d03a8b7a1b7cbaccb24">
   <Library_General_Settings>
     <Package_File_Name>ni_measurement_plugin_converter</Package_File_Name>
-    <Library_Version>2.0.0.3</Library_Version>
+    <Library_Version>2.1.0.1</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..\Source\Converter</Library_Source_Folder>
     <Library_Output_Folder>..\Build Output</Library_Output_Folder>
@@ -17,14 +17,14 @@
   </Library_General_Settings>
   <Advanced_Settings>
     <Package_Dependencies>
-      <External_Dependencies>ni_lib_labview_grpc_library &gt;= 1.0.1.1</External_Dependencies>
-      <External_Dependencies>ni_lib_labview_grpc_servicer &gt;= 1.0.1.1</External_Dependencies>
+      <External_Dependencies>ni_lib_labview_grpc_library &gt;= 1.2.5.1</External_Dependencies>
+      <External_Dependencies>ni_lib_labview_grpc_servicer &gt;= 1.2.5.1</External_Dependencies>
+      <External_Dependencies>ni_measurement_plugin_sdk_service &gt;= 3.1.0.1</External_Dependencies>
       <External_Dependencies>ni_protobuf_types &gt;= 1.0.0.1</External_Dependencies>
-      <Additional_External_Dependencies>jdp_science_jsontext &gt;=1.8.2.122</Additional_External_Dependencies>
-      <Additional_External_Dependencies>jdp_science_lib_common_utilities &gt;=1.4.1.18</Additional_External_Dependencies>
-      <Additional_External_Dependencies>ni_measurement_plugin_sdk &gt;=3.0.0.3</Additional_External_Dependencies>
-      <Direct_Dependencies>ni_lib_labview_grpc_library-1.0.1.1</Direct_Dependencies>
-      <Direct_Dependencies>ni_lib_labview_grpc_servicer-1.0.1.1</Direct_Dependencies>
+      <Additional_External_Dependencies>data_serialization &gt;=1.0.0.1</Additional_External_Dependencies>
+      <Direct_Dependencies>ni_lib_labview_grpc_library-1.2.5.1</Direct_Dependencies>
+      <Direct_Dependencies>ni_lib_labview_grpc_servicer-1.2.5.1</Direct_Dependencies>
+      <Direct_Dependencies>ni_measurement_plugin_sdk_service-3.1.0.1</Direct_Dependencies>
       <Direct_Dependencies>ni_protobuf_types-1.0.0.1</Direct_Dependencies>
     </Package_Dependencies>
     <Custom_Action_VIs>
@@ -37,11 +37,11 @@
     </Custom_Action_VIs>
     <VI_Package_Configuration_File>Measurement Plug-In Converter.vipc</VI_Package_Configuration_File>
     <Description>
-      <One_Line_Description_Summary/>
-      <Description/>
+      <One_Line_Description_Summary>Provides tool for converting LabVIEW-based measurements into LabVIEW measurement plug-ins.</One_Line_Description_Summary>
+      <Description>This package offers a tool to convert simple, standards-compliant LabVIEW-based measurements into LabVIEW measurement plug-ins. The converter utility is accessible from the Tools menu.</Description>
       <Copyright/>
       <Packager>NI</Packager>
-      <URL/>
+      <URL>https://github.com/ni/measurement-plugin-converter-labview</URL>
       <Release_Notes/>
     </Description>
     <Destinations>
@@ -122,10 +122,10 @@
         <Namespace/>
       </Namespace_Overrides>
       <Exclusions>
-        <Path>Convert Measurement.vi</Path>
+        <Path>Measurement Plugin Converter Scripting.lvproj</Path>
       </Exclusions>
       <Exclusions>
-        <Path>Measurement Plugin Converter Scripting.lvproj</Path>
+        <Path>[Deprecated] Convert Measurement.vi</Path>
       </Exclusions>
       <Place_Folder_Contents>
         <Path/>
@@ -134,7 +134,7 @@
         <Path>_code_migrator</Path>
       </Place_Folder_Contents>
     </Source_Files>
-    <License_Agreement_Filepath/>
+    <License_Agreement_Filepath>..\LICENSE</License_Agreement_Filepath>
     <Licensing_and_Activation>
       <License_LF_file_path/>
       <Licensed_library_file_path/>

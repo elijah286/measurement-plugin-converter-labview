@@ -4,9 +4,6 @@
 	<Property Name="NI.Lib.SourceVersion" Type="Int">553680896</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
-	<Item Name="Friends List" Type="Friends List">
-		<Item Name="MeasurementGenerator Tests.lvlib" Type="Friended Library" URL="../../../../../../../../Database/measurement-plugin-labview/Source/Tests/Tests.Generator/Dialog/MeasurementGenerator Tests.lvlib"/>
-	</Item>
 	<Item Name="Helpers" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">1</Property>
 		<Property Name="NI.SortType" Type="Int">0</Property>

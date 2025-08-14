@@ -15,11 +15,12 @@
 
 </Property>
 	<Item Name="SubVIs" Type="Folder">
+		<Item Name="Add Copied Standalone VIs to Library.vi" Type="VI" URL="../SubVIs/Add Copied Standalone VIs to Library.vi"/>
 		<Item Name="Check Main Measurement for Instrument Drivers.vi" Type="VI" URL="../SubVIs/Check Main Measurement for Instrument Drivers.vi"/>
 		<Item Name="Classify Dependencies.vi" Type="VI" URL="../SubVIs/Classify Dependencies.vi"/>
 		<Item Name="Create Auto-Populating Folder.vi" Type="VI" URL="../SubVIs/Create Auto-Populating Folder.vi"/>
 		<Item Name="Create Directory for Dependency.vi" Type="VI" URL="../SubVIs/Create Directory for Dependency.vi"/>
-		<Item Name="Create Lib If Not Present.vi" Type="VI" URL="../SubVIs/Create Lib If Not Present.vi"/>
+		<Item Name="Create Lib if not Present.vi" Type="VI" URL="../SubVIs/Create Lib if not Present.vi"/>
 		<Item Name="Get all Dependencies.vi" Type="VI" URL="../SubVIs/Get all Dependencies.vi"/>
 		<Item Name="Get Common Dependencies.vi" Type="VI" URL="../SubVIs/Get Common Dependencies.vi"/>
 		<Item Name="Get Dependencies.vi" Type="VI" URL="../SubVIs/Get Dependencies.vi"/>

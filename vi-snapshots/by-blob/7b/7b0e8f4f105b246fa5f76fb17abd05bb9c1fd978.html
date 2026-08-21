@@ -1,0 +1,271 @@
+<HTML>
+<HEAD>
+<TITLE>Agilent N6700 Series Read External Datalog.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="Agilent N6700 Series Read External Datalog.vi"></A><H2>Agilent N6700 Series Read External Datalog.vi</H2>
+<P>Configures the external datalog then reads it from the instrument's buffer.</P>
+<HR>
+<H3>Connector Pane</H3>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAAsklEQVQ4T4WRQRaAIAhEvYv337XxAJ1rSgQcSA18ifodwAp+rKAdTYDOAG1E7wzbI8AZEYS7AOQyVIcAzOU3KBbMGprntxpO9gLlaAKEd1kCtxhkfQQWCUOKoRDzDcBdxmWGrDAudQARSFn7efcIVAZUg4FanVjUIOdOLLqIKey17JsBbgkMVE3DXTEwNzcKX0s1HAGXSkGf/B+tXRHYhexyolVsFFyHBeUu17DtQJV/7AFB8QTl6XR0sQAAAABJRU5ErkJggg==" ALT="Agilent N6700 Series Read External Datalog.vi"></P>
+<HR>
+<H3>Front Panel</H3>
+<P><IMG src="data:image/png;base64, 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" ALT="Agilent N6700 Series Read External Datalog.vi"></P>
+<HR>
+<H3>Controls and Indicators</H3>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAMAAABA3o1rAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAAT0lEQVQoU5WRWwoAIAgE9/6wN/YjyiRKMxsi/BjXHuADFAQkqJC393Xt3wTqMGpwR44E2s5ZiwQC8SWIE0yKEsYhrUQ0wrFu8XqohNpn5TTHBJ/cpL4svwAAAABJRU5ErkJggg==" ALT="cvsrn"></P>
+</TD>
+<TD>
+<B>Agilent SMU</B> <P>VISA resource name is the name of the VISA resource to open.  </P>
+<P></P>
+<P>Valid Range:</P>
+<P>Not Applicable</P>
+<P></P>
+<P>Default Value:</P>
+<P>Not Applicable</P>
+<P></P>
+<P>&lt;b&gt;Notes:&lt;/b&gt;</P>
+<P></P>
+<P>(1) Each time this function is invoked a Unique Session is opened.  It is possible to have more than one session open for the same resource.</P>
+<P></P>
+<P>(2) Refer to the following table below for the exact grammar to use for this parameter.  Optional fields are shown in square brackets ([]).</P>
+<P></P>
+<P>Syntax</P>
+<P>------------------------------------------------------</P>
+<P>GPIB[board]::&lt;primary address&gt;[::secondary address]::INSTR</P>
+<P>ASRL&lt;port&gt;::INSTR</P>
+<P>TCPIP::&lt;Instrument's IP address&gt;::INSTR</P>
+<P>&lt;Alias Name&gt;</P>
+<P></P>
+<P>If you do not specify a value for an optional field, the following values are used:</P>
+<P></P>
+<P>Optional Field - Value</P>
+<P>------------------------------------------------------</P>
+<P>board - 0</P>
+<P>secondary address - none (31)</P>
+<P></P>
+<P>(3) The following table contains example valid values for this parameter.</P>
+<P></P>
+<P>&quot;Valid Value&quot; - Description</P>
+<P>------------------------------------------------------</P>
+<P>------------------------------------------------------</P>
+<P>&quot;GPIB::22::INSTR&quot; - GPIB board 0, primary address 22 no</P>
+<P>                    secondary address</P>
+<P>&quot;GPIB::22::5::INSTR&quot; - GPIB board 0, primary address 22</P>
+<P>                       secondary address 5</P>
+<P>&quot;GPIB1::22::5::INSTR&quot; - GPIB board 1, primary address 22</P>
+<P>                        secondary address 5</P>
+<P>&quot;ASRL2::INSTR&quot; - COM port 2</P>
+<P>&quot;SampleInstr&quot; - Logical name &quot;SampleInstr&quot;</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAMAAABA3o1rAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAAUUlEQVQoU42PwQ0AIAgDOwn7D9mHERMVkerFxAdXGmAP8CFAMAQd76/MZyEUMgo+iwLjhj70Yv+yYEPAuozkJhguwrnBZEVmXVGy9RXI+FyiaZwnLfc8MCdDAAAAAElFTkSuQmCC" ALT="cstr"></P>
+</TD>
+<TD>
+<B>Agilent SMU Channel</B> <P>Pass the name of the channel.</P>
+<P></P>
+<P>Valid Channel Names:  1,2,3,4</P>
+<P></P>
+<P>Default Value:  3</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAMAAABA3o1rAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAAVklEQVQoU42PXQ7AIAyCuf/xdh4ejP3ZNF1RYpoYP8DiOQgXAIQc0PZ5Wv8KmAE2YoJ7gr/H3QiyADkFgOiwCvK/Itk9Yfmkb1gqqr4tWmVnL2l/Q7QGRH36sW26z7AAAAAASUVORK5CYII=" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Data Log Type</B> <P>Sets the type of external data logger you want to configure.</P>
+<P></P>
+<P><B><B>Valid Values:</B></B></P>
+<P>0: Current</P>
+<P>1: Voltage</P>
+<P></P>
+<P><B>Default Value:</B> 1: Voltage</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAMAAABA3o1rAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAAS0lEQVQoU42PwQ0AIAgD2cL99+RhrImCocUL8eO1qI0G+xBMsAUdX0PzUUDgnLj3R0gDwSshNpRCavBO4I+EkoWC+wtK2EeQ8VOimbAZJ9j1+sF+AAAAAElFTkSuQmCC" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Data Log Period</B> <P>Specifies the logging period (or integration) time of an external datalog measurement.</P>
+<P></P>
+<P>&lt;b&gt;Units:&lt;/b&gt; seconds</P>
+<P></P>
+<P><B>Valid Range:</B></P>
+<P>0.0001024 to 60.0</P>
+<P></P>
+<P><B>Default Value:</B> 0.1</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAMAAABA3o1rAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAAVklEQVQoU42PXQ7AIAyCuf/xdh4ejP3ZNF1RYpoYP8DiOQgXAIQc0PZ5Wv8KmAE2YoJ7gr/H3QiyADkFgOiwCvK/Itk9Yfmkb1gqqr4tWmVnL2l/Q7QGRH36sW26z7AAAAAASUVORK5CYII=" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Max Records</B> <P>Specifies the maximum number of records of external datalog data that the controller will return for each channel.</P>
+<P></P>
+<P><B>Valid Range:</B></P>
+<P>1 to 16384</P>
+<P></P>
+<P><B>Default Value:</B> </P>
+<P>1</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAMAAABA3o1rAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAAUklEQVQoU42PSQ4AIAgD+3e+zcEFghtWJ4qJTiFCHuBDAMEEHm8rC/ZjESwCL+1GN8H3QDXrcBfCgs+pgk5CvNgoOTqsgpxCwvjFFRcINB5NOAWz5p4hbjhmfwAAAABJRU5ErkJggg==" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>error in</B> <P>error in is a cluster that describes the error status before this VI executes. If error in indicates that an error occurred before this VI was called, this VI may choose not to execute its function, but just pass the error through to its error out cluster. If no error has occurred, then this VI executes normally and sets its own error status in error out. Use the error handler VIs to look up the error code and to display the corresponding error message. Using error in and error out clusters is a convenient way to check errors and to specify execution order by wiring the error output from one subVI to the error input of the next.</P>
+<P></P>
+<P><B>Valid Range:</B></P>
+<P>Not Applicable</P>
+<P></P>
+<P>Default:</P>
+<P>status= False (no error)</P>
+<P>code = 0</P>
+<P>source = empty string</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAMAAABA3o1rAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAAR0lEQVQoU52PwQkAIAwDs/9qrpSHSENFpVE8hIJcQot2AQ8CDCH4+HhlfhUUggbAoyH+cyvyW5BC8rehFDbmFSUSDDaeJZ4OWdHkfaNCMWsAAAAASUVORK5CYII=" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P>The <B>status</B> boolean is either TRUE (X) for an error, or FALSE (checkmark) for no error or a warning.</P>
+<P></P>
+<P>The pop-up option <B>Explain Error</B> (or Explain Warning) gives more information about the error displayed.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAMAAABA3o1rAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAAVklEQVQoU42PXQ7AIAyCuf/xdh4ejP3ZNF1RYpoYP8DiOQgXAIQc0PZ5Wv8KmAE2YoJ7gr/H3QiyADkFgOiwCvK/Itk9Yfmkb1gqqr4tWmVnL2l/Q7QGRH36sW26z7AAAAAASUVORK5CYII=" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P>The <B>code</B> input identifies the error or warning.</P>
+<P></P>
+<P>The pop-up option <B>Explain Error</B> (or Explain Warning) gives more information about the error displayed.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAMAAABA3o1rAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAAUUlEQVQoU42PwQ0AIAgDOwn7D9mHERMVkerFxAdXGmAP8CFAMAQd76/MZyEUMgo+iwLjhj70Yv+yYEPAuozkJhguwrnBZEVmXVGy9RXI+FyiaZwnLfc8MCdDAAAAAElFTkSuQmCC" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P>The <B>source</B> string describes the origin of the error or warning.</P>
+<P></P>
+<P>The pop-up option <B>Explain Error</B> (or Explain Warning) gives more information about the error displayed.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAMAAABA3o1rAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAAT0lEQVQoU42QyQ0AIAgEtxL6L5KHURAkkWMePGBYoqAGEEpmQpGvQr6uAnsryC7wnVXCGcphSH0F1uZ+N1lOSCA0gqRnJ/DHhBQMv7oRGhYk9SS1qQIy0QAAAABJRU5ErkJggg==" ALT="istr"></P>
+</TD>
+<TD>
+<B>External Log</B> <P>Returns the external datalog data from the instruments buffer.</P>
+<P></P>
+<P>A record is one set of voltage and current readings for one time interval. The exact format of a record depends on which functions have been enabled for external datalog sensing. If all functions are enabled, then one record will contain:Current average, Current minimum, Current maximum, Voltage average, Voltage minimum, Voltage maximum,</P>
+<P>in that order.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAMAAABA3o1rAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAATUlEQVQoU42NMQ4AIAgD+3e+zeBQJLGKcIOJcC2wBhi+zIRPfwh3ziIegnPICB8RnD/tEoENheB7RCnUoyE3PNUJ2oA3KZTksZqJ0LAA3Th1tHjwbxwAAAAASUVORK5CYII=" ALT="ierrcodeclst"></P>
+</TD>
+<TD>
+<B>error out</B> <P>error out is a cluster that describes the error status after this VI executes. If an error occurred before this VI was called, error out is the same as error in. Otherwise, error out shows the error, if any, that occurred in this VI. Use the error handler VIs to look up the error code and to display the corresponding error message. Using error in and error out clusters is a convenient way to check errors and to specify execution order by wiring the error output from one subVI to the error input of the next.</P>
+<P></P>
+<P><B>Valid Range:</B></P>
+<P>Not Applicable</P>
+<P></P>
+<P>Default:</P>
+<P>status= False (no error)</P>
+<P>code = 0</P>
+<P>source = empty string</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAMAAABA3o1rAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAARElEQVQoU2M4TQAwnGbAC4hTgMd8qALc2qEK/kC4ME0QCkXBH6iO0wiSVAUwS2BWkW4CIQUM2AFcAU7AQGRQE1BAAAAAb0Kl2NnrI/wAAAAASUVORK5CYII=" ALT="ibool"></P>
+</TD>
+<TD>
+<B>status</B> <P>The <B>status</B> boolean is either TRUE (X) for an error, or FALSE (checkmark) for no error or a warning.</P>
+<P></P>
+<P>The pop-up option <B>Explain Error</B> (or Explain Warning) gives more information about the error displayed.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAMAAABA3o1rAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAAT0lEQVQoU42QyQ0AIAgEt//yqIeHCYeBCMIk7ocRUNAACF92wqe/Cf11ExjaRhKeUVBDDtnUWvB8Bc6lYYTXsxCWtBdGATVXaMHyqwdh4AAbkbnjvNgSyQAAAABJRU5ErkJggg==" ALT="ii32"></P>
+</TD>
+<TD>
+<B>code</B> <P>The <B>code</B> input identifies the error or warning.</P>
+<P></P>
+<P>The pop-up option <B>Explain Error</B> (or Explain Warning) gives more information about the error displayed.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAMAAABA3o1rAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAAT0lEQVQoU42QyQ0AIAgEtxL6L5KHURAkkWMePGBYoqAGEEpmQpGvQr6uAnsryC7wnVXCGcphSH0F1uZ+N1lOSCA0gqRnJ/DHhBQMv7oRGhYk9SS1qQIy0QAAAABJRU5ErkJggg==" ALT="istr"></P>
+</TD>
+<TD>
+<B>source</B> <P>The <B>source</B> string describes the origin of the error or warning.</P>
+<P></P>
+<P>The pop-up option <B>Explain Error</B> (or Explain Warning) gives more information about the error displayed.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<HR>
+<H3>Block Diagram</H3>
+<P><IMG src="data:image/png;base64, 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" ALT="Agilent N6700 Series Read External Datalog.vi"></P>
+<HR>
+<H3>List of SubVIs and Express VIs with Configuration Information</H3>
+<HR>
+<H3>VI Revision History</H3>
+<P>&quot;Agilent N6700 Series Read External Datalog.vi History&quot;</P>
+<P>Current Revision:   53</P>
+<HR>
+<H3>Position in Hierarchy</H3>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAADYAAAB1CAMAAAAyV+ItAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAB20lEQVRYR+2WTW6EMAyFs+EkLDlID9IrdjOrrNoL9DazcXFInATHP6CqVC0vIyYa/PH8EhRNCKf1cUAtJj6Q6Z9hoErGFkUKBsv61EW4iNhqB2g5vojYSbez2RZpFbEPGYu1LO5mChYXKo7E5dm3Y3G9F0ttaa7MXNhEL9ohLExh8mJpA2J2wwFNpzL2Qkpu1XHDoo1NhQuFk7HwLMrZqqOKpZcrlmwAjeO6pV3pGCupMre1rmLptSiZsp8Xa7PhDAN3pRzDNttsCOGPEvZJIp/NCZ8lb3eD1TXcIPXl6vetOhlYPRR6JxOj4yY5eY+geuAlJ+eB1xyvz997vKoSsSpWPSzlWH8RSofY5vRDWA6mYnvVYlD+PDHJK2lKf7CoG2O6MaYbY/oj2OsBXYkFl67HwJCEPVQpGJIAj222fkP5zcSITOZAQ8GakT7Z08SgFvGJ6tZme1AuPZsmEQuqFGy3u27sPWn0h8SFwTGsNti3bGA00uetyMI6A8TAg/UCpHB4sLnFsp+NzTNx7myJIs69kglsbsDu6sHaZQUbm3Oj7craWC095MblysZlYlszfIJfMpZrRyPIp3Kg7AzLWy66SX7ubMXHzjYQdLMhZkjAHLoYc+sy7NaF+gJ6DQJP99iO6QAAAABJRU5ErkJggg==" ALT="Agilent N6700 Series Read External Datalog.vi"></P>
+<HR>
+<H3>Iconified Cluster Constants</H3>
+</BODY>
+</HTML>

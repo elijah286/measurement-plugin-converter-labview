@@ -1,0 +1,114 @@
+[
+  {
+    "sha": "9adeb5f8daa0fe0bba387f808df068f531d59d87",
+    "short": "9adeb5f",
+    "message": "Add LabVIEW CI pipeline",
+    "author": "Elijah Kerry",
+    "date": "2026-08-20T19:54:52-05:00",
+    "vi_count": 947
+  },
+  {
+    "sha": "7d2d817f3eeda26ab2240f8fa5b9abae30b86125",
+    "short": "7d2d817",
+    "message": "Cleanup for failure in Measurement Conversion (#20)",
+    "author": "Varshini Senthilkumar",
+    "date": "2025-08-14T18:08:36+05:30",
+    "vi_count": 947
+  },
+  {
+    "sha": "556a0b9c29b4df46614595bb759498420ef04626",
+    "short": "556a0b9",
+    "message": "Update Build Specification (#19)",
+    "author": "Varshini Senthilkumar",
+    "date": "2025-08-14T15:27:08+05:30",
+    "vi_count": 946
+  },
+  {
+    "sha": "13fb673646d25544ade85f262fe1c11827495a50",
+    "short": "13fb673",
+    "message": "Multiple Fixes and Enhancements for Measurement Conversion and Dependency Migration (#18)",
+    "author": "Varshini Senthilkumar",
+    "date": "2025-08-14T15:08:01+05:30",
+    "vi_count": 946
+  },
+  {
+    "sha": "6eec82f04906c98773e7f1686ab4823f186854cd",
+    "short": "6eec82f",
+    "message": "Folder Rename and Code Refactor Changes (#15)",
+    "author": "Varshini Senthilkumar",
+    "date": "2025-08-08T13:55:10+05:30",
+    "vi_count": 945
+  },
+  {
+    "sha": "12024f7c3652304bbd9d9a4f3b268fd3ae534d4a",
+    "short": "12024f7",
+    "message": "Refactor VIs to Prevent Reference Leaks and Preserve Errors (#13)",
+    "author": "Varshini Senthilkumar",
+    "date": "2025-08-07T09:55:32+05:30",
+    "vi_count": 945
+  },
+  {
+    "sha": "4b2e1eb8d96b8f3d0c2e68edb3e862d258abec26",
+    "short": "4b2e1eb",
+    "message": "Refactor Serializer and Deserializer vim files into Separate Package with Palette Support (#12)",
+    "author": "Varshini Senthilkumar",
+    "date": "2025-08-07T08:10:48+05:30",
+    "vi_count": 945
+  },
+  {
+    "sha": "a07b50fad0e87c096c7813ad9be05ac4f29a75eb",
+    "short": "a07b50f",
+    "message": "refactor: Code cleanup and Improvements (#11)",
+    "author": "Varshini Senthilkumar",
+    "date": "2025-08-01T04:14:34+05:30",
+    "vi_count": 941
+  },
+  {
+    "sha": "63e3c6e5cea4ab9c6e44d415facff6561f0445ed",
+    "short": "63e3c6e",
+    "message": "refactor: Clean up redundant folders and standardize naming (#10)",
+    "author": "Varshini Senthilkumar",
+    "date": "2025-07-24T11:04:21+05:30",
+    "vi_count": 959
+  },
+  {
+    "sha": "6ba87486a0ea3e591124584afe8dda6d113f2b1c",
+    "short": "6ba8748",
+    "message": "Replace 'Migrate' Term in Converter Utility Files and Build Spec (#9)",
+    "author": "Varshini Senthilkumar",
+    "date": "2025-07-16T18:04:23+05:30",
+    "vi_count": 983
+  },
+  {
+    "sha": "f4dfe076b7598a4bb50161019bcb57f74a2afe15",
+    "short": "f4dfe07",
+    "message": "Update folder names to align with the new repository name (#8)",
+    "author": "Varshini Senthilkumar",
+    "date": "2025-07-16T11:30:07+05:30",
+    "vi_count": 983
+  },
+  {
+    "sha": "d0917e1574d9033f110d801fa1ed365fbac9d21c",
+    "short": "d0917e1",
+    "message": "fix: bugfixes for multiple measurement migration tool (#6)",
+    "author": "AishwaryaLakshmiSS",
+    "date": "2024-09-27T09:38:24+05:30",
+    "vi_count": 983
+  },
+  {
+    "sha": "5021a2234b6b347976e50263f08d9b7765a33ff8",
+    "short": "5021a22",
+    "message": "Cleaned up the VIs (#5)",
+    "author": "sabthagiri6",
+    "date": "2024-09-19T16:55:23+05:30",
+    "vi_count": 983
+  },
+  {
+    "sha": "07264de02e43ccc477ad4e4580e85186328884f9",
+    "short": "07264de",
+    "message": "Migration Tool  (#4)",
+    "author": "sabthagiri6",
+    "date": "2024-09-04T18:13:04+05:30",
+    "vi_count": 1384
+  }
+]

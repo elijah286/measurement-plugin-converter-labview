@@ -1,0 +1,447 @@
+<HTML>
+<HEAD>
+<TITLE>Agilent N6700 Series Configure Voltage.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="Agilent N6700 Series Configure Voltage.vi"></A><H2>Agilent N6700 Series Configure Voltage.vi</H2>
+<P>Configures the power supply's output range on a channel, configures the DC voltage level, channel appears at the output connector and takes a measurement on the output signal and returns the measured value.</P>
+<HR>
+<H3>Connector Pane</H3>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAAsklEQVQ4T4WRQRaAIAhEvYv337XxAJ1rSgQcSA18ifodwAp+rKAdTYDOAG1E7wzbI8AZEYS7AOQyVIcAzOU3KBbMGprntxpO9gLlaAKEd1kCtxhkfQQWCUOKoRDzDcBdxmWGrDAudQARSFn7efcIVAZUg4FanVjUIOdOLLqIKey17JsBbgkMVE3DXTEwNzcKX0s1HAGXSkGf/B+tXRHYhexyolVsFFyHBeUu17DtQJV/7AFB8QTl6XR0sQAAAABJRU5ErkJggg==" ALT="Agilent N6700 Series Configure Voltage.vi"></P>
+<HR>
+<H3>Front Panel</H3>
+<P><IMG src="data:image/png;base64, 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" ALT="Agilent N6700 Series Configure Voltage.vi"></P>
+<HR>
+<H3>Controls and Indicators</H3>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAMAAABA3o1rAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAAT0lEQVQoU5WRWwoAIAgE9/6wN/YjyiRKMxsi/BjXHuADFAQkqJC393Xt3wTqMGpwR44E2s5ZiwQC8SWIE0yKEsYhrUQ0wrFu8XqohNpn5TTHBJ/cpL4svwAAAABJRU5ErkJggg==" ALT="cvsrn"></P>
+</TD>
+<TD>
+<B>Agilent SMU</B> <P>VISA resource name is the name of the VISA resource to open.  </P>
+<P></P>
+<P>Valid Range:</P>
+<P>Not Applicable</P>
+<P></P>
+<P>Default Value:</P>
+<P>Not Applicable</P>
+<P></P>
+<P>&lt;b&gt;Notes:&lt;/b&gt;</P>
+<P></P>
+<P>(1) Each time this function is invoked a Unique Session is opened.  It is possible to have more than one session open for the same resource.</P>
+<P></P>
+<P>(2) Refer to the following table below for the exact grammar to use for this parameter.  Optional fields are shown in square brackets ([]).</P>
+<P></P>
+<P>Syntax</P>
+<P>------------------------------------------------------</P>
+<P>GPIB[board]::&lt;primary address&gt;[::secondary address]::INSTR</P>
+<P>ASRL&lt;port&gt;::INSTR</P>
+<P>TCPIP::&lt;Instrument's IP address&gt;::INSTR</P>
+<P>&lt;Alias Name&gt;</P>
+<P></P>
+<P>If you do not specify a value for an optional field, the following values are used:</P>
+<P></P>
+<P>Optional Field - Value</P>
+<P>------------------------------------------------------</P>
+<P>board - 0</P>
+<P>secondary address - none (31)</P>
+<P></P>
+<P>(3) The following table contains example valid values for this parameter.</P>
+<P></P>
+<P>&quot;Valid Value&quot; - Description</P>
+<P>------------------------------------------------------</P>
+<P>------------------------------------------------------</P>
+<P>&quot;GPIB::22::INSTR&quot; - GPIB board 0, primary address 22 no</P>
+<P>                    secondary address</P>
+<P>&quot;GPIB::22::5::INSTR&quot; - GPIB board 0, primary address 22</P>
+<P>                       secondary address 5</P>
+<P>&quot;GPIB1::22::5::INSTR&quot; - GPIB board 1, primary address 22</P>
+<P>                        secondary address 5</P>
+<P>&quot;ASRL2::INSTR&quot; - COM port 2</P>
+<P>&quot;SampleInstr&quot; - Logical name &quot;SampleInstr&quot;</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAMAAABA3o1rAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAAUUlEQVQoU42PwQ0AIAgDOwn7D9mHERMVkerFxAdXGmAP8CFAMAQd76/MZyEUMgo+iwLjhj70Yv+yYEPAuozkJhguwrnBZEVmXVGy9RXI+FyiaZwnLfc8MCdDAAAAAElFTkSuQmCC" ALT="cstr"></P>
+</TD>
+<TD>
+<B>Agilent SMUChannel</B> <P>Pass the name of the channel on which to specify the output range.</P>
+<P></P>
+<P>Valid Channel Names:  1,2,3,4</P>
+<P></P>
+<P>Default Value:  1</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAMAAABA3o1rAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAAS0lEQVQoU42PwQ0AIAgD2cL99+RhrImCocUL8eO1qI0G+xBMsAUdX0PzUUDgnLj3R0gDwSshNpRCavBO4I+EkoWC+wtK2EeQ8VOimbAZJ9j1+sF+AAAAAElFTkSuQmCC" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Voltage Range</B> <P>Sets the range in which you want the power supply to operate.  The instrument driver coerces this value to the closest value the instrument supports that is greater than or equal to the value you specify.</P>
+<P></P>
+<P>&lt;b&gt;Units:&lt;/b&gt; volts (for voltage range)</P>
+<P>           amps (for current range)</P>
+<P></P>
+<P><B>Valid Range:</B></P>
+<P>(for voltage)</P>
+<P>N6731A/B: 0.0 to 5.0 V</P>
+<P>N6732A/B: 0.0 to 8.0 V</P>
+<P>N6733A/B: 0.0 to 20.0 V</P>
+<P>N6734A/B: 0.0 to 35.0 V</P>
+<P>N6735A: 0.0 to 50.0 V</P>
+<P>N6735B: 0.0 to 60.0 V</P>
+<P>N6736B: 0.0 to 100.0 V</P>
+<P>N6741B: 0.0 to 5.0 V</P>
+<P>N6742A/B: 0.0 to 8.0 V </P>
+<P>N6743A/B: 0.0 to 20.0 V</P>
+<P>N6744A/B: 0.0 to 35.0 V</P>
+<P>N6745A: 0.0 to 50.0 V</P>
+<P>N6745B: 0.0 to 60.0 V</P>
+<P>N6746B: 0.0 to 100.0 V</P>
+<P>N6773A: 0.0 to 20.0 V</P>
+<P>N6774A: 0.0 to 35.0 V</P>
+<P>N6775A: 0.0 to 60.0 V</P>
+<P>N6776A: 0.0 to 100.0 V</P>
+<P>N6777A: 0.0 to 150.0 V</P>
+<P>N6751A: 0.0 to 50.0 V</P>
+<P>N6752A: 0.0 to 50.0 V</P>
+<P>N6753A: 0.0 to 20.0 V</P>
+<P>N6754A: 0.0 to 60.0 V</P>
+<P>N6755A: 0.0 to 20.0 V</P>
+<P>N6756A: 0.0 to 60.0 V</P>
+<P>N6761A: 0.0 to 50.0 V</P>
+<P>N6762A: 0.0 to 50.0 V</P>
+<P>N6763A: 0.0 to 20.0 V</P>
+<P>N6764A: 0.0 to 60.0 V</P>
+<P>N6765A: 0.0 to 20.0 V</P>
+<P>N6766A: 0.0 to 60.0 V</P>
+<P>N6781A: 0.0 to 20.0 V</P>
+<P>N6782A: 0.0 to 20.0 V</P>
+<P>N6783A-BAT: 0.0 to 8.0 V</P>
+<P>N6783A-MFG: 0.0 to 6.0 V</P>
+<P>N6784A: -20.0 to +20.0 V</P>
+<P>N6785A: -20.0 to +20.0 V</P>
+<P>N6786A: -20.0 to +20.0 V</P>
+<P>N6791A: 0.0 to 60.0 V</P>
+<P>N6792A: 0.0 to 60.0 V</P>
+<P></P>
+<P>(for current)</P>
+<P>N6731A/B: 0.0 to 10.0 A</P>
+<P>N6732A/B: 0.0 to 6.25 A</P>
+<P>N6733A/B: 0.0 to 2.5 A</P>
+<P>N6734A/B: 0.0 to 1.5 A</P>
+<P>N6735A/B: 0.0 to 0.8 A</P>
+<P>N6736B: 0.0 to 0.5 A</P>
+<P>N6741B: 0.0 to 20.0 A</P>
+<P>N6742A: 0.0 to 10.0 A</P>
+<P>N6742B: 0.0 to 12.5 A</P>
+<P>N6743A/B: 0.0 to 5.0 A</P>
+<P>N6744A/B: 0.0 to 3.0 A</P>
+<P>N6745A/B: 0.0 to 1.6 A</P>
+<P>N6746B: 0.0 to 1.0 A</P>
+<P>N6773A: 0.0 to 15.0 A</P>
+<P>N6774A: 0.0 to 8.5 A</P>
+<P>N6775A: 0.0 to 5.0 A</P>
+<P>N6776A: 0.0 to 3.0 A</P>
+<P>N6777A: 0.0 to 2.0 A</P>
+<P>N6751A: 0.0 to 5.0 A</P>
+<P>N6752A: 0.0 to 10.0 A</P>
+<P>N6753A: 0.0 to 50.0 A</P>
+<P>N6754A: 0.0 to 20.0 A</P>
+<P>N6755A: 0.0 to 50.0 A</P>
+<P>N6756A: 0.0 to 17.0 A</P>
+<P>N6761A: 0.0 to 1.5 A</P>
+<P>N6762A: 0.0 to 3.0 A</P>
+<P>N6763A: 0.0 to 50.0 A</P>
+<P>N6764A: 0.0 to 20.0 A</P>
+<P>N6765A: 0.0 to 50.0 A</P>
+<P>N6766A: 0.0 to 17.0 A</P>
+<P>N6781A: -3.0 to +3.0 A</P>
+<P>N6782A: -3.0 to +3.0 A</P>
+<P>N6783A-BAT: -2.0 to + 3.0 A</P>
+<P>N6783A-MFG: -2.0; 0 to + 3.0 A</P>
+<P>N6784A: -3.0 to +3.0 A</P>
+<P>N6785A: -3.0 to +3.0 A</P>
+<P>N6786A: -3.0 to +3.0 A</P>
+<P>N6791A: 0.0 to 20.0 A</P>
+<P>N6792A: 0.0 to 40.0 A</P>
+<P></P>
+<P><B>Default Value:</B>  0.0</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAMAAABA3o1rAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAAS0lEQVQoU42PwQ0AIAgD2cL99+RhrImCocUL8eO1qI0G+xBMsAUdX0PzUUDgnLj3R0gDwSshNpRCavBO4I+EkoWC+wtK2EeQ8VOimbAZJ9j1+sF+AAAAAElFTkSuQmCC" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Voltage Level</B> <P>Sets the DC voltage you want the power supply to attempt to generate. </P>
+<P></P>
+<P>&lt;b&gt;Units:&lt;/b&gt; volts</P>
+<P></P>
+<P><B>Valid Range:</B></P>
+<P>N6731A/B: 0.0 to 5.0 V</P>
+<P>N6732A/B: 0.0 to 8.0 V</P>
+<P>N6733A/B: 0.0 to 20.0 V</P>
+<P>N6734A/B: 0.0 to 35.0 V</P>
+<P>N6735A: 0.0 to 50.0 V</P>
+<P>N6735B: 0.0 to 60.0 V</P>
+<P>N6736B: 0.0 to 100.0 V</P>
+<P>N6741B: 0.0 to 5.0 V</P>
+<P>N6742A/B: 0.0 to 8.0 V </P>
+<P>N6743A/B: 0.0 to 20.0 V</P>
+<P>N6744A/B: 0.0 to 35.0 V</P>
+<P>N6745A: 0.0 to 50.0 V</P>
+<P>N6745B: 0.0 to 60.0 V</P>
+<P>N6746B: 0.0 to 100.0 V</P>
+<P>N6773A: 0.0 to 20.0 V</P>
+<P>N6774A: 0.0 to 35.0 V</P>
+<P>N6775A: 0.0 to 60.0 V</P>
+<P>N6776A: 0.0 to 100.0 V</P>
+<P>N6777A: 0.0 to 150.0 V</P>
+<P>N6751A: 0.0 to 50.0 V</P>
+<P>N6752A: 0.0 to 50.0 V</P>
+<P>N6753A: 0.0 to 20.0 V</P>
+<P>N6754A: 0.0 to 60.0 V</P>
+<P>N6755A: 0.0 to 20.0 V</P>
+<P>N6756A: 0.0 to 60.0 V</P>
+<P>N6761A: 0.0 to 50.0 V</P>
+<P>N6762A: 0.0 to 50.0 V</P>
+<P>N6763A: 0.0 to 20.0 V</P>
+<P>N6764A: 0.0 to 60.0 V</P>
+<P>N6765A: 0.0 to 20.0 V</P>
+<P>N6766A: 0.0 to 60.0 V</P>
+<P>N6781A: 0.0 to 20.0 V</P>
+<P>N6782A: 0.0 to 20.0 V</P>
+<P>N6783A-BAT: 0.0 to 8.0 V</P>
+<P>N6783A-MFG: 0.0 to 6.0 V</P>
+<P>N6784A: -20.0 to +20.0 V</P>
+<P>N6791A: 0.0 to 60.0 V</P>
+<P>N6792A: 0.0 to 60.0 V</P>
+<P></P>
+<P><B>Default Value:</B>  0.0 volts</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAMAAABA3o1rAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAAVklEQVQoU42PXQ7AIAyCuf/xdh4ejP3ZNF1RYpoYP8DiOQgXAIQc0PZ5Wv8KmAE2YoJ7gr/H3QiyADkFgOiwCvK/Itk9Yfmkb1gqqr4tWmVnL2l/Q7QGRH36sW26z7AAAAAASUVORK5CYII=" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Behavior</B> <P>Sets the behavior you want the power supply to exhibit when the output current is greater than or equal to the value of the limit parameter.</P>
+<P></P>
+<P><B>Valid Values:</B></P>
+<P>0: Regulatory Limit - Over current protection is disabled</P>
+<P>1: Trip Limit - Over current protection is enabled</P>
+<P></P>
+<P><B>Default Value:</B>  0: Regulatory limit</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAMAAABA3o1rAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAAS0lEQVQoU42PwQ0AIAgD2cL99+RhrImCocUL8eO1qI0G+xBMsAUdX0PzUUDgnLj3R0gDwSshNpRCavBO4I+EkoWC+wtK2EeQ8VOimbAZJ9j1+sF+AAAAAElFTkSuQmCC" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Current Limit</B> <P>Sets the current limit you want to use.</P>
+<P></P>
+<P>&lt;b&gt;Units:&lt;/b&gt; amps</P>
+<P></P>
+<P><B>Valid Range:</B></P>
+<P>N6731A/B: 0.0 to 10.0 A</P>
+<P>N6732A/B: 0.0 to 6.25 A</P>
+<P>N6733A/B: 0.0 to 2.5 A</P>
+<P>N6734A/B: 0.0 to 1.5 A</P>
+<P>N6735A/B: 0.0 to 0.8 A</P>
+<P>N6736B: 0.0 to 0.5 A</P>
+<P>N6741B: 0.0 to 20.0 A</P>
+<P>N6742A: 0.0 to 10.0 A</P>
+<P>N6742B: 0.0 to 12.5 A</P>
+<P>N6743A/B: 0.0 to 5.0 A</P>
+<P>N6744A/B: 0.0 to 3.0 A</P>
+<P>N6745A/B: 0.0 to 1.6 A</P>
+<P>N6746B: 0.0 to 1.0 A</P>
+<P>N6773A: 0.0 to 15.0 A</P>
+<P>N6774A: 0.0 to 8.5 A</P>
+<P>N6775A: 0.0 to 5.0 A</P>
+<P>N6776A: 0.0 to 3.0 A</P>
+<P>N6777A: 0.0 to 2.0 A</P>
+<P>N6751A: 0.0 to 5.0 A</P>
+<P>N6752A: 0.0 to 10.0 A</P>
+<P>N6753A: 0.0 to 50.0 A</P>
+<P>N6754A: 0.0 to 20.0 A</P>
+<P>N6755A: 0.0 to 50.0 A</P>
+<P>N6756A: 0.0 to 17.0 A</P>
+<P>N6761A: 0.0 to 1.5 A</P>
+<P>N6762A: 0.0 to 3.0 A</P>
+<P>N6763A: 0.0 to 50.0 A</P>
+<P>N6764A: 0.0 to 20.0 A</P>
+<P>N6765A: 0.0 to 50.0 A</P>
+<P>N6766A: 0.0 to 17.0 A</P>
+<P>N6781A: -3.0 to +3.0 A</P>
+<P>N6782A: -3.0 to +3.0 A</P>
+<P>N6783A-BAT: -2.0 to + 3.0 A</P>
+<P>N6783A-MFG: -2.0; 0 to + 3.0 A</P>
+<P>N6784A: -3.0 to +3.0 A</P>
+<P>N6785A: -3.0 to +3.0 A</P>
+<P>N6786A: -3.0 to +3.0 A</P>
+<P>N6791A: 0.0 to 20.0 A</P>
+<P>N6792A: 0.0 to 40.0 A</P>
+<P></P>
+<P><B>Default Value:</B>  0.0</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAMAAABA3o1rAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAAUklEQVQoU42PSQ4AIAgD+3e+zcEFghtWJ4qJTiFCHuBDAMEEHm8rC/ZjESwCL+1GN8H3QDXrcBfCgs+pgk5CvNgoOTqsgpxCwvjFFRcINB5NOAWz5p4hbjhmfwAAAABJRU5ErkJggg==" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>error in</B> <P>error in is a cluster that describes the error status before this VI executes. If error in indicates that an error occurred before this VI was called, this VI may choose not to execute its function, but just pass the error through to its error out cluster. If no error has occurred, then this VI executes normally and sets its own error status in error out. Use the error handler VIs to look up the error code and to display the corresponding error message. Using error in and error out clusters is a convenient way to check errors and to specify execution order by wiring the error output from one subVI to the error input of the next.</P>
+<P></P>
+<P><B>Valid Range:</B></P>
+<P>Not Applicable</P>
+<P></P>
+<P>Default:</P>
+<P>status= False (no error)</P>
+<P>code = 0</P>
+<P>source = empty string</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAMAAABA3o1rAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAAR0lEQVQoU52PwQkAIAwDs/9qrpSHSENFpVE8hIJcQot2AQ8CDCH4+HhlfhUUggbAoyH+cyvyW5BC8rehFDbmFSUSDDaeJZ4OWdHkfaNCMWsAAAAASUVORK5CYII=" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P>The <B>status</B> boolean is either TRUE (X) for an error, or FALSE (checkmark) for no error or a warning.</P>
+<P></P>
+<P>The pop-up option <B>Explain Error</B> (or Explain Warning) gives more information about the error displayed.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAMAAABA3o1rAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAAVklEQVQoU42PXQ7AIAyCuf/xdh4ejP3ZNF1RYpoYP8DiOQgXAIQc0PZ5Wv8KmAE2YoJ7gr/H3QiyADkFgOiwCvK/Itk9Yfmkb1gqqr4tWmVnL2l/Q7QGRH36sW26z7AAAAAASUVORK5CYII=" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P>The <B>code</B> input identifies the error or warning.</P>
+<P></P>
+<P>The pop-up option <B>Explain Error</B> (or Explain Warning) gives more information about the error displayed.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAMAAABA3o1rAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAAUUlEQVQoU42PwQ0AIAgDOwn7D9mHERMVkerFxAdXGmAP8CFAMAQd76/MZyEUMgo+iwLjhj70Yv+yYEPAuozkJhguwrnBZEVmXVGy9RXI+FyiaZwnLfc8MCdDAAAAAElFTkSuQmCC" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P>The <B>source</B> string describes the origin of the error or warning.</P>
+<P></P>
+<P>The pop-up option <B>Explain Error</B> (or Explain Warning) gives more information about the error displayed.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAMAAABA3o1rAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAARklEQVQoU2MQJwAYxBnwAuIU4DEfqgC3dqiCPwwQYxAkuoI/YEFkhFsBDhP+EG8CHgXIjoQoQfEFNgBXgBMwEBnUBBQQAAB3RCC/EvR80QAAAABJRU5ErkJggg==" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Voltage Measurement</B> <P>Returns the measured value.</P>
+<P></P>
+<P>Units: volts   (for voltage measurement)</P>
+<P>           amps  (for current measurement)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAMAAABA3o1rAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAATUlEQVQoU42NMQ4AIAgD+3e+zeBQJLGKcIOJcC2wBhi+zIRPfwh3ziIegnPICB8RnD/tEoENheB7RCnUoyE3PNUJ2oA3KZTksZqJ0LAA3Th1tHjwbxwAAAAASUVORK5CYII=" ALT="ierrcodeclst"></P>
+</TD>
+<TD>
+<B>error out</B> <P>error out is a cluster that describes the error status after this VI executes. If an error occurred before this VI was called, error out is the same as error in. Otherwise, error out shows the error, if any, that occurred in this VI. Use the error handler VIs to look up the error code and to display the corresponding error message. Using error in and error out clusters is a convenient way to check errors and to specify execution order by wiring the error output from one subVI to the error input of the next.</P>
+<P></P>
+<P><B>Valid Range:</B></P>
+<P>Not Applicable</P>
+<P></P>
+<P>Default:</P>
+<P>status= False (no error)</P>
+<P>code = 0</P>
+<P>source = empty string</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAMAAABA3o1rAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAARElEQVQoU2M4TQAwnGbAC4hTgMd8qALc2qEK/kC4ME0QCkXBH6iO0wiSVAUwS2BWkW4CIQUM2AFcAU7AQGRQE1BAAAAAb0Kl2NnrI/wAAAAASUVORK5CYII=" ALT="ibool"></P>
+</TD>
+<TD>
+<B>status</B> <P>The <B>status</B> boolean is either TRUE (X) for an error, or FALSE (checkmark) for no error or a warning.</P>
+<P></P>
+<P>The pop-up option <B>Explain Error</B> (or Explain Warning) gives more information about the error displayed.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAMAAABA3o1rAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAAT0lEQVQoU42QyQ0AIAgEt//yqIeHCYeBCMIk7ocRUNAACF92wqe/Cf11ExjaRhKeUVBDDtnUWvB8Bc6lYYTXsxCWtBdGATVXaMHyqwdh4AAbkbnjvNgSyQAAAABJRU5ErkJggg==" ALT="ii32"></P>
+</TD>
+<TD>
+<B>code</B> <P>The <B>code</B> input identifies the error or warning.</P>
+<P></P>
+<P>The pop-up option <B>Explain Error</B> (or Explain Warning) gives more information about the error displayed.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAMAAABA3o1rAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAAT0lEQVQoU42QyQ0AIAgEtxL6L5KHURAkkWMePGBYoqAGEEpmQpGvQr6uAnsryC7wnVXCGcphSH0F1uZ+N1lOSCA0gqRnJ/DHhBQMv7oRGhYk9SS1qQIy0QAAAABJRU5ErkJggg==" ALT="istr"></P>
+</TD>
+<TD>
+<B>source</B> <P>The <B>source</B> string describes the origin of the error or warning.</P>
+<P></P>
+<P>The pop-up option <B>Explain Error</B> (or Explain Warning) gives more information about the error displayed.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<HR>
+<H3>Block Diagram</H3>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAABYIAAAELCAMAAABTQgIpAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAgAElEQVR4Xu2dy27kRp6vSQMDMYFZyKv2SqtML2pSi0HlquodUtVAw1MrLWzlC0hnU71zGXC7Fqp+Ap1ZuHtgSOqFpIcoAwakggHpUQ68EIaHceM1yLgwkoxg/j5VpjJJRjCLEfEp8k8yIooG5E8KVOkBAABYAwUDAMBoyCWbcPb3ZWsBAADkvLxLP58ptkku59LlmYIlfd99BhQMAAAKVvcvor2P65a13L30V+Hh5HLJXhMFSxKxPjAUDAAACk7a7EspK1iyXCiYxX3FMzXwMxQMAAAqCsdmfdur9+nD+8flh/RhnVwdp09nm/R+HuW9YLL+4vjpLLn6wJYXCi7/Ywp+hoIBAEBBRcG3R8ntUZx1jMnrs2gmAg5CwbfrJPuXLV3We8EiLBxBwQAAoE1FwZfz7EVyl6bp0xuxRKwu1rcruNILft7fl5yrA8CKL9vrMAABw2LBFQXfzMtLxGpjBaMXDByCi8zBNGFXRBydr6NDrth4847L10DB5dNx+/tQMHANFAwmysu79OksWqVP33PFRnv0dBxV8GLzSLvEJDbxuaRgvrzjojRcEQGcAgUD0AC3ZoChgIIBaIAblMFQQMEANJB0gSuo0gOgCyoTAA2gYDAUqEwAADAaUDAAAIwGFAwAAKMBBQMAwGhAwQAAMBpQMAAAjAYUDAAAowEFAwDAaEDBANT5XYEqPQDaQMEA1IGCwWBAwQDUkUv2L5xffpGtBcAKKBiAOpmCJX3fXxhQMHAJFAx2ATI2+wOf1r4xc30DouDmUt4HhoKBS6BgsAuQeeOEepsKri8RCmZxXxb8zXrBxMDPUDBwChQMdgGi4Pi8TcF18l4wMzB//wtx8PMzFAxcAgWDXYD3ghM6e9zVcfp0Gs3usuf44zpbt2Rr5snVezp1XEXB+dk5KBhsASgY7AIkFpwJ92RN5ku+PYtml3xC+9cX0eoTmc7zjPy+PaJb1xTMfvFAxPPzL79IztUBUKalHkqAgsEuQHvBN0syYfLTm0vWI/4pTe/nmX1P1rWp7WWBiOzxl7+gFwz0gIIBqEBjwSdvbnjfl0xj//GIvMoWsunrZQpm3RnxhEAE0AUKBqAC6wUvNu8iodvF+Tp6eT+PVtcXUR6IqPeCK/wFV0QATaBgACqwWHC0R0/HsUDEy7v0OlNwcrvmJ+pIVKJQcBPcmgF0gYIB6AFuUAb9gIIB6IGkC1xBlR7sOgZVBAoGoA4UDPphUEWgYAAAcAsUDAAAowEFAwDAaEDBAAAwGlAwAACMBhQMAACjAQUDAMBoQMEAADAaUDAAAIwGFAwAAKMBBQNgz58UqNKDnQcKBsAeKBj0JEQFX6ejcq36fGB3kEs24ezvy9YCUCJEBafxqKSqzwd2h0zBkr7vPgMKBmqgYGOg4EmwOY3Y3HDFLxktq8RiomDJWtYHhoKBmjAV/JpGBD5fLVS6zHiVnqk2KTG7OlTlCgVPgtWFeIpKs3E20FQwi/uKZ2rgZygYaBCmguP4i/NFpssOWQqXkg0lKxctiaHgXYFIND5Z89f9FVz+xxT8DAUDNZNVcMxXSzdqTwkF7wpEv2wuzod5ckVm5JzdkWk7swWf7+liqmfmWvo2/rgm0ysnYl5PQl3B5V4wFAw0CFvBx+nTWTzLmsQRsefNIlua/SNN6WyWtaqHRfzF39NHIlWiVrp11oCe/s8mfcgWkoQLnglJz5LlK0R2q/TpHRQ8PVYX2b+Yz0i/FEFhMkV99sz8HHEFc12/zlJ8Yq+XOr3g5/19ybk64BlftteRIQhawbdnpD97csR7tSdHs/RM9H0PeXeWxxyyBWzrzbs4+fhnunBzFq9+5Zkwu/JkdIXI7utzYmMoeHJQ0bJZ6pdUqclPaXq/ZAvu0jR9WkdcwQl7y1LQ1290FIxecBCMLLagFczUSpsE6Qa/Pnv1X/+YXcSzrCk9NBWcP/OFh6XFdKFIxheJ7Daf//r/0AueHvFJ5tGSguOPR7x7mz3fiAgwUzB7y1Lc5J3jqO103P4+FBwOI4ttAgrOu6iz//7b1397e/bFxyNpL1ih4CIZX8Szi+Pk+BG94Amyur6ISoGI+HwdvbwngYjZZfZlqRKI4G9ZineSQEQVXBEREiOLLXwFk9AC68Z+8feL+NXD4ovzo/hluRdMFuRibQQicgUXyVggQmSXqfnkCAqeHsntmp5ou5+TEPDj/OVdep29viOn4/by03HkS9Yn/pam2KufjmuCWzNCYmSxTUDBCT8dF2c9mnj2axyTppS59OsN6bySjVbp0/dCweR03NkXm8fidJwIRPBkYkU5u4uSgaHgyXP4SbVFDm5QDp+RxRaqgkcECp40r1Le/9VC0gWuoEoPxmfkQoKCjYGCQQ4UHD4jFxIUbAwUDMCEGFlsULAxUDAAE2JksYWq4Pxuii0g8m7ZBxQMwIQYWWxBKnjWGGWn8lal55m4Wk22uLReXNdWAwoGYEKMLLaJKLiCGwWjFwzALjCy2IJUMB1lpzpEjxiFZ5U+/ZWufk8u7SWL36f/91hsycbk2bCrfslFwewC4FgkEyP8vKcXDNNe8Os0fVzM8kuPoWAApsXIYgtSwaQXXB2iR4zCQ8fUITdX3B6xey4Osxf0Nd2SbZTfNhez2+DojR40Gev7kq3IbXM8EEFH7Cl1iaFgACbEyGILVsFXlSF68rEeyJg6bDXfgr9mW/5ZLItLg0eQNzyZGKpnEZdGi7ghfWM+EhAUDMDEGFlsgStYDNFTDLeTHD8eyhR8I3q+UgXzZGKonrKCyW3KGKwSyMGtGeEzciGFreB8iB7hza/JmDpsEJ58cB62Nd2yNlpaEYjgyfhQPTdHRSCCrs9HAoKCQQUoOHxGLqQgFcxG2SFWTEqn4+gCMqYOXy0G52EKTtjpOOppOn5PtlVxOo4nW7Chem7/VZyO25AQRILTcUAKhukJn5HFFqSC41GBgoNHdwJ7eg7gtG01AYNVhs/IYoOCjYGCg8dkAvvDdkVHUdeQ7QkUHAYjiw0KNgYKDh6TCezjcx0Fs7iveMasGSExstigYGOg4OAxmcA+6wXTlQm5raexCabvDJ+RxRakgourEzJepWftupRQSdxKx1ZQcPhoTmBPYsEPL9jK5S2bVK66SV3B5V4wFBwGI4steAWTGYyMEBelVRYt6q+g4EmjP4H93slpZWVtk85e8PP+vuRcHdgeX3YXu5yRxRa8gvU6tSU6E0DBu4HBBPazT5WVtU0QiPAKK0dZJXJHoApmg/B8SB/e/J2PorPIFj4eiut36XA71KRiIVuSbcmm6BSD/Hx+oDd2LFbp07uYj93DhupZfPFTZXAfKHhKGExgf76gK5l865vIT8ft70PBo2DlKKtE7ghTwXQcHTZ4zqG4yW12e1QZTofdNVdeOKPT0x8SBbNBfjZn4t46OrzPIu/8kmyXP2UyLw3uk/eKoeAJoDeBPVXwyZquZAqub9JxURquiBgeK0dZJXJHmAq+Ksbo+XN5NIh8OB063A5TKl9YG4BH3KjMFUyH9+HeZlve/utX2pnOB/eBgncCjQnsy5vg1gyvsHKUVSJ3hKxgMfJOoWAxnA4bbocrmC6sD8BTVzAZp4e94lve/Ec+Ps8MCt4RNCawr22CG5S9wspRVoncEaaC6Tg6cT7yDgtEkBd8OB023A6XK134NVtCtnwQCi4HIj7SgAVVMBuqh7m7NLgPFAyaSLrAFVTpgVOsjrdVIneEqWA6jk5cjLzDTsfxJUSTdLgd0b+lC9mS2V36P3kvmLwTp+PIOD0xG7uHDdWTbbF6KA/usxCXv0HBIAcK9gqr422VyB1BKjh2x+Gvqi0aQMEA+ImVo6wSuWOnFUziekexKVAwAH5i5SirRO4IUcH/m47K/6o+HwBgFKwcZZXIHSEqGAAAJFg5yiqRO6BgAMBEsHKUVSJ3QMEAgIlg5SirRO6AggEAE8HKUVaJ3AEFAwAmgpWjrBK5AwoGTtjRexQOFKjSA6dYVTOrRO6AgoETFLVjqpUHCvYKq2pmlcgdUDBwwr4YmiaRrp5q5ZFL9t85X30lWwu2hlU1s0rkDigYOGGfjAtGkUYhSOXZnEZ8DN78l4zk7lMUxZv7romL1cyeivHM5DsjI/+ui73RmZLJ08ts+VnH54vKGWYKlvR9v2JAwUNj5SirRO6AgoETiILbesFcwasL8dQ9dfw1GRz9zkrBhRtffX+RL6vuim8Tf8z8ezPP9yYUvLp/Ee19fGOg4OZ63geGgofGylFWidwBBQMnEAU/0yFyyzP4sHVcwURcZPr4KOpW8OXxOpr9s9OBbeRujL9b/JhnUO3SVvvh+d64ghcn69LaFtoULMIS1MDP/RSsFUfW2miHsHKUVSJ3lBWsKE/7T4qKMn2ogp/pKOXlqSwpXMExm/qdDAA6T67IpEFkmr5TMn/Q53u6mNvv8CJ69eaSL2HbkLn9+HSbV+8fl2RNcvU+vTh+OosS9o5M8LdJeec5+ZnujeRM5+dsbhNv3r0o740rWMxoTzY9ZTtnr/kSllFTwbSOVxX83EfBBzqtBif8psXWynNrGQN/qCtY0gsmQYjVRWnSTLKMzYhJJ5XPJ81cXi5+XFaWLM7nyQ2fvZhMB7imL9ZJ9o9vt7wl82rmXevVKd8VmyJZts3eMZmHXuytrmC6Kf84LBl95hlJesGkjvOafvDVV7mCD1i02PRxoLENHnjgscVHYDAFP3f1gploS1PHR8lPacrnxVzSafrWbKvvDn/Ol9BtFpvP716IlGQKzWwNm4ZebPdGrKR7jDdpkTP5kWyTcUhn76R7qyv4kk3WWfqApY9ZRIpJYfEXB/zkXPaP94Kfv/pKo6B7Pg40tsEjnMeBxjamj23kOf1HZMmXkgsShkAjEBHFJ0ybQsHxx6PCbTfCatkGq+tTsYRtM8/6rI+5CpMb1j3lChbvSnpNfuZ7EwqWbBPRs29ib3MapWZ96nzTRfkDlj5mMxBBSq2h4F6BCFILVPSpKMA/tlaerHoCA+wPmH3Evh+Fgsun45iEhYKj1fVFVApExOfr6OU9CURk3/A37yIRdiCOTfiSBdvm4zo+OcpeHtJ0dM2SK3gh3pX0yi++2LDAw1K2zerXOesFs73No9dndHLk4ooIsfOygouMGHmjOeB/POuBCGu0qoDWRjuEVe23SuQOnI7zE+sjZl9K/RBXRHRclEYirKSnSU7EEZk9zsk0ffckrvD5fr5XnI7jImZL2DZkbj9yTu57qr89fk6M/RPvIpYpyeOERTSWd+J0XHMbOmfKi2JvUXx8ff2P7E22q6czHoigOy8ruMiIIe+3DHdFhGqDHcOq9lslckdFwa1bUXp8UtQUQ7Tan5QepdQLjVszOsh6n1tiezlTeNe3hpNbM3SqgH09mSZWtd8qkTvQC/YT6yNmX0r96HGDMumOFreyuWR7OQvkVdvFDcpajUZnm13CqvZbJXIHesFeotX+pPQopV4o9jvWx9o2ki5wBVX6DnTS9trBBLGqZlaJ3IFesJ9YHzH7UuqHJPxQi0VMku0pWCutzja7hFU1s0rkDvSCvUSr/UnpUUrAK3SqgH09mSZWtd8qkTvQC/YT6yNmX0rAK7Qajc42u4RV7bdK5A70gr1Eq/1J6VFKwCt0qoB9PZkmVrXfKpE70Av2E+sjZl9KwCu0Go3ONruEVe23SuSOYHvB6cioPl8/tNqflB6lBLxCpwrY15NpYlX7rRK5I9hecPrHqGxZwVrtT4p9KQGv0Go0OtvsEla13yqRO4LtBf+RcgmzTunAr9M/VJ+vH1rtT0qPUgJeoVMF7OvJNLGq/VaJ3BFsL/gP0Q+m/dGhX29bwVrtT4p9KQGv0Go0OtvsEla13yqRO4LtBafautzK6y0HIrTan5QepQS8QqcKFPUk3XmeBaoNy1gl6ke9DIPtBU9bwVrtT4p9KQGv0Go0xTa0bfvzSMXHkn/ubfDM78N8FguKz9D+OYtE6v+To0f9cwfbC552IEKr/UnpUUrAK3SqQKkXrNH4h3wUH2so2hXc8TnzRKr/j7NHWv/cwfaCp306Tqv9SbEvJeCc32qoti+j1WhKvWC/ftL8Y0URmWfq6Ux80Ffpaek/UIy83JsuBbf+lBQ80E+3gusrq/Ro3Dq1yRAuxbFoHEi3aLU/KT1KCbimj4K1Gk05Fqxq+wP/0A9Ff9N5pzYX7HPSKfoKKvNI9aOpYN5Iuz5lKRAx2E+NYHvBLCI7CgMoWKv9SbEvJeCcqnTNFKzVaLyOBZNn8pv2dEV3t9bt3YaCWSul+ye7J9pr/ZyIBdvzRzqACKUMEYjQan9SepQScE0m3VIX2EzBWo2mEQv2BaK9ioLJTKkf0oejv6eP89ld+nTK51K9ItNYqXLToqrgKIpyFesk6tjGGbSMuhUcUi942grWan9S7EsJOKfkXWMFazWaeizYG/gXxpKCT45O1kWnt5hL1X0vWHiu/BnUiQYg5R3yKsH2ggcJB0gZYs9a7U9Kj1ICruG9YBYUNlSwVqNpxIJ9QdILXt5lC57o1NQ/pem9ewULRL9XqxdcJBqAKcaCVVttg0H2bH3E7EsJOKePgrUaTT0W3LHpsPBAQDkWvLzhc1XHH4+20QtukIresGK74ZoMYsFuGCIQodX+pPQoJeCaPgrWajQex4LZs1Dw3uY03rxj5o3P19HL+0X2fLhlBfPf3ZsN12RSxILdMISCtdqfFPtSAs7po2CtRuNvLLj0W1wXvPchfVgTH7+8S6/v56v06ftMwIvN45YcnNZ+tzFYk0Es2BFD7Fmr/UnpUUrANX0UrNVoPI4FV3+Pge5nGK7JIBbshkH2bH3E7EsJOKfPRWlajcbrWHD59xjofobhmgxiwW4YIhCh1f6k9Cgl4Jo+t2ZoNRp/Y8E+ofisgzUZxIIdMYSCtdqfFPtSAs75rYZq+zJajabYZtirq3zFqvZbJbIBsWBHDLFnrfYnpUcpAdf0UbBWoynqyfMBY2cULG0iVrXfKpEViAW7YZA9Wx8x+1ICXqHVaEq94B1TMPm/qrbxDsSC3TBEIMK+evUoJbBFzHrABJ0qQDzEHoWCi2V4mD1UR7sviAU7YggFa7U/KfalBLxCq9EUAskVrBTNJB4HGtsYP7YNYsGOGGLP9vWhRymBLbKdXnDBzgUierQROa7zk4BYsBsG2bP1EbMvJeAVho1m1xQsPz5WtZ8nMjveViAW7IYhAhGG7a9Ej1ICWwS9YNc4V7DZAbcAsWBHDKFgw/ZXwr6UgFcYNpqduy44wF4wYsGOGGLPhu2vRI9SAltk271gz8aIGADnCjY74DYgFuyGQfZsfcTsSwl4hWGjSf0aI2L7BNgLRizYEUMEIgzbX4kepQTMOVeQb7j1XnDk1RgRA+BcwWYH3ALEgh0xhIIN218J+1ICFmgr2BjDRrN7cQjnCu7eygGIBTtiiD0btr8SPUoJmCOX7H9yvv02X7T1XvDuOViyzKr2D9YLRizYEYPs2fqI2ZfSjjJ7WuevE+kkOsld+nmdPX+KonhzP4/P2ZzsdF2mYEnf91tGWcHGGDYaxIIJVrV/sF4wYsEuGOjaH8P2V6JHKe0mr76/4K+S2jxmXMjxx8y/N/Pkmsw3eSdRcNSA94GH7AUPVDE9QhyfbxR0ZkKo9oJ7Z9dCawEF2wseS8G8n7Ptmm59xOxLaTeJv1v8mHs3kSk4/3W8jmb/vGxRMI/7ntOX1MDPkl6wQfs2NMJQFdMbcqkopKh2ZrUX3Du7FloLSNEL1q0ACqo5O8l0pL/6A9X04o+W6cGSKdg0D/ME4ZL8HJ9kvdwP6ed7OptvQueYvDpOn8426T3xbLx594JseHl4Eb1606ZgYWL671uq4OdmL9ikfR80FzXZXQVHzhTMOTA74KbYFpCbz1PrBTvJNP8f0WDcYI9it+pt7R+kfvHXpgdLqmDJss7VxgnCZXUarS7izRkNQywvF8THl8vbs2iWhyX2Mh/TpZeLH5fdCj6P6goWhRrRAjU4sJpGGLZi+vMgx4e9Lh8hSRfhG3Ve9EGUTn4rs9PIS/awFZaqAnSvztmqglX/B6eP4m+Zelv7R1G/1CVQTZspuJmfYR7nqiLQK6EgiDdpmt4T2TIFL++y909v+Ps8LHF4P08uF98d/pyYKPj522/FQc16wfUDK2/feUHyv8LKFHz7YSqmP4+il1IcD+kXtW+68ykeB9TB56rslPm0PGyFpaoAqvT0URIKfagyVeVHH7b9+p4MtdsiEFFaKD9Y1WP9p6h5rAzz0Cj2yZD8nOn05E2h4Bui1qSu4My42bLV9SlRcNZRzqPG5HCxTbh92wIRDFX7bjYaVQrxYqiK6Q3NWPA3FfKljZQt1GPBPbOrY1tAqgqgEiV9lL5W1xp4S6YaeU5cwQcSBcsPVlSjOxChl4d5gmBZXdCnDQs8LC8Xm3dcvrmCV7/OWS94Tq6LyJa9Psu6xZ9Y+lzBpFrmL/9TGQv+pkK+NCpRC0QoUgxUMT2iruBvatRWt1O7IoIvtc6uBb3Tcc3zcboVoJu2WHCfTEeqckPttqlgzYPVqWDNPMwTBAvp0RLb3onTcXv0dBxV8GLzSE/HvUrThxe830ue4+Pr63/wDnLRCy7TfkWE+F2jtppgaIShKqY3NHrBxXFpPaZy5FdEWGfXgp6C6yv1K4ACuYJ7ZTpSlRvoQoxmL1j3YHUpWDcP8wQTQPRrzWBfyepIbs2o9oKLw9l+YGUKbk8xUMX0iJqCy4el8rqRsI60F2yfXQu21wXrVoBuWnrBvTIdScHR0GNEmB4stYKrryLZATdOEDqko1vcJGfAuaQPLLtBmc9gb9C+DY2we/cnyxQsVrYcUznSXrB9du1YjRGhWwEUSBXcL9Px/uoPcYNyoxesfbA6FKydh3mCnUXSBa7AN/uN/pi176aCu1Ls7hgRukeolfZesNjCKLsObMaIcPN55L3gfpkOIUI5g+xZquB8WcfBUik4X9Z1wI0T7Cy6Cv6N9oN/Mziwhkbg8xZJulET5UDMfCyrjUaVNe8F0/x6Z9eBzRgRuhVAwRYUPNINytEwgQh5Lzhf1nGwoGAfqfWCK7QdWD3BiOnXD2LK7ig4ElPPS47QN0aVNe8F0/x6Z9eOznjBB/WHqgJIVkuo5esk02kruDhepgdL9+44HQVXl5mWEChRjQWXaWvfmoKhlSSiCj442CkFCyTVt3SANCprtcn0zq4dnVhwQ8KqCtBcLaWar5NMBwkHSBliz51/BCsH6081vmxur2zGzbWNJRYlBMq0jRGhat8aKXgvmAgYCo7EAdJ3pkLBptl1oIwFS9CoAOY4yXQIEcoZds8uDpZxHsYJgB7m7VsnRR6IgILz45MvVVfWTgWbZ9eBMhYsQacCGOMk04kHInJcHCzjPIwTABXSXrBG+9ZIwb4uUQNDwbXjo1NZuxRskV076liwBI0KYI6TTHdUwVYHyzgP4wRACT0jZ96+dVLQmBU1MBRcP0AalVWt4NbVZqhjwRJ0KoAxTjIdNhxQZtg9uzhYxnkYJwB6mLdv3RRQMHtTP0AalbVDwTbZddA/FqxTZTRwkumwIiwz7J5dHCzjPIwTAD3M27duit27KE3QPELtq6WoFNy+2pTesWCtKqOBk0x3MhBhebCM8zBOAPQwb9+6KXauF/y7QPcItfJl5ZKi3tm10z8W7OrzOMl0dxXcvroN4zyME+wkPyiQJDE/sLopdq4XnJtL9whp4ji7Mi2x4G5cf57mOQnbTIcNB5QZYM+OS8A4D+MEVj4KHYv/svmB1U1xwIl2BbmCm2i1kBKOs6tgM46HbgXQRHJljm2mA4iwhQH2XPpu4uJgGedhnCDzkWSZ/uogkf9dWXLevpWsNG/fuilSaZxxwgSpYIsy2srncZLppAMRbQpuonWwjPMwThBFb4V6lpKVk1WwpO/7ljG4giPJd9wpE1ogwnZoR90KoIn5TN6tQME6qxnGeRgnoArm8pFoaUIKTooJ5YiCG+t/YH+LdBSs1b51U9h8xw2a4BTM20IvBbv6PE4ytf2j0pNhdhtgIIIouNEL5l/VdRVc0lsI5AoWf2boEz0Kz4MreJiK6SO6R0gTx9nleKJgh7Fg2/9RT4bZbaAKfqb9v7KPAlZwQieRu3qfPrx/XGav59nrRzqr59Vx+nQalRUclf6D9M/Q8/PgChYV84ddQ3WEVOlrOM4ux7aAVJ8nssFJpsO4sMHgu3VxsIzzME7AFUwcTMxTEy5VcIvS6HI6MXFy9SG998fBJ2ui29uj5PYo3pxFq0/Zi4hO9XlLplueN3vBjELBFu3JPkVeMdP03/5tpx6qI6RKX3sos9PIQ/YoCki9rcnnaVYZDZxkavtHpSeD79bFwTLOwzjBDz8UCibvKpszBbcojb8uzxrvB3dpmj69uaST15c+nZjhvqxgCv9v//D2LVXw89u3khalOrDmLbDRwiVlM20UvRCtFlLCcXY5tgWkrABqi7uoh5LHSH/1891qbOvkoTxY28hDlUCyD6bgZx4LJoco4tEIruBWpc1zrXml4Bv+6dQKzv+v9NfyrW4vuImqF9yRYvCvZ96gOkLdqxs4zi7HtoBUn6dZZTRwkqntH5WeDL5bFwfLOA/jBEUvODNPVPgoKhTcqjRPFbx5xz5R9gGLnrqGgt/mCpZkqjqwWoukq21beLAUV0Qo6MpEguPscmwLSLcCGOEkU9v/UU8G362Lg2Wch3GCIhZcVXCpF9yiNPY6Pl9Hh34peI/GrvnfCxKlblVwlWXnFRHG7Vs3xeAVc2wUQyt4h+0lK7oVQBN+RYSLTEeqcsPstnxFhIODZZyHcYLSFRGSWzOogluUxl5Hq/Tp+8vF5tEjByuxuDVjewxTMT0iNAVHbWNEBIvtH5WeDLPbAKvXrtyaUcLiBuXtMUzF9IgA24gP98/8ptpAnwFGamhhgD0HWL128gblblTpnbK7Y0QExMGhadgAAAn7SURBVLTKaFduUA4FhXCG9dEw+KXgnR0jIhzk4wUPi8NeMBTsF175aAfx4DvusATYRiYWC+4XDnhW0JW23561CLB6gXFJd83BIbYRD8rIYS+4nwif406gYBAYiAUHwLTKqF8goq+CEYgAfoFYsP8gFlwCCgbTwoPvuMMSYBtBLLhEXwXb71mLAKsXGBfEggPAgzJy2AvuJ0IoGEwLxIIDYFpl5CoQUb4OQl/BCEQAv0As2H8QCy4BBYNp4cF33GEJsI3sUiz49zbEBn0VbC9/LQKsXmBcEAsOAA/KyGEvGAoGoACx4ACYVhl1BiJ+l5ePOwUjEAH8ArFg/9mlWHBJwXsvimeJgkveLb2GgkFgePAdd1gCbCO7FQvOnpLzeRS9err7WTxLFMyt+1xzsFLBCEQAv0AsOAA8KCOHvWCVguNN+kgnmIlP1uy5W8HPUDAIGMSCA2BaZaQORMRZL3j2KYpen7LnTgU/m/WCEYgAfoFYsP/sXCyYKHh1EWUP9tylYPFLRCRa8qVAwcA/PPiOOywBtpFtxYJ/q6Ha3hGqQIRcwYKSgmkEgneFtRWMQATwC8SCA2BLZWSiYId+tlOw2KDaC87Nqx2IgIKBXyAWHADVMkruskJLT0vr2aTifGpxxuFd+rCOuqlKd7BesF4gQjsWbKhgBCKAXyAW7D+1WHBFtaUl5eWzxxdRcruWJsjfZtItdYEH6wXrKVjzioj6OygYBMaWvuP6S4BtpBYL1lAw1RbtSEoSVBXceLl19AIRuC4Y7AaIBQdAtYy4cK+O06fTaHaXPSdX79OHebY8+cDCD8kN3eRmmW2aXH1I75fZE92CvWUO5r1gFhQerhesVjBjO3fHQcHALxALDgBJLPhxeXsWzXjvl7xefUouF1nnlwqaWTo+pwq+zJ6TmzXdgr9lGZko2CHqQETX4kK8GCMCTAHEgv1HGgtmOp0nP6VZH5erdUnk/LSu9YKpgnP5dig4e3T8OEOh4C2PlAYFA7/YtThEiG1EGgtmUl18PCqpdXnD5SpiwYmRghs73g4YrBKAAsSCA0AaC2YKPl9HL++XPMyw2Lzja8kVEcvbdZytPiwCEflblpGPClYCBYNpgVhwAMiuC/4nC0S8vEuv75e3/0rvSU9374O4GphfF7xKn77PzPy4vKYn4cTbyuk4rYvSHIKJiwAoQCzYf2qxYBuaF7JFft6aoaRyOXATKBgExoTiEK1hxE5UuXqAgzEiWhRcpbnFVugXDuirYPs9axFCfQJeMaFYsEq2clS5+sCWyggKdk8Q9Qn4xIRiwTY6tUkzPNMpIwICEQAU+BULpmeank67NnlNzkWlnyRrbHRqk2ZwHMSCfaKnghV0pYWCgX9s6TuuJTRkeSiLW5agIwhIyHS6IfbmcU9p+LNOIAruHQv2iQHCAS0MsOcQ6hPwCr9iwVSbbYoVdCiYDC3LnqLyPQjtBKFgz/5O9mUAEbYwwJ6DqE/AJ/yKBYteMB98hg5Ek3xIP9/nA9BEfEBvMo7sX+nYM5FYlemUpGd3hikULM7FBaJgn8qoN/0CEX1AIAL4h4ex4Ac6NhYbfGZ2udicRaUBaCI+muzNPD5nN4XFYlWmU/46ocOC0SHBqMybGo/41RBBKHiSseBRgIKBd/j1HZeodO8kU2Z58Bn6LAagiXgggkyokFRXEZ2uLrJ/8YYNHLYUQeGmxqmDo2AUPL1Y8Hhs90CGUJ+AV3gYC559iiuDz9DnmyKmQBU8+/RqnVRXEZ1S0YoxaWjSksxLGo94YwlCwZ79newL643+IXrCQ7/e7oEMoj4Bn0i9ijPy03F88Bk2EM2GhSPEADRcwfGHezH2jFhFdBqfvCmGBcsyqMi8pHFBIAr2qYx684foB9P/0tCvEYgAfuFZLJgq+GTNBp+5ZCPi3pE47l71dFwUvb6IEjb2zF5xOi6KVtcXUSkQEVOZNzUuCELBU4sFa+tyG6+hYOAXQXzHPWzeiRH/bV73KdUpnbMy+UAHDiNDglGZNzVeSeM7U4sFa+tyK6+3eyBDqE/AK/yKBct4lUqmY5+lF42bL7p1KtF4pErjC96XkRFQMAAFfsWCe9GhU6nGCYEoeDJlRPhD/9TZFl4jEAH8Io0m8x23dTC0TlS5ekAaTSsWzK04DlAw8IsJfcdVyVaOKlcPmFoseGRUn68XIdQn4BX+x4LBlP5OTh0oGBiSTivOOE1QRsEABQNDJhQLniwTiwVPGigYGILvuP4zsVjwpIGCgSGIBQcAyigYoGBgCGLBAYAyCgYoGBiCWLD/IBYcDlAwMATfcf0HseBwgIKBIYgFBwDKKBigYGAIYsEBgDIKBigYGIJYsP8gFhwOUDAwBN9x/Qex4AFQjSUip5mNJGsAOkAsOABQRttHJVs5zWwkWQPQAWLBAYAy2j42Y+ZBwaA/iAX7D2LBGcndpyiKN/fNKVi1eU3HqpTOngIFg7HAd1z/QSw4I7kms7neWSk4n+GKzfwqJdPp5rTYtj7PqxQoGPQHseAAQBkRJx6vo9k/dczYQFPBq4vsN30iSZbqXUHBoD+IBQcAyog48fAievXmcp7QebBnd+nTabRKn94Rv2bCvHr/uCRrkqv36cXx01mUsHfH6dPZJuWdZ6Lg1acoev3Xq2ztnG3D8s90SnKKT9Z8dx0KFufioGDQH8SC/Qex4Ig5cfFj9sgcyXq1yeXifJ7cLJmCb49iumZ5u06yf3y75e1ZNCtsShSc3Mzj8+XNOnNxnOdFFczfEi/Pk8zR93Mm+mzB5/t5SdcRvxoCCgb9wXdc/0EsOKLC/e7w50yqd9mfo6d18lOa3i82n9+94L3gTJ10Deknk39L8a7coaWBiNens088EcuLriI6XV1k/+LNWWbnPFG232xBUlI/2/r3SH4hm+SjA9ABYsEBgDKi8dzV9WlmxhuiwfjjERXi3vHjMlfwDesbcwWLdw0Fzz69WvPlN0WsgciTilYkofkS0S8buo54bxfCBf1BLDgAUEZMrTdz0id9R0MQ6+jl/eLjOj45yl4eEmHGdM2SK3gh3jUUHH+4z7KigQi6TR6IiOIT1ocWCmaiXzZ0LYCCQX8QC/YfxIIjcVVD9rxHY7Iv79Lr+3n2fEHOyX1PPUnXiF7wXLyjoYTH4nRcFL2+iJJrEuplKVj+VKer64uoFIiImeg3JJ68KOlaAAWD/uA7rv8gFuyU+G/zhky5TpPbTMgJsTPzNhN9ckdOx5V0XUkDQC8QCw4AlJFDZlnHuU3BrRxK76mDgkF/EAsOAJTR9unQ6au00f9lQMGgP4gF+w9iwQMgu8BMjSpXAFSk+AnjBwreLirZylHlCoCKVNn28ePJDwBgerBYMB7+P1QlCQAIEFXDx8OTR6oqSQBAgKi+/eLHkx8oGIApkoJAUJUkAMHz/wHtra0X+xu/ywAAAABJRU5ErkJggg==" ALT="Agilent N6700 Series Configure Voltage.vi"></P>
+<P><IMG src="data:image/png;base64, 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" ALT="Agilent N6700 Series Configure Voltage.vi"></P>
+<HR>
+<H3>List of SubVIs and Express VIs with Configuration Information</H3>
+<HR>
+<H3>VI Revision History</H3>
+<P>&quot;Agilent N6700 Series Configure Voltage.vi History&quot;</P>
+<P>Current Revision:   48</P>
+<HR>
+<H3>Position in Hierarchy</H3>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAADYAAAB1CAMAAAAyV+ItAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAB20lEQVRYR+2WTW6EMAyFs+EkLDlID9IrdjOrrNoL9DazcXFInATHP6CqVC0vIyYa/PH8EhRNCKf1cUAtJj6Q6Z9hoErGFkUKBsv61EW4iNhqB2g5vojYSbez2RZpFbEPGYu1LO5mChYXKo7E5dm3Y3G9F0ttaa7MXNhEL9ohLExh8mJpA2J2wwFNpzL2Qkpu1XHDoo1NhQuFk7HwLMrZqqOKpZcrlmwAjeO6pV3pGCupMre1rmLptSiZsp8Xa7PhDAN3pRzDNttsCOGPEvZJIp/NCZ8lb3eD1TXcIPXl6vetOhlYPRR6JxOj4yY5eY+geuAlJ+eB1xyvz997vKoSsSpWPSzlWH8RSofY5vRDWA6mYnvVYlD+PDHJK2lKf7CoG2O6MaYbY/oj2OsBXYkFl67HwJCEPVQpGJIAj222fkP5zcSITOZAQ8GakT7Z08SgFvGJ6tZme1AuPZsmEQuqFGy3u27sPWn0h8SFwTGsNti3bGA00uetyMI6A8TAg/UCpHB4sLnFsp+NzTNx7myJIs69kglsbsDu6sHaZQUbm3Oj7craWC095MblysZlYlszfIJfMpZrRyPIp3Kg7AzLWy66SX7ubMXHzjYQdLMhZkjAHLoYc+sy7NaF+gJ6DQJP99iO6QAAAABJRU5ErkJggg==" ALT="Agilent N6700 Series Configure Voltage.vi"></P>
+<HR>
+<H3>Iconified Cluster Constants</H3>
+</BODY>
+</HTML>

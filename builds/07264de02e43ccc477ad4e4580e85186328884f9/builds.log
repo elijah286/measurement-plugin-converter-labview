@@ -1,0 +1,4587 @@
+Project has no build specifications: src\measurement_migration_tool\Measurement Migration Tool.lvproj
+=== ExecuteBuildSpec 'Voltage Measurement' [EXE] target 'My Computer' in src\Migration Results\Measurement Plug-in\Measurement.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_584189.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+LabVIEW launched successfully.
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : Cannot complete build because following VI loaded broken:
+
+C:\workspace\src\Migration Results\Measurement Plug-in\Voltage Measurement\Get 
+Measurement Details.vi
+
+Open the VI in LabVIEW and fix the listed errors. If the VI loads as expected 
+but errors are still detected during the build, contact National Instruments 
+technical support for assistance.
+
+Broken VIs:
+- DMM_Voltage Measurement.lvlib:DMM Measurement.vi:
+	Type Definition 'Resolution in Digits': Type definition not found or contains 
+errors
+
+	Poly VI 'niDMM Config Measurement.vi': SubVI is missing
+
+	Poly VI 'niDMM Config Measurement.vi': SubVI is missing
+
+	SubVI 'niDMM Read.vi': SubVI is missing
+
+	SubVI 'niDMM Is Over Range.vi': SubVI is missing
+
+- Main_Voltage Measurement.lvlib:Voltage Measurement.vi:
+	Type Definition 'Resolution in Digits': Type definition not found or contains 
+errors
+
+	SubVI 'SMU_Voltage Measurement.lvlib:NI-DCPower Source DC Voltage.vi': SubVI 
+is not executable
+
+	SubVI 'DMM_Voltage Measurement.lvlib:DMM Measurement.vi': SubVI is not 
+executable
+
+- SMU_Voltage Measurement.lvlib:Configuration.vi:
+	SubVI 'niDCPower Configure Current Limit Range.vi': SubVI is missing
+
+	SubVI 'niDCPower Configure Voltage Level Range.vi': SubVI is missing
+
+	SubVI 'niDCPower Configure Source Mode.vi': SubVI is missing
+
+	SubVI 'niDCPower Configure Output Function.vi': SubVI is missing
+
+	SubVI 'niDCPower Configure Current Limit.vi': SubVI is missing
+
+	SubVI 'niDCPower Configure Voltage Level.vi': SubVI is missing
+
+- SMU_Voltage Measurement.lvlib:Read Measurement.vi:
+	SubVI 'niDCPower Wait For Event.vi': SubVI is missing
+
+	SubVI 'niDCPower Reset.vi': SubVI is missing
+
+	SubVI 'niDCPower Measure Multiple.vi': SubVI is missing
+
+	SubVI 'niDCPower Initiate.vi': SubVI is missing
+
+- Voltage Measurement.lvlib:Get Measurement Details.vi:
+	Type Definition 'measurement details': Type definition not found or contains 
+errors
+
+	Type Definition 'MeasurementAnnotation': Type definition not found or 
+contains errors
+
+	SubVI 'Create Basic Measurement Annotations.vi': SubVI is missing
+
+	Type Definition 'measurement details': Type definition not found or contains 
+errors
+
+- Voltage Measurement.lvlib:Get Type Specializations.vi:
+	Type Definition 'Type Specializations 2': Type definition not found or 
+contains errors
+
+	Type Definition 'type specialization': Type definition not found or contains 
+errors
+
+	Type Definition 'key': Type definition not found or contains errors
+
+	Type Definition 'type specialization': Type definition not found or contains 
+errors
+
+	Type Definition 'key': Type definition not found or contains errors
+
+	Type Definition 'Type Specializations': Type definition not found or contains 
+errors
+
+	Type Definition 'type specialization': Type definition not found or contains 
+errors
+
+	Type Definition 'key': Type definition not found or contains errors
+
+	Type Definition 'type specialization': Type definition not found or contains 
+errors
+
+	Type Definition 'key': Type definition not found or contains errors
+
+- Voltage Measurement.lvlib:Get UI Details.vi:
+	Type Definition 'UI Information': Type definition not found or contains errors
+
+	Type Definition 'UI Information': Type definition not found or contains errors
+
+- Voltage Measurement.lvlib:Measurement Configuration.ctl:
+- Voltage Measurement.lvlib:Measurement Logic.vi:
+	Type Definition 'measurement configuration': Type definition not found or 
+contains errors
+
+	Type Definition 'Resolution in Digits': Type definition not found or contains 
+errors
+
+	Type Definition 'Resolution in Digits': Type definition not found or contains 
+errors
+
+	LabVIEW Object 'measure call context in': Refers to a missing LabVIEW class
+
+	LabVIEW Object 'measure call context out': Refers to a missing LabVIEW class
+
+	SubVI 'Get Resource Details.vim': SubVI is missing
+
+	SubVI 'Get Resource Details.vim': required input 'Pin Name' is not wired
+
+	Bundle By Name: Contains unwired or bad terminal
+
+	SubVI 'Get Resource Details.vim': SubVI is missing
+
+	SubVI 'Get Resource Details.vim': required input 'Pin Name' is not wired
+
+	SubVI 'Voltage Measurement.lvlib:Wrapper.vi': SubVI is not executable
+
+	SubVI 'Unreserve Sessions.vi': SubVI is missing
+
+	SubVI 'Close Sessions.vi': SubVI is missing
+
+	SubVI 'Get Connections - NPin MConn.vi': SubVI is missing
+
+	SubVI 'Get Connections - NPin MConn.vi': SubVI is missing
+
+	SubVI 'Initialize Sessions - NSess.vi': SubVI is missing
+
+	SubVI 'Initialize Sessions - NSess.vi': SubVI is missing
+
+	SubVI 'Reserve Sessions - NPin.vi': SubVI is missing
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+- Voltage Measurement.lvlib:Measurement 
+Logic.vi:Instance:d11d6585-437b-4326-b166-854f3e8d2707.vi:
+	Type Definition 'connection': Type definition not found or contains errors
+
+	Type Definition 'connection': Type definition not found or contains errors
+
+	Type Definition 'connection': Type definition not found or contains errors
+
+- Voltage Measurement.lvlib:Measurement 
+Logic.vi:Instance:ec50b443-56b4-4650-b870-3e73b6de3c7c.vi:
+	Type Definition 'niDMM connection': Type definition not found or contains 
+errors
+
+	Type Definition 'connection': Type definition not found or contains errors
+
+	Type Definition 'connection': Type definition not found or contains errors
+
+- Voltage Measurement.lvlib:Measurement Plugin.lvclass:Get Plugin Paths.vi:
+	LabVIEW Object 'measurement customizations in': Refers to a missing LabVIEW 
+class
+
+	LabVIEW Object 'measurement customizations out': Refers to a missing LabVIEW 
+class
+
+	Type Definition 'plugin paths': Type definition not found or contains errors
+
+	Type Definition 'Plugin Paths': Type definition not found or contains errors
+
+- Voltage Measurement.lvlib:Measurement Plugin.lvclass:Pack for gRPC.vi:
+	Type Definition 'any': Type definition not found or contains errors
+
+	LabVIEW Object 'measurement customizations in': Refers to a missing LabVIEW 
+class
+
+	LabVIEW Object 'measurement customizations out': Refers to a missing LabVIEW 
+class
+
+	SubVI 'Get gRPC ID.vi': SubVI is missing
+
+	Type Definition 'measurement configuration': Type definition not found or 
+contains errors
+
+	Type Definition 'Resolution in Digits': Type definition not found or contains 
+errors
+
+	Type Definition 'Resolution in Digits': Type definition not found or contains 
+errors
+
+	SubVI 'PackToAny.vim': SubVI is missing
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	SubVI 'PackToAny.vim': SubVI is missing
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+- Voltage Measurement.lvlib:Measurement Plugin.lvclass:Pack for 
+gRPC.vi:Instance:2eca732d-dbaa-43bf-a7dd-ede2da65bc1b.vi:
+	Type Definition 'Data To Pack': Type definition not found or contains errors
+
+	Type Definition 'Resolution in Digits': Type definition not found or contains 
+errors
+
+	Type Definition 'Resolution in Digits': Type definition not found or contains 
+errors
+
+	Type Definition 'gRPCid in': Type definition not found or contains errors
+
+	Type Definition 'Any': Type definition not found or contains errors
+
+	SubVI 'Translate Protobuf Error.vi': SubVI is missing
+
+	Type Definition 'Any': Type definition not found or contains errors
+
+	SubVI 'Get Server DLL Path.vi': SubVI is missing
+
+- Voltage Measurement.lvlib:Measurement Plugin.lvclass:Pack for 
+gRPC.vi:Instance:a6012965-5700-4384-8228-972e71b6560c.vi:
+	Type Definition 'gRPCid in': Type definition not found or contains errors
+
+	Type Definition 'Any': Type definition not found or contains errors
+
+	SubVI 'Translate Protobuf Error.vi': SubVI is missing
+
+	Type Definition 'Any': Type definition not found or contains errors
+
+	SubVI 'Get Server DLL Path.vi': SubVI is missing
+
+- Voltage Measurement.lvlib:Measurement Plugin.lvclass:Unpack for gRPC.vi:
+	Type Definition 'any': Type definition not found or contains errors
+
+	LabVIEW Object 'measurement customizations in': Refers to a missing LabVIEW 
+class
+
+	LabVIEW Object 'measurement customizations out': Refers to a missing LabVIEW 
+class
+
+	SubVI 'Get gRPC ID.vi': SubVI is missing
+
+	SubVI 'UnpackFromAny.vim': SubVI is missing
+
+	Type Definition 'Measurement Configuration': Type definition not found or 
+contains errors
+
+	Type Definition 'Resolution in Digits': Type definition not found or contains 
+errors
+
+	Type Definition 'Resolution in Digits': Type definition not found or contains 
+errors
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	SubVI 'UnpackFromAny.vim': SubVI is missing
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+- Voltage Measurement.lvlib:Measurement Plugin.lvclass:Unpack for 
+gRPC.vi:Instance:3ecd018e-d556-4cbc-bc60-c4ba57204520.vi:
+	Type Definition 'gRPCid in': Type definition not found or contains errors
+
+	Type Definition 'Any': Type definition not found or contains errors
+
+	SubVI 'Translate Protobuf Error.vi': SubVI is missing
+
+	SubVI 'Get Server DLL Path.vi': SubVI is missing
+
+- Voltage Measurement.lvlib:Measurement Plugin.lvclass:Unpack for 
+gRPC.vi:Instance:a521b266-ce99-437c-923d-067dcf1e07fd.vi:
+	Type Definition 'Data Type': Type definition not found or contains errors
+
+	Type Definition 'Resolution in Digits': Type definition not found or contains 
+errors
+
+	Type Definition 'Resolution in Digits': Type definition not found or contains 
+errors
+
+	Type Definition 'Unpacked Value': Type definition not found or contains errors
+
+	Type Definition 'Resolution in Digits': Type definition not found or contains 
+errors
+
+	Type Definition 'Resolution in Digits': Type definition not found or contains 
+errors
+
+	Type Definition 'gRPCid in': Type definition not found or contains errors
+
+	Type Definition 'Any': Type definition not found or contains errors
+
+	SubVI 'Translate Protobuf Error.vi': SubVI is missing
+
+	SubVI 'Get Server DLL Path.vi': SubVI is missing
+
+- Voltage Measurement.lvlib:Run Service.vi:
+	SubVI 'Run Service.vi': SubVI is missing
+
+	LabVIEW Object 'MeasurementLink Measurement Template.lvlib:Measurement 
+Customizations.lvclass': Refers to a missing LabVIEW class
+
+	Wire: Class conflict
+
+- Voltage Measurement.lvlib:Wrapper.vi:
+	Type Definition 'measurement configuration': Type definition not found or 
+contains errors
+
+	Type Definition 'Resolution in Digits': Type definition not found or contains 
+errors
+
+	Type Definition 'Resolution in Digits': Type definition not found or contains 
+errors
+
+	SubVI 'Deserializer.vim': SubVI is missing
+
+	SubVI 'Deserializer.vim': SubVI is missing
+
+	SubVI 'Serializer.vim': SubVI is missing
+
+	SubVI 'Main_Voltage Measurement.lvlib:Voltage Measurement.vi': SubVI is not 
+executable
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+- Voltage 
+Measurement.lvlib:Wrapper.vi:Instance:4d43a4d9-7ba6-4b96-af49-ff976aab273c.vi:
+	SubVI 'To JSON Text.vim': SubVI is missing
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+- Voltage Measurement.lvlib:Wrapper.vi:Instance:4d43a4d9-7ba6-4b96-af49-ff976aa
+b273c.vi:Instance:331b549c-fcf8-43d9-8a1e-5b3c0091a99c.vi:
+	LabVIEW Object 'LVClass Serializer': Refers to a missing LabVIEW class
+
+	SubVI 'Variant to JSON Text.vi': SubVI is missing
+
+- Voltage 
+Measurement.lvlib:Wrapper.vi:Instance:8052c3e2-2d3c-4b5d-8ebd-80e283c36217.vi:
+	SubVI 'From JSON Text.vim': SubVI is missing
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+- Voltage Measurement.lvlib:Wrapper.vi:Instance:8052c3e2-2d3c-4b5d-8ebd-80e283c
+36217.vi:Instance:6651a77e-856e-4bcd-af5a-c0c13b264cc1.vi:
+	LabVIEW Object 'LVClass Serializer': Refers to a missing LabVIEW class
+
+	SubVI 'JSON text to Variant.vi': SubVI is missing
+
+- Voltage 
+Measurement.lvlib:Wrapper.vi:Instance:89afc385-0980-489f-8757-53e797cfab6b.vi:
+	SubVI 'From JSON Text.vim': SubVI is missing
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+- Voltage Measurement.lvlib:Wrapper.vi:Instance:89afc385-0980-489f-8757-53e797c
+fab6b.vi:Instance:6651a77e-856e-4bcd-af5a-c0c13b264cc1.vi:
+	LabVIEW Object 'LVClass Serializer': Refers to a missing LabVIEW class
+
+	SubVI 'JSON text to Variant.vi': SubVI is missing
+
+
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1003 occurred at AB_Get_Detailed_BrokenVI_Message.vi -> 
+AB_Targetfile.lvclass:Open_Top_Level_VIs.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x3EB) The VI is not executable. This error may occur because 
+the VI is either broken or contains a subVI that LabVIEW cannot locate. Select 
+File>>Open to open the VI and verify that you can run it.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+=== ExecuteBuildSpec 'Voltage Measurement UI' [Packed Library] target 'My Computer' in src\Migration Results\Measurement Plug-in\Measurement.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_704770.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : Cannot complete build because following VI loaded broken:
+
+C:\workspace\src\Migration Results\Measurement Plug-in\Voltage Measurement 
+UI\Measurement UI.vi
+
+Open the VI in LabVIEW and fix the listed errors. If the VI loads as expected 
+but errors are still detected during the build, contact National Instruments 
+technical support for assistance.
+
+Broken VIs:
+- Voltage Measurement UI.lvlib:Measurement UI.vi:
+- Voltage Measurement UI.lvlib:Measurement 
+UI.vi:Instance:26c97f67-8eeb-4d6c-a4e6-daa21564d3c2.vi:
+- Voltage Measurement UI.lvlib:Measurement UI.vi:Instance:26c97f67-8eeb-4d6c-a4
+e6-daa21564d3c2.vi:Instance:331b549c-fcf8-43d9-8a1e-5b3c0091a99c.vi:
+- Voltage Measurement UI.lvlib:Measurement 
+UI.vi:Instance:28d90450-5d99-49a4-90b1-325ba2476667.vi:
+- Voltage Measurement UI.lvlib:Measurement UI.vi:Instance:28d90450-5d99-49a4-90
+b1-325ba2476667.vi:Instance:331b549c-fcf8-43d9-8a1e-5b3c0091a99c.vi:
+- Voltage Measurement UI.lvlib:Measurement 
+UI.vi:Instance:351760b3-00b7-4416-9fd1-19b13cc79dea.vi:
+- Voltage Measurement UI.lvlib:Measurement UI.vi:Instance:351760b3-00b7-4416-9f
+d1-19b13cc79dea.vi:Instance:6651a77e-856e-4bcd-af5a-c0c13b264cc1.vi:
+- Voltage Measurement UI.lvlib:Measurement 
+UI.vi:Instance:4bcd2c1e-3f2c-486c-82e3-602b17ef9a63.vi:
+- Voltage Measurement UI.lvlib:Measurement UI.vi:Instance:4bcd2c1e-3f2c-486c-82
+e3-602b17ef9a63.vi:Instance:331b549c-fcf8-43d9-8a1e-5b3c0091a99c.vi:
+- Voltage Measurement UI.lvlib:Measurement 
+UI.vi:Instance:879f99f0-bd73-4d52-ae43-b0561c3201ba.vi:
+- Voltage Measurement UI.lvlib:Measurement UI.vi:Instance:879f99f0-bd73-4d52-ae
+43-b0561c3201ba.vi:Instance:6651a77e-856e-4bcd-af5a-c0c13b264cc1.vi:
+- Voltage Measurement UI.lvlib:Measurement 
+UI.vi:Instance:a974f454-6ffc-4656-b646-80058465afbc.vi:
+- Voltage Measurement UI.lvlib:Measurement UI.vi:Instance:a974f454-6ffc-4656-b6
+46-80058465afbc.vi:Instance:6651a77e-856e-4bcd-af5a-c0c13b264cc1.vi:
+- Voltage Measurement UI.lvlib:Measurement 
+UI.vi:Instance:bbb96b86-ba45-4082-a54c-6555ea11af37.vi:
+- Voltage Measurement UI.lvlib:Measurement UI.vi:Instance:bbb96b86-ba45-4082-a5
+4c-6555ea11af37.vi:Instance:331b549c-fcf8-43d9-8a1e-5b3c0091a99c.vi:
+
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1003 occurred at AB_Get_Detailed_BrokenVI_Message.vi -> 
+AB_Targetfile.lvclass:Open_Top_Level_VIs.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x3EB) The VI is not executable. This error may occur because 
+the VI is either broken or contains a subVI that LabVIEW cannot locate. Select 
+File>>Open to open the VI and verify that you can run it.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+=== ExecuteBuildSpec 'Voltage Measurement' [EXE] target 'My Computer' in src\Migration Results\Source\Vin Measurements.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_974977.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : You did not specify any startup VIs. Select a startup VI 
+before building the application.
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1 occurred at AB_Engine_Build.vi -> AB_Build_Invoke.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x1) An input parameter is invalid. For example if the input is 
+a path, the path might contain a character not allowed by the OS such as ? or 
+@.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+Project has no build specifications: src\Prototype\Multiple Migration\Multiple Migration Prototype.lvproj
+Project has no build specifications: src\Test measurements\Dependencies\Code Modules\Different Libraries\Voltage Measurement.lvproj
+Project has no build specifications: src\Test measurements\Dependencies\Code Modules\No Library\Voltage Measurement.lvproj
+Project has no build specifications: src\Test measurements\Dependencies\Code Modules\Same Library\Fgen Burst.lvproj
+=== ExecuteBuildSpec 'LDO Dropout Voltage' [Packed Library] target 'My Computer' in src\Test measurements\Dependencies\Graphs and Splitters\LDO Dropout Voltage.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_22816.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : Cannot complete build because following VI loaded broken:
+
+C:\workspace\src\Test measurements\Dependencies\Graphs and Splitters\main.vi
+
+Open the VI in LabVIEW and fix the listed errors. If the VI loads as expected 
+but errors are still detected during the build, contact National Instruments 
+technical support for assistance.
+
+Broken VIs:
+- LDO Dropout Voltage.lvlib:Advance Settings UI.vi:
+- LDO Dropout Voltage.lvlib:Advance Settings.ctl:
+- LDO Dropout Voltage.lvlib:Helper.vi:
+- LDO Dropout Voltage.lvlib:Log Data.vi:
+- LDO Dropout Voltage.lvlib:main.vi:
+- LDO Dropout 
+Voltage.lvlib:main.vi:Instance:0b250ff7-52ee-4af6-80b1-a8d503da2759.vi:
+- LDO Dropout 
+Voltage.lvlib:main.vi:Instance:6a7d4b92-ccd7-4b01-a579-e3d7f201896e.vi:
+- LDO Dropout 
+Voltage.lvlib:main.vi:Instance:bb3e62c4-a2c2-4505-9438-f842dd651d6c.vi:
+- LDO Dropout 
+Voltage.lvlib:main.vi:Instance:be024a05-4f6c-4aec-bf2b-5f4e194505bf.vi:
+- LDO Dropout 
+Voltage.lvlib:main.vi:Instance:ce2ee1e5-697c-4608-b941-8c9b0f21ffd9.vi:
+- LDO Dropout 
+Voltage.lvlib:main.vi:Instance:dc46d5cc-eb00-4f7e-b59b-e7fbb9f2ed4c.vi:
+- LDO Dropout 
+Voltage.lvlib:main.vi:Instance:f0cc231b-6294-4813-9d5b-a7ddc5043ff2.vi:
+- LDO Dropout 
+Voltage.lvlib:main.vi:Instance:f8cfc4b9-01f6-4b8f-8ca0-5ef2fe22dc8a.vi:
+- LDO Dropout Voltage.lvlib:Test Inputs.ctl:
+
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1003 occurred at AB_Get_Detailed_BrokenVI_Message.vi -> 
+AB_Targetfile.lvclass:Open_Top_Level_VIs.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x3EB) The VI is not executable. This error may occur because 
+the VI is either broken or contains a subVI that LabVIEW cannot locate. Select 
+File>>Open to open the VI and verify that you can run it.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+=== ExecuteBuildSpec 'LDODropoutVoltagePkg' [{E661DAE2-7517-431F-AC41-30807A3BDA38}] target 'My Computer' in src\Test measurements\Dependencies\Graphs and Splitters\LDO Dropout Voltage.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_191772.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : Cannot complete build because following VI loaded broken:
+
+C:\workspace\src\Test measurements\Dependencies\Graphs and Splitters\main.vi
+
+Open the VI in LabVIEW and fix the listed errors. If the VI loads as expected 
+but errors are still detected during the build, contact National Instruments 
+technical support for assistance.
+
+Broken VIs:
+- LDO Dropout Voltage.lvlib:Advance Settings UI.vi:
+- LDO Dropout Voltage.lvlib:Advance Settings.ctl:
+- LDO Dropout Voltage.lvlib:Helper.vi:
+- LDO Dropout Voltage.lvlib:Log Data.vi:
+- LDO Dropout Voltage.lvlib:main.vi:
+- LDO Dropout 
+Voltage.lvlib:main.vi:Instance:0b250ff7-52ee-4af6-80b1-a8d503da2759.vi:
+- LDO Dropout 
+Voltage.lvlib:main.vi:Instance:6a7d4b92-ccd7-4b01-a579-e3d7f201896e.vi:
+- LDO Dropout 
+Voltage.lvlib:main.vi:Instance:bb3e62c4-a2c2-4505-9438-f842dd651d6c.vi:
+- LDO Dropout 
+Voltage.lvlib:main.vi:Instance:be024a05-4f6c-4aec-bf2b-5f4e194505bf.vi:
+- LDO Dropout 
+Voltage.lvlib:main.vi:Instance:ce2ee1e5-697c-4608-b941-8c9b0f21ffd9.vi:
+- LDO Dropout 
+Voltage.lvlib:main.vi:Instance:dc46d5cc-eb00-4f7e-b59b-e7fbb9f2ed4c.vi:
+- LDO Dropout 
+Voltage.lvlib:main.vi:Instance:f0cc231b-6294-4813-9d5b-a7ddc5043ff2.vi:
+- LDO Dropout 
+Voltage.lvlib:main.vi:Instance:f8cfc4b9-01f6-4b8f-8ca0-5ef2fe22dc8a.vi:
+- LDO Dropout Voltage.lvlib:Test Inputs.ctl:
+
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1003 occurred at AB_Get_Detailed_BrokenVI_Message.vi -> 
+AB_Targetfile.lvclass:Open_Top_Level_VIs.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x3EB) The VI is not executable. This error may occur because 
+the VI is either broken or contains a subVI that LabVIEW cannot locate. Select 
+File>>Open to open the VI and verify that you can run it.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+Project has no build specifications: src\Test measurements\Dependencies\Multiple Migration Test\T1\Measurement 1\Fgen Burst.lvproj
+=== ExecuteBuildSpec 'Voltage Measurement' [EXE] target 'My Computer' in src\Test measurements\Dependencies\Multiple Migration Test\T1\Measurement 2\Vin Measurements T1.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_30588.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : You did not specify any startup VIs. Select a startup VI 
+before building the application.
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1 occurred at AB_Engine_Build.vi -> AB_Build_Invoke.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x1) An input parameter is invalid. For example if the input is 
+a path, the path might contain a character not allowed by the OS such as ? or 
+@.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+Project has no build specifications: src\Test measurements\Dependencies\Multiple Migration Test\T10\Meas 1\Fgen Burst T10.lvproj
+=== ExecuteBuildSpec 'Voltage Measurement' [EXE] target 'My Computer' in src\Test measurements\Dependencies\Multiple Migration Test\T10\Meas 2\Vin Measurements T10.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_300377.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : You did not specify any startup VIs. Select a startup VI 
+before building the application.
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1 occurred at AB_Engine_Build.vi -> AB_Build_Invoke.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x1) An input parameter is invalid. For example if the input is 
+a path, the path might contain a character not allowed by the OS such as ? or 
+@.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+Project has no build specifications: src\Test measurements\Dependencies\Multiple Migration Test\T11\Meas 1\Fgen Burst T11.lvproj
+=== ExecuteBuildSpec 'Voltage Measurement' [EXE] target 'My Computer' in src\Test measurements\Dependencies\Multiple Migration Test\T11\Meas 2\Vin Measurements.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_475391.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : You did not specify any startup VIs. Select a startup VI 
+before building the application.
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1 occurred at AB_Engine_Build.vi -> AB_Build_Invoke.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x1) An input parameter is invalid. For example if the input is 
+a path, the path might contain a character not allowed by the OS such as ? or 
+@.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+Project has no build specifications: src\Test measurements\Dependencies\Multiple Migration Test\T12\Meas 1\Load SMU Meas.lvproj
+=== ExecuteBuildSpec 'Voltage Measurement' [EXE] target 'My Computer' in src\Test measurements\Dependencies\Multiple Migration Test\T12\Meas 2\Vin Measurements T12.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_25860.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : You did not specify any startup VIs. Select a startup VI 
+before building the application.
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1 occurred at AB_Engine_Build.vi -> AB_Build_Invoke.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x1) An input parameter is invalid. For example if the input is 
+a path, the path might contain a character not allowed by the OS such as ? or 
+@.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+Project has no build specifications: src\Test measurements\Dependencies\Multiple Migration Test\T14\Meas 1\NI-DCPower Source DC Voltage T14.lvproj
+=== ExecuteBuildSpec 'Voltage Measurement' [EXE] target 'My Computer' in src\Test measurements\Dependencies\Multiple Migration Test\T14\Meas 2\Vin Measurements T14.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_832171.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : You did not specify any startup VIs. Select a startup VI 
+before building the application.
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1 occurred at AB_Engine_Build.vi -> AB_Build_Invoke.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x1) An input parameter is invalid. For example if the input is 
+a path, the path might contain a character not allowed by the OS such as ? or 
+@.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+Project has no build specifications: src\Test measurements\Dependencies\Multiple Migration Test\T15\Meas 1\No Lib T15.lvproj
+=== ExecuteBuildSpec 'Voltage Measurement' [EXE] target 'My Computer' in src\Test measurements\Dependencies\Multiple Migration Test\T15\Meas 2\Vin Measurements T15.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_677592.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : You did not specify any startup VIs. Select a startup VI 
+before building the application.
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1 occurred at AB_Engine_Build.vi -> AB_Build_Invoke.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x1) An input parameter is invalid. For example if the input is 
+a path, the path might contain a character not allowed by the OS such as ? or 
+@.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+Project has no build specifications: src\Test measurements\Dependencies\Multiple Migration Test\T16\Meas 1\No Lib T15.lvproj
+=== ExecuteBuildSpec 'Voltage Measurement' [EXE] target 'My Computer' in src\Test measurements\Dependencies\Multiple Migration Test\T16\Meas 2\Vin Measurements T8.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_985719.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : You did not specify any startup VIs. Select a startup VI 
+before building the application.
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1 occurred at AB_Engine_Build.vi -> AB_Build_Invoke.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x1) An input parameter is invalid. For example if the input is 
+a path, the path might contain a character not allowed by the OS such as ? or 
+@.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+Project has no build specifications: src\Test measurements\Dependencies\Multiple Migration Test\T18\Meas 1\Test 18.lvproj
+=== ExecuteBuildSpec 'Voltage Measurement' [EXE] target 'My Computer' in src\Test measurements\Dependencies\Multiple Migration Test\T18\Meas 2\Vin Measurements T18.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_644206.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : You did not specify any startup VIs. Select a startup VI 
+before building the application.
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1 occurred at AB_Engine_Build.vi -> AB_Build_Invoke.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x1) An input parameter is invalid. For example if the input is 
+a path, the path might contain a character not allowed by the OS such as ? or 
+@.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+Project has no build specifications: src\Test measurements\Dependencies\Multiple Migration Test\T19\Meas 1\Test 19.lvproj
+=== ExecuteBuildSpec 'Voltage Measurement' [EXE] target 'My Computer' in src\Test measurements\Dependencies\Multiple Migration Test\T19\Meas 2\Vin Measurements T19.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_283728.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : You did not specify any startup VIs. Select a startup VI 
+before building the application.
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1 occurred at AB_Engine_Build.vi -> AB_Build_Invoke.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x1) An input parameter is invalid. For example if the input is 
+a path, the path might contain a character not allowed by the OS such as ? or 
+@.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+Project has no build specifications: src\Test measurements\Dependencies\Multiple Migration Test\T2\Meas1\Fgen Burst T2.lvproj
+=== ExecuteBuildSpec 'Voltage Measurement' [EXE] target 'My Computer' in src\Test measurements\Dependencies\Multiple Migration Test\T2\Meas2\Vin Measurements T1.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_129149.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : You did not specify any startup VIs. Select a startup VI 
+before building the application.
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1 occurred at AB_Engine_Build.vi -> AB_Build_Invoke.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x1) An input parameter is invalid. For example if the input is 
+a path, the path might contain a character not allowed by the OS such as ? or 
+@.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+Project has no build specifications: src\Test measurements\Dependencies\Multiple Migration Test\T20\Meas 1\Test 20.lvproj
+=== ExecuteBuildSpec 'Voltage Measurement' [EXE] target 'My Computer' in src\Test measurements\Dependencies\Multiple Migration Test\T20\Meas 2\Vin Measurements T20.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_991167.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : You did not specify any startup VIs. Select a startup VI 
+before building the application.
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1 occurred at AB_Engine_Build.vi -> AB_Build_Invoke.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x1) An input parameter is invalid. For example if the input is 
+a path, the path might contain a character not allowed by the OS such as ? or 
+@.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+Project has no build specifications: src\Test measurements\Dependencies\Multiple Migration Test\T3\Meas 1\No Lib T3.lvproj
+=== ExecuteBuildSpec 'Voltage Measurement' [EXE] target 'My Computer' in src\Test measurements\Dependencies\Multiple Migration Test\T3\Meas 2\Vin Measurements T3.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_935396.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : You did not specify any startup VIs. Select a startup VI 
+before building the application.
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1 occurred at AB_Engine_Build.vi -> AB_Build_Invoke.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x1) An input parameter is invalid. For example if the input is 
+a path, the path might contain a character not allowed by the OS such as ? or 
+@.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+Project has no build specifications: src\Test measurements\Dependencies\Multiple Migration Test\T4\Meas 1\No Lib T4.lvproj
+=== ExecuteBuildSpec 'Voltage Measurement' [EXE] target 'My Computer' in src\Test measurements\Dependencies\Multiple Migration Test\T4\Meas 2\Vin Measurements T4.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_337441.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : You did not specify any startup VIs. Select a startup VI 
+before building the application.
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1 occurred at AB_Engine_Build.vi -> AB_Build_Invoke.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x1) An input parameter is invalid. For example if the input is 
+a path, the path might contain a character not allowed by the OS such as ? or 
+@.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+Project has no build specifications: src\Test measurements\Dependencies\Multiple Migration Test\T6\DC Power T6.lvproj
+Project has no build specifications: src\Test measurements\Dependencies\Multiple Migration Test\T7\Meas 1\No Lib T7.lvproj
+=== ExecuteBuildSpec 'Voltage Measurement' [EXE] target 'My Computer' in src\Test measurements\Dependencies\Multiple Migration Test\T7\Meas 2\Vin Measurements T7.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_366163.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : You did not specify any startup VIs. Select a startup VI 
+before building the application.
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1 occurred at AB_Engine_Build.vi -> AB_Build_Invoke.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x1) An input parameter is invalid. For example if the input is 
+a path, the path might contain a character not allowed by the OS such as ? or 
+@.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+Project has no build specifications: src\Test measurements\Dependencies\Multiple Migration Test\T8\Meas 1\No Lib T8.lvproj
+=== ExecuteBuildSpec 'Voltage Measurement' [EXE] target 'My Computer' in src\Test measurements\Dependencies\Multiple Migration Test\T8\Meas 2\Vin Measurements T8.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_401307.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : You did not specify any startup VIs. Select a startup VI 
+before building the application.
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1 occurred at AB_Engine_Build.vi -> AB_Build_Invoke.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x1) An input parameter is invalid. For example if the input is 
+a path, the path might contain a character not allowed by the OS such as ? or 
+@.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+Project has no build specifications: src\Test measurements\Dependencies\Multiple Migration Test\T9\Meas 1\Fgen Burst T9.lvproj
+=== ExecuteBuildSpec 'Voltage Measurement' [EXE] target 'My Computer' in src\Test measurements\Dependencies\Multiple Migration Test\T9\Meas 2\Vin Measurements T9.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_81471.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : You did not specify any startup VIs. Select a startup VI 
+before building the application.
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1 occurred at AB_Engine_Build.vi -> AB_Build_Invoke.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x1) An input parameter is invalid. For example if the input is 
+a path, the path might contain a character not allowed by the OS such as ? or 
+@.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+=== ExecuteBuildSpec 'Voltage Measurement' [EXE] target 'My Computer' in src\Test measurements\Dependencies\Multiple Migration Test\Voltage Measurement\Vin Measurements.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_769129.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : You did not specify any startup VIs. Select a startup VI 
+before building the application.
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1 occurred at AB_Engine_Build.vi -> AB_Build_Invoke.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x1) An input parameter is invalid. For example if the input is 
+a path, the path might contain a character not allowed by the OS such as ? or 
+@.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+Project has no build specifications: src\Test measurements\Dependencies\NI SMU + DMM\Vin Measurements.lvproj
+=== ExecuteBuildSpec 'LDO Line Transient' [Packed Library] target 'My Computer' in src\Test measurements\Dependencies\Tabs\LDO Line Transient\LDO Line Transient.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_156038.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : Cannot complete build because following VI loaded broken:
+
+C:\workspace\src\Test measurements\Dependencies\Tabs\LDO Line Transient\main.vi
+
+Open the VI in LabVIEW and fix the listed errors. If the VI loads as expected 
+but errors are still detected during the build, contact National Instruments 
+technical support for assistance.
+
+Broken VIs:
+- LDO Line Transient.lvlib:Adv Settings Setup Instr.ctl:
+- LDO Line Transient.lvlib:Advance Settings UI.vi:
+- LDO Line Transient.lvlib:Advance Settings.ctl:
+- LDO Line Transient.lvlib:Helper.vi:
+- LDO Line Transient.lvlib:Log Data.vi:
+- LDO Line Transient.lvlib:main.vi:
+- LDO Line 
+Transient.lvlib:main.vi:Instance:20f14550-4756-4008-9ed5-c13eed5fd878.vi:
+- LDO Line 
+Transient.lvlib:main.vi:Instance:217e438d-a1ad-49ce-9dcd-d015b5ab8206.vi:
+- LDO Line 
+Transient.lvlib:main.vi:Instance:49732470-67c5-4264-8b59-91d7a6bf13ef.vi:
+- LDO Line 
+Transient.lvlib:main.vi:Instance:64e7d395-4f1e-47d2-aa56-89bf032ac911.vi:
+- LDO Line 
+Transient.lvlib:main.vi:Instance:7d547965-4422-4a29-bcba-22e7343550fa.vi:
+- LDO Line 
+Transient.lvlib:main.vi:Instance:92dab295-f5c3-455d-a51b-398903a4b680.vi:
+- LDO Line 
+Transient.lvlib:main.vi:Instance:98935dad-41b4-4920-b943-01b05448cf2f.vi:
+- LDO Line 
+Transient.lvlib:main.vi:Instance:a2cb5138-c738-477a-b5c4-3cdfd9a525fc.vi:
+- LDO Line 
+Transient.lvlib:main.vi:Instance:bb3e62c4-a2c2-4505-9438-f842dd651d6c.vi:
+- LDO Line 
+Transient.lvlib:main.vi:Instance:c145c5dd-ae3b-4a85-a29b-a78c16d0dffa.vi:
+- LDO Line 
+Transient.lvlib:main.vi:Instance:ce2ee1e5-697c-4608-b941-8c9b0f21ffd9.vi:
+- LDO Line 
+Transient.lvlib:main.vi:Instance:d648f1df-a8d9-4085-9eb0-24252e83c66e.vi:
+- LDO Line 
+Transient.lvlib:main.vi:Instance:e1ff1980-5b52-43e3-809b-8f211f405b25.vi:
+- LDO Line 
+Transient.lvlib:main.vi:Instance:f054ac9e-285a-43ff-a938-075fc082fc86.vi:
+- LDO Line Transient.lvlib:Test Inputs.ctl:
+
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1003 occurred at AB_Get_Detailed_BrokenVI_Message.vi -> 
+AB_Targetfile.lvclass:Open_Top_Level_VIs.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x3EB) The VI is not executable. This error may occur because 
+the VI is either broken or contains a subVI that LabVIEW cannot locate. Select 
+File>>Open to open the VI and verify that you can run it.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+=== ExecuteBuildSpec 'LDOLineTransientPkg' [{E661DAE2-7517-431F-AC41-30807A3BDA38}] target 'My Computer' in src\Test measurements\Dependencies\Tabs\LDO Line Transient\LDO Line Transient.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_180503.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : Cannot complete build because following VI loaded broken:
+
+C:\workspace\src\Test measurements\Dependencies\Tabs\LDO Line Transient\main.vi
+
+Open the VI in LabVIEW and fix the listed errors. If the VI loads as expected 
+but errors are still detected during the build, contact National Instruments 
+technical support for assistance.
+
+Broken VIs:
+- LDO Line Transient.lvlib:Adv Settings Setup Instr.ctl:
+- LDO Line Transient.lvlib:Advance Settings UI.vi:
+- LDO Line Transient.lvlib:Advance Settings.ctl:
+- LDO Line Transient.lvlib:Helper.vi:
+- LDO Line Transient.lvlib:Log Data.vi:
+- LDO Line Transient.lvlib:main.vi:
+- LDO Line 
+Transient.lvlib:main.vi:Instance:20f14550-4756-4008-9ed5-c13eed5fd878.vi:
+- LDO Line 
+Transient.lvlib:main.vi:Instance:217e438d-a1ad-49ce-9dcd-d015b5ab8206.vi:
+- LDO Line 
+Transient.lvlib:main.vi:Instance:49732470-67c5-4264-8b59-91d7a6bf13ef.vi:
+- LDO Line 
+Transient.lvlib:main.vi:Instance:64e7d395-4f1e-47d2-aa56-89bf032ac911.vi:
+- LDO Line 
+Transient.lvlib:main.vi:Instance:7d547965-4422-4a29-bcba-22e7343550fa.vi:
+- LDO Line 
+Transient.lvlib:main.vi:Instance:92dab295-f5c3-455d-a51b-398903a4b680.vi:
+- LDO Line 
+Transient.lvlib:main.vi:Instance:98935dad-41b4-4920-b943-01b05448cf2f.vi:
+- LDO Line 
+Transient.lvlib:main.vi:Instance:a2cb5138-c738-477a-b5c4-3cdfd9a525fc.vi:
+- LDO Line 
+Transient.lvlib:main.vi:Instance:bb3e62c4-a2c2-4505-9438-f842dd651d6c.vi:
+- LDO Line 
+Transient.lvlib:main.vi:Instance:c145c5dd-ae3b-4a85-a29b-a78c16d0dffa.vi:
+- LDO Line 
+Transient.lvlib:main.vi:Instance:ce2ee1e5-697c-4608-b941-8c9b0f21ffd9.vi:
+- LDO Line 
+Transient.lvlib:main.vi:Instance:d648f1df-a8d9-4085-9eb0-24252e83c66e.vi:
+- LDO Line 
+Transient.lvlib:main.vi:Instance:e1ff1980-5b52-43e3-809b-8f211f405b25.vi:
+- LDO Line 
+Transient.lvlib:main.vi:Instance:f054ac9e-285a-43ff-a938-075fc082fc86.vi:
+- LDO Line Transient.lvlib:Test Inputs.ctl:
+
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1003 occurred at AB_Get_Detailed_BrokenVI_Message.vi -> 
+AB_Targetfile.lvclass:Open_Top_Level_VIs.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x3EB) The VI is not executable. This error may occur because 
+the VI is either broken or contains a subVI that LabVIEW cannot locate. Select 
+File>>Open to open the VI and verify that you can run it.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+Project has no build specifications: src\Test measurements\Dependencies\Testcase Scenario\T1\Load SMU Meas Folder\Load SMU Meas.lvproj
+Project has no build specifications: src\Test measurements\Dependencies\Testcase Scenario\T10\No Lib.lvproj
+Project has no build specifications: src\Test measurements\Dependencies\Testcase Scenario\T11\First\Voltage Measurement.lvproj
+Project has no build specifications: src\Test measurements\Dependencies\Testcase Scenario\T2\Different Libraries\Voltage Measurement.lvproj
+Project has no build specifications: src\Test measurements\Dependencies\Testcase Scenario\T3\No Lib.lvproj
+Project has no build specifications: src\Test measurements\Dependencies\Testcase Scenario\T4\Fgen Burst.lvproj
+Project has no build specifications: src\Test measurements\Dependencies\Testcase Scenario\T5\No Lib.lvproj
+Project has no build specifications: src\Test measurements\Dependencies\Testcase Scenario\T6\No Lib.lvproj
+Project has no build specifications: src\Test measurements\Dependencies\Testcase Scenario\T7\DCPower.lvproj
+Project has no build specifications: src\Test measurements\Dependencies\Testcase Scenario\T9\No Lib.lvproj
+=== ExecuteBuildSpec 'audio_intermodulationDistortionMeasurement' [EXE] target 'My Computer' in src\Test measurements\IMD\IMD\IMD_MeasService\intermodulationDistortion\audio_intermodulationDistortionMeasurement.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_270476.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : Cannot complete build because following VI loaded broken:
+
+C:\workspace\src\Test 
+measurements\IMD\IMD\IMD_MeasService\intermodulationDistortion\IMD_POC\Get 
+Measurement Details.vi
+
+Open the VI in LabVIEW and fix the listed errors. If the VI loads as expected 
+but errors are still detected during the build, contact National Instruments 
+technical support for assistance.
+
+Broken VIs:
+- audio_intermodulationDistortionMeasurement.lvlib:Configure PCM Settings.vi:
+	Type Definition 'PCM Input Task out': Type definition not found or contains 
+errors
+
+	LabVIEW Object 'PDM Acquisition Class Library.lvlib:PCM Input Task.lvclass': 
+Refers to a missing LabVIEW class
+
+	LabVIEW Object 'PDM Acquisition Class Library.lvlib:PCM Input Task.lvclass': 
+Refers to a missing LabVIEW class
+
+	Type Definition 'Frame Sync Clock Control': Type definition not found or 
+contains errors
+
+	Type Definition 'Bit Clock Edge  Sync': Type definition not found or contains 
+errors
+
+	Type Definition 'Bit Clock Edge  Sync': Type definition not found or contains 
+errors
+
+	Type Definition 'logic level': Type definition not found or contains errors
+
+	Type Definition 'PCM data configuration': Type definition not found or 
+contains errors
+
+	Type Definition 'Frame Sync Edge for Channel 0': Type definition not found or 
+contains errors
+
+	Type Definition 'Endianness': Type definition not found or contains errors
+
+	Type Definition 'Data Justification': Type definition not found or contains 
+errors
+
+	Type Definition 'Frame Sync Edge for Channel 0': Type definition not found or 
+contains errors
+
+	Type Definition 'Endianness': Type definition not found or contains errors
+
+	Type Definition 'Data Justification': Type definition not found or contains 
+errors
+
+	Type Definition 'acquisition mode': Type definition not found or contains 
+errors
+
+	Poly VI 'Configure Microphone Sensitivity.vi': SubVI is missing
+
+	Poly VI 'Configure Microphone Sensitivity.vi': SubVI is missing
+
+	SubVI 'Configure PCM Input Latch Delay.vi': SubVI is missing
+
+	Poly VI 'Configure Timing.vi': SubVI is missing
+
+	Poly VI 'Configure Timing.vi': SubVI is missing
+
+	Poly VI 'Create Task.vi': SubVI is missing
+
+	Poly VI 'Create Task.vi': SubVI is missing
+
+- audio_intermodulationDistortionMeasurement.lvlib:Generate multi tone 
+waveform.vi:
+	SubVI 'DAQmx Start Task.vi': SubVI is missing
+
+	Poly VI 'DAQmx Write.vi': SubVI is missing
+
+	Poly VI 'DAQmx Write.vi': SubVI is missing
+
+	Poly VI 'DAQmx Write.vi': SubVI is missing
+
+	Poly VI 'DAQmx Write.vi': SubVI is missing
+
+	LabVIEW Class Method SubVI 'SV Signal (Waveform).vi': The wired class does 
+not support a method of this VI's name.
+
+	LabVIEW Class Method SubVI 'SV Signal (Waveform).vi': SubVI is missing
+
+	Wire: Class conflict
+
+	Shift Register: Shift register: Feedback Node: data type is undefined
+
+	Type Definition 'System Timing Model': Type definition not found or contains 
+errors
+
+	LabVIEW Class Method SubVI 'SV Signal (Waveform).vi': The wired class does 
+not support a method of this VI's name.
+
+	LabVIEW Class Method SubVI 'SV Signal (Waveform).vi': SubVI is missing
+
+	Property Node: Contains unwired or bad terminal
+
+	Property Node: Invalid property
+
+	PropItem: Invalid property
+
+	PropItem: Invalid property
+
+	PropItem: Invalid property
+
+	Poly VI 'SV Configure Generator.vi': SubVI is missing
+
+	Poly VI 'SV Configure Generator.vi': SubVI is missing
+
+	You have connected two terminals of different types.
+
+	You have connected two terminals of different types.
+
+	You have connected two terminals of different types.
+
+	Wire: Class conflict
+
+- audio_intermodulationDistortionMeasurement.lvlib:Get Measurement Details.vi:
+	Type Definition 'Measurement Details': Type definition not found or contains 
+errors
+
+	Type Definition 'Measurement Details': Type definition not found or contains 
+errors
+
+- audio_intermodulationDistortionMeasurement.lvlib:Get Type Specializations.vi:
+	Type Definition 'Type Specializations 2': Type definition not found or 
+contains errors
+
+	Type Definition 'Type Specialization': Type definition not found or contains 
+errors
+
+	Type Definition 'Key': Type definition not found or contains errors
+
+	Type Definition 'Type Specialization': Type definition not found or contains 
+errors
+
+	Type Definition 'Key': Type definition not found or contains errors
+
+	Type Definition 'Type Specializations': Type definition not found or contains 
+errors
+
+	Type Definition 'Type Specialization': Type definition not found or contains 
+errors
+
+	Type Definition 'Key': Type definition not found or contains errors
+
+	Type Definition 'Type Specialization': Type definition not found or contains 
+errors
+
+	Type Definition 'Key': Type definition not found or contains errors
+
+- audio_intermodulationDistortionMeasurement.lvlib:Get UI Details.vi:
+	Type Definition 'UI Information': Type definition not found or contains errors
+
+	Type Definition 'UI Information': Type definition not found or contains errors
+
+- audio_intermodulationDistortionMeasurement.lvlib:Measurement Logic.vi:
+	LabVIEW Object 'Measurement Context': Refers to a missing LabVIEW class
+
+	LabVIEW Object 'Measurement Context out': Refers to a missing LabVIEW class
+
+	Type Definition 'PCM Input Task out': Type definition not found or contains 
+errors
+
+	LabVIEW Object 'PDM Acquisition Class Library.lvlib:PCM Input Task.lvclass': 
+Refers to a missing LabVIEW class
+
+	LabVIEW Object 'PDM Acquisition Class Library.lvlib:PCM Input Task.lvclass': 
+Refers to a missing LabVIEW class
+
+	Bundle By Name: Cluster is invalid or empty
+
+	Bundle By Name: Contains unwired or bad terminal
+
+	Property Node: Invalid property
+
+	Poly VI 'DAQmx Timing.vi': SubVI is missing
+
+	Poly VI 'DAQmx Timing.vi': SubVI is missing
+
+	Poly VI 'DAQmx Create Virtual Channel.vi': SubVI is missing
+
+	Poly VI 'DAQmx Create Virtual Channel.vi': SubVI is missing
+
+	You have connected two terminals of different types.
+
+	SubVI 'audio_intermodulationDistortionMeasurement.lvlib:Configure PCM 
+Settings.vi': SubVI is not executable
+
+	Bundle By Name: Cluster is invalid or empty
+
+	Bundle By Name: Contains unwired or bad terminal
+
+	Unbundle By Name: Cluster is invalid or empty
+
+	Unbundle By Name: Contains unwired or bad terminal
+
+	Poly VI 'Read PDM and PCM Waveform.vi': SubVI is missing
+
+	Poly VI 'Read PDM and PCM Waveform.vi': SubVI is missing
+
+	Poly VI 'Start Task.vi': SubVI is missing
+
+	Poly VI 'Start Task.vi': SubVI is missing
+
+	SubVI 'audio_intermodulationDistortionMeasurement.lvlib:Perform Audio 
+Measurements.vi': SubVI is not executable
+
+	SubVI 'audio_intermodulationDistortionMeasurement.lvlib:Generate multi tone 
+waveform.vi': SubVI is not executable
+
+	Unbundle By Name: Cluster is invalid or empty
+
+	Unbundle By Name: Contains unwired or bad terminal
+
+	Poly VI 'Clear Task.vi': SubVI is missing
+
+	Poly VI 'Clear Task.vi': SubVI is missing
+
+	SubVI 'DAQmx Clear Task.vi': SubVI is missing
+
+	SubVI 'DAQmx Stop Task.vi': SubVI is missing
+
+	Shift Register: Shift register: Feedback Node: data type is undefined
+
+	Shift Register: Shift register: Feedback Node: data type is undefined
+
+- 
+audio_intermodulationDistortionMeasurement.lvlib:MeasurementPlugin.lvclass:Get 
+Plugin Paths.vi:
+	LabVIEW Object 'Measurement Customizations in': Refers to a missing LabVIEW 
+class
+
+	LabVIEW Object 'Measurement Customizations out': Refers to a missing LabVIEW 
+class
+
+	Type Definition 'Plugin Paths': Type definition not found or contains errors
+
+	Type Definition 'Plugin Paths': Type definition not found or contains errors
+
+- audio_intermodulationDistortionMeasurement.lvlib:MeasurementPlugin.lvclass:Pa
+ck For Grpc.vi:
+	Type Definition 'Any': Type definition not found or contains errors
+
+	LabVIEW Object 'Measurement Customizations in': Refers to a missing LabVIEW 
+class
+
+	LabVIEW Object 'Measurement Customizations out': Refers to a missing LabVIEW 
+class
+
+	LabVIEW Class Method SubVI 'Read gRPCid.vi': The wired class does not support 
+a method of this VI's name.
+
+	LabVIEW Class Method SubVI 'Read gRPCid.vi': SubVI is missing
+
+	SubVI 'PackToAny.vim': SubVI is missing
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	SubVI 'PackToAny.vim': SubVI is missing
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Wire: Class conflict
+
+- audio_intermodulationDistortionMeasurement.lvlib:MeasurementPlugin.lvclass:Pa
+ck For Grpc.vi:Instance:2eca732d-dbaa-43bf-a7dd-ede2da65bc1b.vi:
+	Type Definition 'gRPCid in': Type definition not found or contains errors
+
+	Type Definition 'Any': Type definition not found or contains errors
+
+	SubVI 'Translate Protobuf Error.vi': SubVI is missing
+
+	Type Definition 'Any': Type definition not found or contains errors
+
+	SubVI 'Get Server DLL Path.vi': SubVI is missing
+
+- audio_intermodulationDistortionMeasurement.lvlib:MeasurementPlugin.lvclass:Pa
+ck For Grpc.vi:Instance:a6012965-5700-4384-8228-972e71b6560c.vi:
+	Type Definition 'gRPCid in': Type definition not found or contains errors
+
+	Type Definition 'Any': Type definition not found or contains errors
+
+	SubVI 'Translate Protobuf Error.vi': SubVI is missing
+
+	Type Definition 'Any': Type definition not found or contains errors
+
+	SubVI 'Get Server DLL Path.vi': SubVI is missing
+
+- audio_intermodulationDistortionMeasurement.lvlib:MeasurementPlugin.lvclass:Un
+pack For Grpc.vi:
+	Type Definition 'Any': Type definition not found or contains errors
+
+	LabVIEW Object 'Measurement Customizations in': Refers to a missing LabVIEW 
+class
+
+	LabVIEW Object 'Measurement Customizations out': Refers to a missing LabVIEW 
+class
+
+	LabVIEW Class Method SubVI 'Read gRPCid.vi': The wired class does not support 
+a method of this VI's name.
+
+	LabVIEW Class Method SubVI 'Read gRPCid.vi': SubVI is missing
+
+	SubVI 'UnpackFromAny.vim': SubVI is missing
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	SubVI 'UnpackFromAny.vim': SubVI is missing
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Wire: Class conflict
+
+- audio_intermodulationDistortionMeasurement.lvlib:MeasurementPlugin.lvclass:Un
+pack For Grpc.vi:Instance:3ecd018e-d556-4cbc-bc60-c4ba57204520.vi:
+	Type Definition 'gRPCid in': Type definition not found or contains errors
+
+	Type Definition 'Any': Type definition not found or contains errors
+
+	SubVI 'Translate Protobuf Error.vi': SubVI is missing
+
+	SubVI 'Get Server DLL Path.vi': SubVI is missing
+
+- audio_intermodulationDistortionMeasurement.lvlib:MeasurementPlugin.lvclass:Un
+pack For Grpc.vi:Instance:a521b266-ce99-437c-923d-067dcf1e07fd.vi:
+	Type Definition 'gRPCid in': Type definition not found or contains errors
+
+	Type Definition 'Any': Type definition not found or contains errors
+
+	SubVI 'Translate Protobuf Error.vi': SubVI is missing
+
+	SubVI 'Get Server DLL Path.vi': SubVI is missing
+
+- audio_intermodulationDistortionMeasurement.lvlib:Perform Audio 
+Measurements.vi:
+	Poly VI 'SVT Intermodulation Distortion.vi': SubVI is missing
+
+	Poly VI 'SVT Intermodulation Distortion.vi': SubVI is missing
+
+	Poly VI 'SVL Set dB Reference.vi': SubVI is missing
+
+	Poly VI 'SVL Set dB Reference.vi': SubVI is missing
+
+- audio_intermodulationDistortionMeasurement.lvlib:Run Service.vi:
+	LabVIEW Object 'MeasurementLink Measurement Template.lvlib:Measurement 
+Customizations.lvclass': Refers to a missing LabVIEW class
+
+	SubVI 'Run Service.vi': SubVI is missing
+
+	Wire: Class conflict
+
+
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1003 occurred at AB_Get_Detailed_BrokenVI_Message.vi -> 
+AB_Targetfile.lvclass:Open_Top_Level_VIs.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x3EB) The VI is not executable. This error may occur because 
+the VI is either broken or contains a subVI that LabVIEW cannot locate. Select 
+File>>Open to open the VI and verify that you can run it.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+=== ExecuteBuildSpec 'Audio Measurements' [EXE] target 'My Computer' in src\Test measurements\IMD\Protocols\I2S Protocol MeasurementLink Prototype\audio_acMeasurement.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_316856.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : Cannot complete build because following VI loaded broken:
+
+C:\workspace\src\Test measurements\IMD\Protocols\I2S Protocol MeasurementLink 
+Prototype\audio_acMeasurement\Get Measurement Details.vi
+
+Open the VI in LabVIEW and fix the listed errors. If the VI loads as expected 
+but errors are still detected during the build, contact National Instruments 
+technical support for assistance.
+
+Broken VIs:
+- audio_acMeasurement.lvlib:Configure I2S settings.vi:
+	Type Definition 'PCM input task out': Type definition not found or contains 
+errors
+
+	LabVIEW Object 'PDM Acquisition Class Library.lvlib:PCM Input Task.lvclass': 
+Refers to a missing LabVIEW class
+
+	LabVIEW Object 'PDM Acquisition Class Library.lvlib:PCM Input Task.lvclass': 
+Refers to a missing LabVIEW class
+
+	Poly VI 'Configure Microphone Sensitivity.vi': SubVI is missing
+
+	Poly VI 'Configure Microphone Sensitivity.vi': SubVI is missing
+
+	SubVI 'Configure PCM Input Latch Delay.vi': SubVI is missing
+
+	Type Definition 'logic level': Type definition not found or contains errors
+
+	Type Definition 'acquisition mode': Type definition not found or contains 
+errors
+
+	Poly VI 'Configure Timing.vi': SubVI is missing
+
+	Poly VI 'Configure Timing.vi': SubVI is missing
+
+	Poly VI 'Create Task.vi': SubVI is missing
+
+	Poly VI 'Create Task.vi': SubVI is missing
+
+- audio_acMeasurement.lvlib:Generate single tone waveform.vi:
+	SubVI 'dB to volts.vi': SubVI is missing
+
+	SubVI 'DAQmx Start Task.vi': SubVI is missing
+
+	Poly VI 'DAQmx Write.vi': SubVI is missing
+
+	Poly VI 'DAQmx Write.vi': SubVI is missing
+
+	LabVIEW Class Method SubVI 'SV Signal (Waveform).vi': The wired class does 
+not support a method of this VI's name.
+
+	LabVIEW Class Method SubVI 'SV Signal (Waveform).vi': SubVI is missing
+
+	Poly VI 'SV Configure Generator.vi': SubVI is missing
+
+	Poly VI 'SV Configure Generator.vi': SubVI is missing
+
+	To Long Integer: Contains unwired or bad terminal
+
+	Type Definition 'System Timing Model': Type definition not found or contains 
+errors
+
+	Property Node: Contains unwired or bad terminal
+
+	Property Node: Invalid property
+
+	Property Node: Invalid refnum class
+
+	Property Node: Invalid property
+
+	You have connected two terminals of different types.
+
+	You have connected two terminals of different types.
+
+	You have connected two terminals of different types.
+
+	Wire: Class conflict
+
+	You have connected two terminals of different types.
+
+	Property Node: Contains unwired or bad terminal
+
+	Property Node: Invalid property
+
+	SubVI 'DAQmx Start Task.vi': SubVI is missing
+
+	You have connected two terminals of different types.
+
+- audio_acMeasurement.lvlib:Get Measurement Details.vi:
+	Type Definition 'Measurement Details': Type definition not found or contains 
+errors
+
+	Type Definition 'Measurement Details': Type definition not found or contains 
+errors
+
+- audio_acMeasurement.lvlib:Get Type Specializations.vi:
+	Type Definition 'Type Specializations 2': Type definition not found or 
+contains errors
+
+	Type Definition 'Type Specialization': Type definition not found or contains 
+errors
+
+	Type Definition 'Key': Type definition not found or contains errors
+
+	Type Definition 'Type Specialization': Type definition not found or contains 
+errors
+
+	Type Definition 'Key': Type definition not found or contains errors
+
+	Type Definition 'Type Specializations': Type definition not found or contains 
+errors
+
+	Type Definition 'Type Specialization': Type definition not found or contains 
+errors
+
+	Type Definition 'Key': Type definition not found or contains errors
+
+	Type Definition 'Type Specialization': Type definition not found or contains 
+errors
+
+	Type Definition 'Key': Type definition not found or contains errors
+
+- audio_acMeasurement.lvlib:Get UI Details.vi:
+	Type Definition 'UI Information': Type definition not found or contains errors
+
+	Type Definition 'UI Information': Type definition not found or contains errors
+
+- audio_acMeasurement.lvlib:Measurement Logic.vi:
+	LabVIEW Object 'Measurement Context': Refers to a missing LabVIEW class
+
+	LabVIEW Object 'Measurement Context out': Refers to a missing LabVIEW class
+
+	Type Definition 'PCM input task out': Type definition not found or contains 
+errors
+
+	LabVIEW Object 'PDM Acquisition Class Library.lvlib:PCM Input Task.lvclass': 
+Refers to a missing LabVIEW class
+
+	LabVIEW Object 'PDM Acquisition Class Library.lvlib:PCM Input Task.lvclass': 
+Refers to a missing LabVIEW class
+
+	SubVI 'Get DAQmx Product Name.vi': SubVI is missing
+
+	Bundle By Name: Cluster is invalid or empty
+
+	Bundle By Name: Contains unwired or bad terminal
+
+	Property Node: Invalid property
+
+	To Long Integer: Contains unwired or bad terminal
+
+	Poly VI 'DAQmx Timing.vi': SubVI is missing
+
+	Poly VI 'DAQmx Timing.vi': SubVI is missing
+
+	Poly VI 'DAQmx Create Virtual Channel.vi': SubVI is missing
+
+	Poly VI 'DAQmx Create Virtual Channel.vi': SubVI is missing
+
+	You have connected two terminals of different types.
+
+	Poly VI 'DAQmx Create Virtual Channel.vi': SubVI is missing
+
+	Poly VI 'DAQmx Create Virtual Channel.vi': SubVI is missing
+
+	SubVI 'audio_acMeasurement.lvlib:Configure I2S settings.vi': SubVI is not 
+executable
+
+	Bundle By Name: Cluster is invalid or empty
+
+	Bundle By Name: Contains unwired or bad terminal
+
+	Bundle By Name: Cluster is invalid or empty
+
+	Bundle By Name: Contains unwired or bad terminal
+
+	Poly VI 'Read PDM and PCM Waveform.vi': SubVI is missing
+
+	Poly VI 'Read PDM and PCM Waveform.vi': SubVI is missing
+
+	Poly VI 'Start Task.vi': SubVI is missing
+
+	Poly VI 'Start Task.vi': SubVI is missing
+
+	Unbundle By Name: Cluster is invalid or empty
+
+	Unbundle By Name: Contains unwired or bad terminal
+
+	SubVI 'audio_acMeasurement.lvlib:Perform Audio Measurements.vi': SubVI is not 
+executable
+
+	SubVI 'audio_acMeasurement.lvlib:Generate single tone waveform.vi': SubVI is 
+not executable
+
+	Unbundle By Name: Cluster is invalid or empty
+
+	Unbundle By Name: Contains unwired or bad terminal
+
+	Unbundle By Name: Cluster is invalid or empty
+
+	Unbundle By Name: Contains unwired or bad terminal
+
+	Poly VI 'Clear Task.vi': SubVI is missing
+
+	Poly VI 'Clear Task.vi': SubVI is missing
+
+	SubVI 'DAQmx Clear Task.vi': SubVI is missing
+
+	You have connected two terminals of different types.
+
+	Shift Register: Shift register: Feedback Node: data type is undefined
+
+	Shift Register: Shift register: Feedback Node: data type is undefined
+
+- audio_acMeasurement.lvlib:MeasurementPlugin.lvclass:Get Plugin Paths.vi:
+	LabVIEW Object 'Measurement Customizations in': Refers to a missing LabVIEW 
+class
+
+	LabVIEW Object 'Measurement Customizations out': Refers to a missing LabVIEW 
+class
+
+	Type Definition 'Plugin Paths': Type definition not found or contains errors
+
+	Type Definition 'Plugin Paths': Type definition not found or contains errors
+
+- audio_acMeasurement.lvlib:MeasurementPlugin.lvclass:Pack For Grpc.vi:
+	Type Definition 'Any': Type definition not found or contains errors
+
+	LabVIEW Object 'Measurement Customizations in': Refers to a missing LabVIEW 
+class
+
+	LabVIEW Object 'Measurement Customizations out': Refers to a missing LabVIEW 
+class
+
+	LabVIEW Class Method SubVI 'Read gRPCid.vi': The wired class does not support 
+a method of this VI's name.
+
+	LabVIEW Class Method SubVI 'Read gRPCid.vi': SubVI is missing
+
+	SubVI 'PackToAny.vim': SubVI is missing
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	SubVI 'PackToAny.vim': SubVI is missing
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Wire: Class conflict
+
+- audio_acMeasurement.lvlib:MeasurementPlugin.lvclass:Pack For 
+Grpc.vi:Instance:2eca732d-dbaa-43bf-a7dd-ede2da65bc1b.vi:
+	Type Definition 'gRPCid in': Type definition not found or contains errors
+
+	Type Definition 'Any': Type definition not found or contains errors
+
+	SubVI 'Translate Protobuf Error.vi': SubVI is missing
+
+	Type Definition 'Any': Type definition not found or contains errors
+
+	SubVI 'Get Server DLL Path.vi': SubVI is missing
+
+- audio_acMeasurement.lvlib:MeasurementPlugin.lvclass:Pack For 
+Grpc.vi:Instance:a6012965-5700-4384-8228-972e71b6560c.vi:
+	Type Definition 'gRPCid in': Type definition not found or contains errors
+
+	Type Definition 'Any': Type definition not found or contains errors
+
+	SubVI 'Translate Protobuf Error.vi': SubVI is missing
+
+	Type Definition 'Any': Type definition not found or contains errors
+
+	SubVI 'Get Server DLL Path.vi': SubVI is missing
+
+- audio_acMeasurement.lvlib:MeasurementPlugin.lvclass:Unpack For Grpc.vi:
+	Type Definition 'Any': Type definition not found or contains errors
+
+	LabVIEW Object 'Measurement Customizations in': Refers to a missing LabVIEW 
+class
+
+	LabVIEW Object 'Measurement Customizations out': Refers to a missing LabVIEW 
+class
+
+	LabVIEW Class Method SubVI 'Read gRPCid.vi': The wired class does not support 
+a method of this VI's name.
+
+	LabVIEW Class Method SubVI 'Read gRPCid.vi': SubVI is missing
+
+	SubVI 'UnpackFromAny.vim': SubVI is missing
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	SubVI 'UnpackFromAny.vim': SubVI is missing
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Wire: Class conflict
+
+- audio_acMeasurement.lvlib:MeasurementPlugin.lvclass:Unpack For 
+Grpc.vi:Instance:3ecd018e-d556-4cbc-bc60-c4ba57204520.vi:
+	Type Definition 'gRPCid in': Type definition not found or contains errors
+
+	Type Definition 'Any': Type definition not found or contains errors
+
+	SubVI 'Translate Protobuf Error.vi': SubVI is missing
+
+	SubVI 'Get Server DLL Path.vi': SubVI is missing
+
+- audio_acMeasurement.lvlib:MeasurementPlugin.lvclass:Unpack For 
+Grpc.vi:Instance:a521b266-ce99-437c-923d-067dcf1e07fd.vi:
+	Type Definition 'gRPCid in': Type definition not found or contains errors
+
+	Type Definition 'Any': Type definition not found or contains errors
+
+	SubVI 'Translate Protobuf Error.vi': SubVI is missing
+
+	SubVI 'Get Server DLL Path.vi': SubVI is missing
+
+- audio_acMeasurement.lvlib:Perform Audio Measurements.vi:
+	SubVI 'SVFA Get Spectrum Subset (1 Ch).vi': SubVI is missing
+
+	SubVI 'Volts to dB.vi': SubVI is missing
+
+	SubVI 'dB to volts.vi': SubVI is missing
+
+	Poly VI 'SVFA Unit Conversion.vi': SubVI is missing
+
+	Poly VI 'SVFA Unit Conversion.vi': SubVI is missing
+
+	Poly VI 'SVT Weighting Filter.vi': SubVI is missing
+
+	Poly VI 'SVT Weighting Filter.vi': SubVI is missing
+
+	Poly VI 'SVT Spurious Free Dynamic Range.vi': SubVI is missing
+
+	Poly VI 'SVT Spurious Free Dynamic Range.vi': SubVI is missing
+
+	Poly VI 'SVT Gain.vi': SubVI is missing
+
+	Poly VI 'SVT Gain.vi': SubVI is missing
+
+	Poly VI 'SVT SNR without Harmonics.vi': SubVI is missing
+
+	Poly VI 'SVT SNR without Harmonics.vi': SubVI is missing
+
+	Poly VI 'SVT Dynamic Range.vi': SubVI is missing
+
+	Poly VI 'SVT Dynamic Range.vi': SubVI is missing
+
+	Poly VI 'SVL Set dB Reference.vi': SubVI is missing
+
+	Poly VI 'SVL Set dB Reference.vi': SubVI is missing
+
+	Poly VI 'SVL AC & DC Level.vi': SubVI is missing
+
+	Poly VI 'SVL AC & DC Level.vi': SubVI is missing
+
+	Type Definition 'window': Type definition not found or contains errors
+
+- audio_acMeasurement.lvlib:Run Service.vi:
+	LabVIEW Object 'MeasurementLink Measurement Template.lvlib:Measurement 
+Customizations.lvclass': Refers to a missing LabVIEW class
+
+	SubVI 'Run Service.vi': SubVI is missing
+
+	Wire: Class conflict
+
+
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1003 occurred at AB_Get_Detailed_BrokenVI_Message.vi -> 
+AB_Targetfile.lvclass:Open_Top_Level_VIs.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x3EB) The VI is not executable. This error may occur because 
+the VI is either broken or contains a subVI that LabVIEW cannot locate. Select 
+File>>Open to open the VI and verify that you can run it.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+=== ExecuteBuildSpec 'Audio Measurements' [EXE] target 'My Computer' in src\Test measurements\IMD\Protocols\POC for refresh the filename\audio_acMeasurement.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_260172.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : Cannot complete build because following VI loaded broken:
+
+C:\workspace\src\Test measurements\IMD\Protocols\POC for refresh the 
+filename\audio_acMeasurement\Get Measurement Details.vi
+
+Open the VI in LabVIEW and fix the listed errors. If the VI loads as expected 
+but errors are still detected during the build, contact National Instruments 
+technical support for assistance.
+
+Broken VIs:
+- audio_acMeasurement.lvlib:Generate single tone waveform.vi:
+	SubVI 'dB to volts.vi': SubVI is missing
+
+	SubVI 'DAQmx Start Task.vi': SubVI is missing
+
+	Poly VI 'DAQmx Write.vi': SubVI is missing
+
+	Poly VI 'DAQmx Write.vi': SubVI is missing
+
+	LabVIEW Class Method SubVI 'SV Signal (Waveform).vi': The wired class does 
+not support a method of this VI's name.
+
+	LabVIEW Class Method SubVI 'SV Signal (Waveform).vi': SubVI is missing
+
+	Poly VI 'SV Configure Generator.vi': SubVI is missing
+
+	Poly VI 'SV Configure Generator.vi': SubVI is missing
+
+	To Long Integer: Contains unwired or bad terminal
+
+	Type Definition 'System Timing Model': Type definition not found or contains 
+errors
+
+	Property Node: Contains unwired or bad terminal
+
+	Property Node: Invalid property
+
+	Property Node: Invalid refnum class
+
+	Property Node: Invalid property
+
+	You have connected two terminals of different types.
+
+	You have connected two terminals of different types.
+
+	You have connected two terminals of different types.
+
+	Wire: Class conflict
+
+	You have connected two terminals of different types.
+
+	Property Node: Contains unwired or bad terminal
+
+	Property Node: Invalid property
+
+	SubVI 'DAQmx Start Task.vi': SubVI is missing
+
+	You have connected two terminals of different types.
+
+- audio_acMeasurement.lvlib:Get Measurement Details.vi:
+	Type Definition 'Measurement Details': Type definition not found or contains 
+errors
+
+	Type Definition 'Measurement Details': Type definition not found or contains 
+errors
+
+- audio_acMeasurement.lvlib:Get Type Specializations.vi:
+	Type Definition 'Type Specializations 2': Type definition not found or 
+contains errors
+
+	Type Definition 'Type Specialization': Type definition not found or contains 
+errors
+
+	Type Definition 'Key': Type definition not found or contains errors
+
+	Type Definition 'Type Specialization': Type definition not found or contains 
+errors
+
+	Type Definition 'Key': Type definition not found or contains errors
+
+	Type Definition 'Type Specializations': Type definition not found or contains 
+errors
+
+	Type Definition 'Type Specialization': Type definition not found or contains 
+errors
+
+	Type Definition 'Key': Type definition not found or contains errors
+
+	Type Definition 'Type Specialization': Type definition not found or contains 
+errors
+
+	Type Definition 'Key': Type definition not found or contains errors
+
+- audio_acMeasurement.lvlib:Get UI Details.vi:
+	Type Definition 'UI Information': Type definition not found or contains errors
+
+	Type Definition 'UI Information': Type definition not found or contains errors
+
+- audio_acMeasurement.lvlib:Measurement Logic.vi:
+	LabVIEW Object 'Measurement Context': Refers to a missing LabVIEW class
+
+	LabVIEW Object 'Measurement Context out': Refers to a missing LabVIEW class
+
+	Type Definition 'PCM input task out': Type definition not found or contains 
+errors
+
+	LabVIEW Object 'PDM Acquisition Class Library.lvlib:PCM Input Task.lvclass': 
+Refers to a missing LabVIEW class
+
+	LabVIEW Object 'PDM Acquisition Class Library.lvlib:PCM Input Task.lvclass': 
+Refers to a missing LabVIEW class
+
+	Type Definition 'Settings': Type definition not found or contains errors
+
+	SubVI 'Get DAQmx Product Name.vi': SubVI is missing
+
+	Bundle By Name: Cluster is invalid or empty
+
+	Bundle By Name: Contains unwired or bad terminal
+
+	Property Node: Invalid property
+
+	To Long Integer: Contains unwired or bad terminal
+
+	Poly VI 'DAQmx Timing.vi': SubVI is missing
+
+	Poly VI 'DAQmx Timing.vi': SubVI is missing
+
+	Poly VI 'DAQmx Create Virtual Channel.vi': SubVI is missing
+
+	Poly VI 'DAQmx Create Virtual Channel.vi': SubVI is missing
+
+	You have connected two terminals of different types.
+
+	Poly VI 'DAQmx Create Virtual Channel.vi': SubVI is missing
+
+	Poly VI 'DAQmx Create Virtual Channel.vi': SubVI is missing
+
+	Bundle By Name: Cluster is invalid or empty
+
+	Bundle By Name: Contains unwired or bad terminal
+
+	SubVI 'Read Protocol Settings from JSON.vi': SubVI is missing
+
+	Type Definition 'Protocol Configurations': Type definition not found or 
+contains errors
+
+	Type Definition 'Settings': Type definition not found or contains errors
+
+	Type Definition 'Settings': Type definition not found or contains errors
+
+	Unbundle By Name: Cluster is invalid or empty
+
+	Unbundle By Name: Contains unwired or bad terminal
+
+	SubVI 'Configure Protocol Settings.vi': SubVI is missing
+
+	Bundle By Name: Cluster is invalid or empty
+
+	Bundle By Name: Contains unwired or bad terminal
+
+	Unbundle By Name: Cluster is invalid or empty
+
+	Unbundle By Name: Contains unwired or bad terminal
+
+	Bundle By Name: Cluster is invalid or empty
+
+	Bundle By Name: Contains unwired or bad terminal
+
+	Unbundle By Name: Cluster is invalid or empty
+
+	Unbundle By Name: Contains unwired or bad terminal
+
+	SubVI 'audio_acMeasurement.lvlib:Perform Audio Measurements.vi': SubVI is not 
+executable
+
+	SubVI 'audio_acMeasurement.lvlib:Generate single tone waveform.vi': SubVI is 
+not executable
+
+	Unbundle By Name: Cluster is invalid or empty
+
+	Unbundle By Name: Contains unwired or bad terminal
+
+	Poly VI 'Read PDM and PCM Waveform.vi': SubVI is missing
+
+	Poly VI 'Read PDM and PCM Waveform.vi': SubVI is missing
+
+	Poly VI 'Start Task.vi': SubVI is missing
+
+	Poly VI 'Start Task.vi': SubVI is missing
+
+	Unbundle By Name: Cluster is invalid or empty
+
+	Unbundle By Name: Contains unwired or bad terminal
+
+	Poly VI 'Clear Task.vi': SubVI is missing
+
+	Poly VI 'Clear Task.vi': SubVI is missing
+
+	SubVI 'DAQmx Clear Task.vi': SubVI is missing
+
+	You have connected two terminals of different types.
+
+	Shift Register: Shift register: Feedback Node: data type is undefined
+
+	Shift Register: Shift register: Feedback Node: data type is undefined
+
+- audio_acMeasurement.lvlib:MeasurementPlugin.lvclass:Get Plugin Paths.vi:
+	LabVIEW Object 'Measurement Customizations in': Refers to a missing LabVIEW 
+class
+
+	LabVIEW Object 'Measurement Customizations out': Refers to a missing LabVIEW 
+class
+
+	Type Definition 'Plugin Paths': Type definition not found or contains errors
+
+	Type Definition 'Plugin Paths': Type definition not found or contains errors
+
+- audio_acMeasurement.lvlib:MeasurementPlugin.lvclass:Pack For Grpc.vi:
+	Type Definition 'Any': Type definition not found or contains errors
+
+	LabVIEW Object 'Measurement Customizations in': Refers to a missing LabVIEW 
+class
+
+	LabVIEW Object 'Measurement Customizations out': Refers to a missing LabVIEW 
+class
+
+	LabVIEW Class Method SubVI 'Read gRPCid.vi': The wired class does not support 
+a method of this VI's name.
+
+	LabVIEW Class Method SubVI 'Read gRPCid.vi': SubVI is missing
+
+	SubVI 'PackToAny.vim': SubVI is missing
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	SubVI 'PackToAny.vim': SubVI is missing
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Wire: Class conflict
+
+- audio_acMeasurement.lvlib:MeasurementPlugin.lvclass:Pack For 
+Grpc.vi:Instance:2eca732d-dbaa-43bf-a7dd-ede2da65bc1b.vi:
+	Type Definition 'gRPCid in': Type definition not found or contains errors
+
+	Type Definition 'Any': Type definition not found or contains errors
+
+	SubVI 'Translate Protobuf Error.vi': SubVI is missing
+
+	Type Definition 'Any': Type definition not found or contains errors
+
+	SubVI 'Get Server DLL Path.vi': SubVI is missing
+
+- audio_acMeasurement.lvlib:MeasurementPlugin.lvclass:Pack For 
+Grpc.vi:Instance:a6012965-5700-4384-8228-972e71b6560c.vi:
+	Type Definition 'gRPCid in': Type definition not found or contains errors
+
+	Type Definition 'Any': Type definition not found or contains errors
+
+	SubVI 'Translate Protobuf Error.vi': SubVI is missing
+
+	Type Definition 'Any': Type definition not found or contains errors
+
+	SubVI 'Get Server DLL Path.vi': SubVI is missing
+
+- audio_acMeasurement.lvlib:MeasurementPlugin.lvclass:Unpack For Grpc.vi:
+	Type Definition 'Any': Type definition not found or contains errors
+
+	LabVIEW Object 'Measurement Customizations in': Refers to a missing LabVIEW 
+class
+
+	LabVIEW Object 'Measurement Customizations out': Refers to a missing LabVIEW 
+class
+
+	LabVIEW Class Method SubVI 'Read gRPCid.vi': The wired class does not support 
+a method of this VI's name.
+
+	LabVIEW Class Method SubVI 'Read gRPCid.vi': SubVI is missing
+
+	SubVI 'UnpackFromAny.vim': SubVI is missing
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	SubVI 'UnpackFromAny.vim': SubVI is missing
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Wire: Class conflict
+
+- audio_acMeasurement.lvlib:MeasurementPlugin.lvclass:Unpack For 
+Grpc.vi:Instance:3ecd018e-d556-4cbc-bc60-c4ba57204520.vi:
+	Type Definition 'gRPCid in': Type definition not found or contains errors
+
+	Type Definition 'Any': Type definition not found or contains errors
+
+	SubVI 'Translate Protobuf Error.vi': SubVI is missing
+
+	SubVI 'Get Server DLL Path.vi': SubVI is missing
+
+- audio_acMeasurement.lvlib:MeasurementPlugin.lvclass:Unpack For 
+Grpc.vi:Instance:a521b266-ce99-437c-923d-067dcf1e07fd.vi:
+	Type Definition 'gRPCid in': Type definition not found or contains errors
+
+	Type Definition 'Any': Type definition not found or contains errors
+
+	SubVI 'Translate Protobuf Error.vi': SubVI is missing
+
+	SubVI 'Get Server DLL Path.vi': SubVI is missing
+
+- audio_acMeasurement.lvlib:Perform Audio Measurements.vi:
+	SubVI 'SVFA Get Spectrum Subset (1 Ch).vi': SubVI is missing
+
+	SubVI 'Volts to dB.vi': SubVI is missing
+
+	SubVI 'dB to volts.vi': SubVI is missing
+
+	Poly VI 'SVFA Unit Conversion.vi': SubVI is missing
+
+	Poly VI 'SVFA Unit Conversion.vi': SubVI is missing
+
+	Poly VI 'SVT Weighting Filter.vi': SubVI is missing
+
+	Poly VI 'SVT Weighting Filter.vi': SubVI is missing
+
+	Poly VI 'SVT Spurious Free Dynamic Range.vi': SubVI is missing
+
+	Poly VI 'SVT Spurious Free Dynamic Range.vi': SubVI is missing
+
+	Poly VI 'SVT Gain.vi': SubVI is missing
+
+	Poly VI 'SVT Gain.vi': SubVI is missing
+
+	Poly VI 'SVT SNR without Harmonics.vi': SubVI is missing
+
+	Poly VI 'SVT SNR without Harmonics.vi': SubVI is missing
+
+	Poly VI 'SVT Dynamic Range.vi': SubVI is missing
+
+	Poly VI 'SVT Dynamic Range.vi': SubVI is missing
+
+	Poly VI 'SVL Set dB Reference.vi': SubVI is missing
+
+	Poly VI 'SVL Set dB Reference.vi': SubVI is missing
+
+	Poly VI 'SVL AC & DC Level.vi': SubVI is missing
+
+	Poly VI 'SVL AC & DC Level.vi': SubVI is missing
+
+	Type Definition 'window': Type definition not found or contains errors
+
+- audio_acMeasurement.lvlib:Run Service.vi:
+	LabVIEW Object 'MeasurementLink Measurement Template.lvlib:Measurement 
+Customizations.lvclass': Refers to a missing LabVIEW class
+
+	SubVI 'Run Service.vi': SubVI is missing
+
+	Wire: Class conflict
+
+
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1003 occurred at AB_Get_Detailed_BrokenVI_Message.vi -> 
+AB_Targetfile.lvclass:Open_Top_Level_VIs.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x3EB) The VI is not executable. This error may occur because 
+the VI is either broken or contains a subVI that LabVIEW cannot locate. Select 
+File>>Open to open the VI and verify that you can run it.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+=== ExecuteBuildSpec 'PDMAcq' [DLL] target 'My Computer' in src\Test measurements\IMD\Prototype for Audio AC Measurement Python\audio_ac\Create AC Measurement DLL\audio_ac_dll.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_44451.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : Cannot complete build because following VI loaded broken:
+
+C:\workspace\src\Test measurements\IMD\Prototype for Audio AC Measurement 
+Python\audio_ac\Create AC Measurement DLL\Get DAQmx Product name.vi
+
+Open the VI in LabVIEW and fix the listed errors. If the VI loads as expected 
+but errors are still detected during the build, contact National Instruments 
+technical support for assistance.
+
+Broken VIs:
+- Get DAQmx Product name.vi:
+	Property Node: Contains unwired or bad terminal
+
+	Property Node: Invalid property
+
+	You have connected two terminals of different types.
+
+
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1003 occurred at AB_Get_Detailed_BrokenVI_Message.vi -> 
+AB_DLL.lvclass:Open_Top_Level_VIs.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x3EB) The VI is not executable. This error may occur because 
+the VI is either broken or contains a subVI that LabVIEW cannot locate. Select 
+File>>Open to open the VI and verify that you can run it.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+=== ExecuteBuildSpec 'SineWaveGen' [DLL] target 'My Computer' in src\Test measurements\IMD\Prototype for Audio AC Measurement Python\audio_ac\Create AC Measurement DLL\audio_ac_dll.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_198064.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : Cannot complete build because following VI loaded broken:
+
+C:\workspace\src\Test measurements\IMD\Prototype for Audio AC Measurement 
+Python\audio_ac\Create AC Measurement DLL\Configure Sine.vi
+
+Open the VI in LabVIEW and fix the listed errors. If the VI loads as expected 
+but errors are still detected during the build, contact National Instruments 
+technical support for assistance.
+
+Broken VIs:
+- Configure Sine.vi:
+	SubVI 'Obj To DVR.vi': SubVI is not executable
+
+	Poly VI 'SV Configure Generator.vi': SubVI is missing
+
+	Poly VI 'SV Configure Generator.vi': SubVI is missing
+
+- Obj To DVR.vi:
+	LabVIEW Object 'signal configuration': Refers to a missing LabVIEW class
+
+	To Variant: Contains unwired or bad terminal
+
+
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1003 occurred at AB_Get_Detailed_BrokenVI_Message.vi -> 
+AB_DLL.lvclass:Open_Top_Level_VIs.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x3EB) The VI is not executable. This error may occur because 
+the VI is either broken or contains a subVI that LabVIEW cannot locate. Select 
+File>>Open to open the VI and verify that you can run it.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+=== ExecuteBuildSpec 'audio_acMeasurement' [EXE] target 'My Computer' in src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\ac\audio_acMeasurement.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_25859.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : Cannot complete build because following VI loaded broken:
+
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement 
+proto on modal dialog\ac\audio_acMeasurement\Get Measurement Details.vi
+
+Open the VI in LabVIEW and fix the listed errors. If the VI loads as expected 
+but errors are still detected during the build, contact National Instruments 
+technical support for assistance.
+
+Broken VIs:
+- audio_acMeasurement.lvlib:Generate single tone waveform.vi:
+	SubVI 'dB to volts.vi': SubVI is missing
+
+	SubVI 'DAQmx Start Task.vi': SubVI is missing
+
+	Poly VI 'DAQmx Write.vi': SubVI is missing
+
+	Poly VI 'DAQmx Write.vi': SubVI is missing
+
+	LabVIEW Class Method SubVI 'SV Signal (Waveform).vi': The wired class does 
+not support a method of this VI's name.
+
+	LabVIEW Class Method SubVI 'SV Signal (Waveform).vi': SubVI is missing
+
+	Poly VI 'SV Configure Generator.vi': SubVI is missing
+
+	Poly VI 'SV Configure Generator.vi': SubVI is missing
+
+	To Long Integer: Contains unwired or bad terminal
+
+	Type Definition 'System Timing Model': Type definition not found or contains 
+errors
+
+	Property Node: Contains unwired or bad terminal
+
+	Property Node: Invalid property
+
+	Property Node: Invalid refnum class
+
+	Property Node: Invalid property
+
+	You have connected two terminals of different types.
+
+	You have connected two terminals of different types.
+
+	You have connected two terminals of different types.
+
+	Wire: Class conflict
+
+	You have connected two terminals of different types.
+
+	Property Node: Contains unwired or bad terminal
+
+	Property Node: Invalid property
+
+	SubVI 'DAQmx Start Task.vi': SubVI is missing
+
+	You have connected two terminals of different types.
+
+- audio_acMeasurement.lvlib:Get Measurement Details.vi:
+	Type Definition 'Measurement Details': Type definition not found or contains 
+errors
+
+	Type Definition 'Measurement Details': Type definition not found or contains 
+errors
+
+- audio_acMeasurement.lvlib:Get Type Specializations.vi:
+	Type Definition 'Type Specializations 2': Type definition not found or 
+contains errors
+
+	Type Definition 'Type Specialization': Type definition not found or contains 
+errors
+
+	Type Definition 'Key': Type definition not found or contains errors
+
+	Type Definition 'Type Specialization': Type definition not found or contains 
+errors
+
+	Type Definition 'Key': Type definition not found or contains errors
+
+	Type Definition 'Type Specializations': Type definition not found or contains 
+errors
+
+	Type Definition 'Type Specialization': Type definition not found or contains 
+errors
+
+	Type Definition 'Key': Type definition not found or contains errors
+
+	Type Definition 'Type Specialization': Type definition not found or contains 
+errors
+
+	Type Definition 'Key': Type definition not found or contains errors
+
+- audio_acMeasurement.lvlib:Get UI Details.vi:
+	Type Definition 'UI Information': Type definition not found or contains errors
+
+	Type Definition 'UI Information': Type definition not found or contains errors
+
+- audio_acMeasurement.lvlib:Measurement Logic.vi:
+	LabVIEW Object 'Measurement Context': Refers to a missing LabVIEW class
+
+	LabVIEW Object 'Measurement Context out': Refers to a missing LabVIEW class
+
+	Type Definition 'PDM task': Type definition not found or contains errors
+
+	LabVIEW Object 'PDM Acquisition Class Library.lvlib:PCM Input Task.lvclass': 
+Refers to a missing LabVIEW class
+
+	LabVIEW Object 'PDM Acquisition Class Library.lvlib:PCM Input Task.lvclass': 
+Refers to a missing LabVIEW class
+
+	SubVI 'Get DAQmx Product Name.vi': SubVI is missing
+
+	Bundle By Name: Cluster is invalid or empty
+
+	Bundle By Name: Contains unwired or bad terminal
+
+	Property Node: Invalid property
+
+	To Long Integer: Contains unwired or bad terminal
+
+	Poly VI 'DAQmx Timing.vi': SubVI is missing
+
+	Poly VI 'DAQmx Timing.vi': SubVI is missing
+
+	Poly VI 'DAQmx Create Virtual Channel.vi': SubVI is missing
+
+	Poly VI 'DAQmx Create Virtual Channel.vi': SubVI is missing
+
+	You have connected two terminals of different types.
+
+	Poly VI 'DAQmx Create Virtual Channel.vi': SubVI is missing
+
+	Poly VI 'DAQmx Create Virtual Channel.vi': SubVI is missing
+
+	SubVI 'Configure Protocol Settings.vi': SubVI is not executable
+
+	Bundle By Name: Cluster is invalid or empty
+
+	Bundle By Name: Contains unwired or bad terminal
+
+	SubVI 'audio_acMeasurement.lvlib:Perform Audio Measurements.vi': SubVI is not 
+executable
+
+	SubVI 'audio_acMeasurement.lvlib:Generate single tone waveform.vi': SubVI is 
+not executable
+
+	Unbundle By Name: Cluster is invalid or empty
+
+	Unbundle By Name: Contains unwired or bad terminal
+
+	Poly VI 'Read PDM and PCM Waveform.vi': SubVI is missing
+
+	Poly VI 'Read PDM and PCM Waveform.vi': SubVI is missing
+
+	Poly VI 'Start Task.vi': SubVI is missing
+
+	Poly VI 'Start Task.vi': SubVI is missing
+
+	Unbundle By Name: Cluster is invalid or empty
+
+	Unbundle By Name: Contains unwired or bad terminal
+
+	Poly VI 'Clear Task.vi': SubVI is missing
+
+	Poly VI 'Clear Task.vi': SubVI is missing
+
+	SubVI 'DAQmx Clear Task.vi': SubVI is missing
+
+	You have connected two terminals of different types.
+
+	Shift Register: Shift register: Feedback Node: data type is undefined
+
+	Shift Register: Shift register: Feedback Node: data type is undefined
+
+- audio_acMeasurement.lvlib:MeasurementPlugin.lvclass:Get Plugin Paths.vi:
+	LabVIEW Object 'Measurement Customizations in': Refers to a missing LabVIEW 
+class
+
+	LabVIEW Object 'Measurement Customizations out': Refers to a missing LabVIEW 
+class
+
+	Type Definition 'Plugin Paths': Type definition not found or contains errors
+
+	Type Definition 'Plugin Paths': Type definition not found or contains errors
+
+- audio_acMeasurement.lvlib:MeasurementPlugin.lvclass:Pack For Grpc.vi:
+	Type Definition 'Any': Type definition not found or contains errors
+
+	LabVIEW Object 'Measurement Customizations in': Refers to a missing LabVIEW 
+class
+
+	LabVIEW Object 'Measurement Customizations out': Refers to a missing LabVIEW 
+class
+
+	LabVIEW Class Method SubVI 'Read gRPCid.vi': The wired class does not support 
+a method of this VI's name.
+
+	LabVIEW Class Method SubVI 'Read gRPCid.vi': SubVI is missing
+
+	SubVI 'PackToAny.vim': SubVI is missing
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	SubVI 'PackToAny.vim': SubVI is missing
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Wire: Class conflict
+
+- audio_acMeasurement.lvlib:MeasurementPlugin.lvclass:Pack For 
+Grpc.vi:Instance:2eca732d-dbaa-43bf-a7dd-ede2da65bc1b.vi:
+	Type Definition 'gRPCid in': Type definition not found or contains errors
+
+	Type Definition 'Any': Type definition not found or contains errors
+
+	SubVI 'Translate Protobuf Error.vi': SubVI is missing
+
+	Type Definition 'Any': Type definition not found or contains errors
+
+	SubVI 'Get Server DLL Path.vi': SubVI is missing
+
+- audio_acMeasurement.lvlib:MeasurementPlugin.lvclass:Pack For 
+Grpc.vi:Instance:a6012965-5700-4384-8228-972e71b6560c.vi:
+	Type Definition 'gRPCid in': Type definition not found or contains errors
+
+	Type Definition 'Any': Type definition not found or contains errors
+
+	SubVI 'Translate Protobuf Error.vi': SubVI is missing
+
+	Type Definition 'Any': Type definition not found or contains errors
+
+	SubVI 'Get Server DLL Path.vi': SubVI is missing
+
+- audio_acMeasurement.lvlib:MeasurementPlugin.lvclass:Unpack For Grpc.vi:
+	Type Definition 'Any': Type definition not found or contains errors
+
+	LabVIEW Object 'Measurement Customizations in': Refers to a missing LabVIEW 
+class
+
+	LabVIEW Object 'Measurement Customizations out': Refers to a missing LabVIEW 
+class
+
+	LabVIEW Class Method SubVI 'Read gRPCid.vi': The wired class does not support 
+a method of this VI's name.
+
+	LabVIEW Class Method SubVI 'Read gRPCid.vi': SubVI is missing
+
+	SubVI 'UnpackFromAny.vim': SubVI is missing
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	SubVI 'UnpackFromAny.vim': SubVI is missing
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Polymorphic terminal cannot accept this data type.
+
+	Wire: Class conflict
+
+- audio_acMeasurement.lvlib:MeasurementPlugin.lvclass:Unpack For 
+Grpc.vi:Instance:3ecd018e-d556-4cbc-bc60-c4ba57204520.vi:
+	Type Definition 'gRPCid in': Type definition not found or contains errors
+
+	Type Definition 'Any': Type definition not found or contains errors
+
+	SubVI 'Translate Protobuf Error.vi': SubVI is missing
+
+	SubVI 'Get Server DLL Path.vi': SubVI is missing
+
+- audio_acMeasurement.lvlib:MeasurementPlugin.lvclass:Unpack For 
+Grpc.vi:Instance:a521b266-ce99-437c-923d-067dcf1e07fd.vi:
+	Type Definition 'gRPCid in': Type definition not found or contains errors
+
+	Type Definition 'Any': Type definition not found or contains errors
+
+	SubVI 'Translate Protobuf Error.vi': SubVI is missing
+
+	SubVI 'Get Server DLL Path.vi': SubVI is missing
+
+- audio_acMeasurement.lvlib:Perform Audio Measurements.vi:
+	SubVI 'SVFA Get Spectrum Subset (1 Ch).vi': SubVI is missing
+
+	SubVI 'Volts to dB.vi': SubVI is missing
+
+	SubVI 'dB to volts.vi': SubVI is missing
+
+	Poly VI 'SVFA Unit Conversion.vi': SubVI is missing
+
+	Poly VI 'SVFA Unit Conversion.vi': SubVI is missing
+
+	Poly VI 'SVT Weighting Filter.vi': SubVI is missing
+
+	Poly VI 'SVT Weighting Filter.vi': SubVI is missing
+
+	Poly VI 'SVT Spurious Free Dynamic Range.vi': SubVI is missing
+
+	Poly VI 'SVT Spurious Free Dynamic Range.vi': SubVI is missing
+
+	Poly VI 'SVT Gain.vi': SubVI is missing
+
+	Poly VI 'SVT Gain.vi': SubVI is missing
+
+	Poly VI 'SVT SNR without Harmonics.vi': SubVI is missing
+
+	Poly VI 'SVT SNR without Harmonics.vi': SubVI is missing
+
+	Poly VI 'SVT Dynamic Range.vi': SubVI is missing
+
+	Poly VI 'SVT Dynamic Range.vi': SubVI is missing
+
+	Poly VI 'SVL Set dB Reference.vi': SubVI is missing
+
+	Poly VI 'SVL Set dB Reference.vi': SubVI is missing
+
+	Poly VI 'SVL AC & DC Level.vi': SubVI is missing
+
+	Poly VI 'SVL AC & DC Level.vi': SubVI is missing
+
+	Type Definition 'window': Type definition not found or contains errors
+
+- audio_acMeasurement.lvlib:Run Service.vi:
+	LabVIEW Object 'MeasurementLink Measurement Template.lvlib:Measurement 
+Customizations.lvclass': Refers to a missing LabVIEW class
+
+	SubVI 'Run Service.vi': SubVI is missing
+
+	Wire: Class conflict
+
+- Configure Protocol Settings.vi:
+	Type Definition 'PDM task': Type definition not found or contains errors
+
+	LabVIEW Object 'PDM Acquisition Class Library.lvlib:PCM Input Task.lvclass': 
+Refers to a missing LabVIEW class
+
+	LabVIEW Object 'PDM Acquisition Class Library.lvlib:PCM Input Task.lvclass': 
+Refers to a missing LabVIEW class
+
+	Type Definition 'Frame Sync Control': Type definition not found or contains 
+errors
+
+	Type Definition 'Bit Clock Edge  Sync': Type definition not found or contains 
+errors
+
+	Type Definition 'Bit Clock Edge  Sync': Type definition not found or contains 
+errors
+
+	Type Definition 'PCM Data Configuration': Type definition not found or 
+contains errors
+
+	Type Definition 'Frame Sync Edge for Channel 0': Type definition not found or 
+contains errors
+
+	Type Definition 'Endianness': Type definition not found or contains errors
+
+	Type Definition 'Data Justification': Type definition not found or contains 
+errors
+
+	Type Definition 'Frame Sync Edge for Channel 0': Type definition not found or 
+contains errors
+
+	Type Definition 'Endianness': Type definition not found or contains errors
+
+	Type Definition 'Data Justification': Type definition not found or contains 
+errors
+
+	Poly VI 'Configure Microphone Sensitivity.vi': SubVI is missing
+
+	Poly VI 'Configure Microphone Sensitivity.vi': SubVI is missing
+
+	Type Definition 'logic level': Type definition not found or contains errors
+
+	Type Definition 'acquisition mode': Type definition not found or contains 
+errors
+
+	Poly VI 'Configure Timing.vi': SubVI is missing
+
+	Poly VI 'Configure Timing.vi': SubVI is missing
+
+	Poly VI 'Create Task.vi': SubVI is missing
+
+	Poly VI 'Create Task.vi': SubVI is missing
+
+
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1003 occurred at AB_Get_Detailed_BrokenVI_Message.vi -> 
+AB_Targetfile.lvclass:Open_Top_Level_VIs.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x3EB) The VI is not executable. This error may occur because 
+the VI is either broken or contains a subVI that LabVIEW cannot locate. Select 
+File>>Open to open the VI and verify that you can run it.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+=== ExecuteBuildSpec 'My Source Distribution' [Source Distribution] target 'My Computer' in src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\ac\audio_acMeasurement.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_350500.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+Operation output: 
+Generated files are:
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\builds\audio_acMeasurement\My Source Distribution\audio_UI.lvlib
+
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\builds\audio_acMeasurement\My Source Distribution\Measurement UI.vi
+
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\builds\audio_acMeasurement\My Source Distribution\File Popup For Load.vi
+
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\builds\audio_acMeasurement\My Source Distribution\File Popup For Save as.vi
+
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\builds\audio_acMeasurement\My Source Distribution\File Popup For Save.vi
+
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\builds\audio_acMeasurement\My Source Distribution\Modal Sub-VI.vi
+
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\builds\audio_acMeasurement\My Source Distribution\rtm modal.rtm
+
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\builds\audio_acMeasurement\My Source Distribution\Check if File or Folder Exists.vi
+
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\builds\audio_acMeasurement\My Source Distribution\FT_FileTypes.ctl
+
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\builds\audio_acMeasurement\My Source Distribution\NI_FileType.lvlib
+
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\builds\audio_acMeasurement\My Source Distribution\Can File be in LLB.vi
+
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\builds\audio_acMeasurement\My Source Distribution\Get File Type.vi
+
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\builds\audio_acMeasurement\My Source Distribution\LVFileType.ctl
+
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\builds\audio_acMeasurement\My Source Distribution\Error Cluster From Error Code.vi
+
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\builds\audio_acMeasurement\My Source Distribution\Convert filetype to Can be in LLB.vi
+
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\builds\audio_acMeasurement\My Source Distribution\Get File Type Icon Image.vi
+
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\builds\audio_acMeasurement\My Source Distribution\imagedata.ctl
+
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\builds\audio_acMeasurement\My Source Distribution\Convert filetype to Icon Image.vi
+
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\builds\audio_acMeasurement\My Source Distribution\Read PNG File.vi
+
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\builds\audio_acMeasurement\My Source Distribution\Check Path.vi
+
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\builds\audio_acMeasurement\My Source Distribution\Directory of Top Level VI.vi
+
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\builds\audio_acMeasurement\My Source Distribution\Create Mask By Alpha.vi
+
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\builds\audio_acMeasurement\My Source Distribution\Bit-array To Byte-array.vi
+
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\builds\audio_acMeasurement\My Source Distribution\Is File a LabVIEW document.vi
+
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\builds\audio_acMeasurement\My Source Distribution\Convert filetype to Is LabVIEW document.vi
+
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\builds\audio_acMeasurement\My Source Distribution\Is File a type of library.vi
+
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\builds\audio_acMeasurement\My Source Distribution\Convert filetype to Is library type.vi
+
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\builds\audio_acMeasurement\My Source Distribution\Is File VI.vi
+
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\builds\audio_acMeasurement\My Source Distribution\Convert filetype to Is VI.vi
+
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\builds\audio_acMeasurement\My Source Distribution\Is File an LLB.vi
+
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\builds\audio_acMeasurement\My Source Distribution\Get Exported File List.vi
+
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\builds\audio_acMeasurement\My Source Distribution\NI_PackedLibraryUtility.lvlib
+
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\builds\audio_acMeasurement\My Source Distribution\Enable Caching.vi
+
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\builds\audio_acMeasurement\My Source Distribution\Get Exported File Path.vi
+
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\builds\audio_acMeasurement\My Source Distribution\Get Guid String.vi
+
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\builds\audio_acMeasurement\My Source Distribution\Get Source Project Path.vi
+
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\builds\audio_acMeasurement\My Source Distribution\Packed Library Path.vi
+
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\builds\audio_acMeasurement\My Source Distribution\Get File Extension.vi
+
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\builds\audio_acMeasurement\My Source Distribution\subFile Dialog.vi
+
+C:\workspace\src\Test measurements\IMD\Prototype for modal dialog\measurement proto on modal dialog\builds\audio_acMeasurement\My Source Distribution\ex_CorrectErrorChain.vi
+
+
+ExecuteBuildSpec operation succeeded.
+
+
+=== ExecuteBuildSpec 'LDO LineRegulation' [Packed Library] target 'My Computer' in src\Test measurements\LDO\LDO Line Regulation\LDO Line Regulation.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_35509.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : Cannot complete build because following VI loaded broken:
+
+C:\workspace\src\Test measurements\LDO\LDO Line Regulation\main.vi
+
+Open the VI in LabVIEW and fix the listed errors. If the VI loads as expected 
+but errors are still detected during the build, contact National Instruments 
+technical support for assistance.
+
+Broken VIs:
+- LDO Line Regulation.lvlib:Advance Settings UI.vi:
+- LDO Line Regulation.lvlib:Advance Settings.ctl:
+- LDO Line Regulation.lvlib:Helper.vi:
+- LDO Line Regulation.lvlib:Log Data.vi:
+- LDO Line Regulation.lvlib:main.vi:
+- LDO Line 
+Regulation.lvlib:main.vi:Instance:34057e1b-ed15-48f4-a73e-55eccb727778.vi:
+- LDO Line 
+Regulation.lvlib:main.vi:Instance:3fc05b7f-d306-4c90-81fb-acd80905c629.vi:
+- LDO Line 
+Regulation.lvlib:main.vi:Instance:bb3e62c4-a2c2-4505-9438-f842dd651d6c.vi:
+- LDO Line 
+Regulation.lvlib:main.vi:Instance:be024a05-4f6c-4aec-bf2b-5f4e194505bf.vi:
+- LDO Line 
+Regulation.lvlib:main.vi:Instance:ce2ee1e5-697c-4608-b941-8c9b0f21ffd9.vi:
+- LDO Line 
+Regulation.lvlib:main.vi:Instance:d9360132-6dee-4b9e-876e-39170c807331.vi:
+- LDO Line 
+Regulation.lvlib:main.vi:Instance:dc46d5cc-eb00-4f7e-b59b-e7fbb9f2ed4c.vi:
+- LDO Line 
+Regulation.lvlib:main.vi:Instance:f0cc231b-6294-4813-9d5b-a7ddc5043ff2.vi:
+- LDO Line 
+Regulation.lvlib:main.vi:Instance:f5d431a0-41a8-4d91-8ed4-f3030fcb2f72.vi:
+- LDO Line 
+Regulation.lvlib:main.vi:Instance:f8cfc4b9-01f6-4b8f-8ca0-5ef2fe22dc8a.vi:
+- LDO Line Regulation.lvlib:Test Inputs.ctl:
+
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1003 occurred at AB_Get_Detailed_BrokenVI_Message.vi -> 
+AB_Targetfile.lvclass:Open_Top_Level_VIs.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x3EB) The VI is not executable. This error may occur because 
+the VI is either broken or contains a subVI that LabVIEW cannot locate. Select 
+File>>Open to open the VI and verify that you can run it.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+=== ExecuteBuildSpec 'LDOLineRegulationPkg' [{E661DAE2-7517-431F-AC41-30807A3BDA38}] target 'My Computer' in src\Test measurements\LDO\LDO Line Regulation\LDO Line Regulation.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_450452.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : Cannot complete build because following VI loaded broken:
+
+C:\workspace\src\Test measurements\LDO\LDO Line Regulation\main.vi
+
+Open the VI in LabVIEW and fix the listed errors. If the VI loads as expected 
+but errors are still detected during the build, contact National Instruments 
+technical support for assistance.
+
+Broken VIs:
+- LDO Line Regulation.lvlib:Advance Settings UI.vi:
+- LDO Line Regulation.lvlib:Advance Settings.ctl:
+- LDO Line Regulation.lvlib:Helper.vi:
+- LDO Line Regulation.lvlib:Log Data.vi:
+- LDO Line Regulation.lvlib:main.vi:
+- LDO Line 
+Regulation.lvlib:main.vi:Instance:34057e1b-ed15-48f4-a73e-55eccb727778.vi:
+- LDO Line 
+Regulation.lvlib:main.vi:Instance:3fc05b7f-d306-4c90-81fb-acd80905c629.vi:
+- LDO Line 
+Regulation.lvlib:main.vi:Instance:bb3e62c4-a2c2-4505-9438-f842dd651d6c.vi:
+- LDO Line 
+Regulation.lvlib:main.vi:Instance:be024a05-4f6c-4aec-bf2b-5f4e194505bf.vi:
+- LDO Line 
+Regulation.lvlib:main.vi:Instance:ce2ee1e5-697c-4608-b941-8c9b0f21ffd9.vi:
+- LDO Line 
+Regulation.lvlib:main.vi:Instance:d9360132-6dee-4b9e-876e-39170c807331.vi:
+- LDO Line 
+Regulation.lvlib:main.vi:Instance:dc46d5cc-eb00-4f7e-b59b-e7fbb9f2ed4c.vi:
+- LDO Line 
+Regulation.lvlib:main.vi:Instance:f0cc231b-6294-4813-9d5b-a7ddc5043ff2.vi:
+- LDO Line 
+Regulation.lvlib:main.vi:Instance:f5d431a0-41a8-4d91-8ed4-f3030fcb2f72.vi:
+- LDO Line 
+Regulation.lvlib:main.vi:Instance:f8cfc4b9-01f6-4b8f-8ca0-5ef2fe22dc8a.vi:
+- LDO Line Regulation.lvlib:Test Inputs.ctl:
+
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1003 occurred at AB_Get_Detailed_BrokenVI_Message.vi -> 
+AB_Targetfile.lvclass:Open_Top_Level_VIs.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x3EB) The VI is not executable. This error may occur because 
+the VI is either broken or contains a subVI that LabVIEW cannot locate. Select 
+File>>Open to open the VI and verify that you can run it.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+=== ExecuteBuildSpec ' LDO Load Regulation' [Packed Library] target 'My Computer' in src\Test measurements\LDO\LDO Load Regulation\LDO Load Regulation.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_596326.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : Cannot complete build because following VI loaded broken:
+
+C:\workspace\src\Test measurements\LDO\LDO Load Regulation\main.vi
+
+Open the VI in LabVIEW and fix the listed errors. If the VI loads as expected 
+but errors are still detected during the build, contact National Instruments 
+technical support for assistance.
+
+Broken VIs:
+- LDO Load Regulation.lvlib:Adv Setup.ctl:
+- LDO Load Regulation.lvlib:Advance Settings UI.vi:
+- LDO Load Regulation.lvlib:Advance Settings.ctl:
+- LDO Load Regulation.lvlib:Helper.vi:
+- LDO Load Regulation.lvlib:Log Data.vi:
+- LDO Load Regulation.lvlib:main.vi:
+- LDO Load 
+Regulation.lvlib:main.vi:Instance:97045b22-c088-492e-b8fe-756b4ca626c0.vi:
+- LDO Load 
+Regulation.lvlib:main.vi:Instance:9bf00ac7-c58e-45e8-95f2-565a27dd0209.vi:
+- LDO Load 
+Regulation.lvlib:main.vi:Instance:be024a05-4f6c-4aec-bf2b-5f4e194505bf.vi:
+- LDO Load 
+Regulation.lvlib:main.vi:Instance:c2b1c575-6273-4f01-9f2a-bc195d2502fa.vi:
+- LDO Load 
+Regulation.lvlib:main.vi:Instance:d12a1fd7-5478-4f09-8baf-cc2a5bf82fd5.vi:
+- LDO Load 
+Regulation.lvlib:main.vi:Instance:d9360132-6dee-4b9e-876e-39170c807331.vi:
+- LDO Load 
+Regulation.lvlib:main.vi:Instance:dc46d5cc-eb00-4f7e-b59b-e7fbb9f2ed4c.vi:
+- LDO Load 
+Regulation.lvlib:main.vi:Instance:f0cc231b-6294-4813-9d5b-a7ddc5043ff2.vi:
+- LDO Load 
+Regulation.lvlib:main.vi:Instance:f5d431a0-41a8-4d91-8ed4-f3030fcb2f72.vi:
+- LDO Load 
+Regulation.lvlib:main.vi:Instance:f8cfc4b9-01f6-4b8f-8ca0-5ef2fe22dc8a.vi:
+- LDO Load Regulation.lvlib:Test Inputs.ctl:
+
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1003 occurred at AB_Get_Detailed_BrokenVI_Message.vi -> 
+AB_Targetfile.lvclass:Open_Top_Level_VIs.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x3EB) The VI is not executable. This error may occur because 
+the VI is either broken or contains a subVI that LabVIEW cannot locate. Select 
+File>>Open to open the VI and verify that you can run it.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+=== ExecuteBuildSpec 'LDOLoadRegulationPkg' [{E661DAE2-7517-431F-AC41-30807A3BDA38}] target 'My Computer' in src\Test measurements\LDO\LDO Load Regulation\LDO Load Regulation.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_531356.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : Cannot complete build because following VI loaded broken:
+
+C:\workspace\src\Test measurements\LDO\LDO Load Regulation\main.vi
+
+Open the VI in LabVIEW and fix the listed errors. If the VI loads as expected 
+but errors are still detected during the build, contact National Instruments 
+technical support for assistance.
+
+Broken VIs:
+- LDO Load Regulation.lvlib:Adv Setup.ctl:
+- LDO Load Regulation.lvlib:Advance Settings UI.vi:
+- LDO Load Regulation.lvlib:Advance Settings.ctl:
+- LDO Load Regulation.lvlib:Helper.vi:
+- LDO Load Regulation.lvlib:Log Data.vi:
+- LDO Load Regulation.lvlib:main.vi:
+- LDO Load 
+Regulation.lvlib:main.vi:Instance:97045b22-c088-492e-b8fe-756b4ca626c0.vi:
+- LDO Load 
+Regulation.lvlib:main.vi:Instance:9bf00ac7-c58e-45e8-95f2-565a27dd0209.vi:
+- LDO Load 
+Regulation.lvlib:main.vi:Instance:be024a05-4f6c-4aec-bf2b-5f4e194505bf.vi:
+- LDO Load 
+Regulation.lvlib:main.vi:Instance:c2b1c575-6273-4f01-9f2a-bc195d2502fa.vi:
+- LDO Load 
+Regulation.lvlib:main.vi:Instance:d12a1fd7-5478-4f09-8baf-cc2a5bf82fd5.vi:
+- LDO Load 
+Regulation.lvlib:main.vi:Instance:d9360132-6dee-4b9e-876e-39170c807331.vi:
+- LDO Load 
+Regulation.lvlib:main.vi:Instance:dc46d5cc-eb00-4f7e-b59b-e7fbb9f2ed4c.vi:
+- LDO Load 
+Regulation.lvlib:main.vi:Instance:f0cc231b-6294-4813-9d5b-a7ddc5043ff2.vi:
+- LDO Load 
+Regulation.lvlib:main.vi:Instance:f5d431a0-41a8-4d91-8ed4-f3030fcb2f72.vi:
+- LDO Load 
+Regulation.lvlib:main.vi:Instance:f8cfc4b9-01f6-4b8f-8ca0-5ef2fe22dc8a.vi:
+- LDO Load Regulation.lvlib:Test Inputs.ctl:
+
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1003 occurred at AB_Get_Detailed_BrokenVI_Message.vi -> 
+AB_Targetfile.lvclass:Open_Top_Level_VIs.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x3EB) The VI is not executable. This error may occur because 
+the VI is either broken or contains a subVI that LabVIEW cannot locate. Select 
+File>>Open to open the VI and verify that you can run it.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+=== ExecuteBuildSpec 'LDO Load Transient' [Packed Library] target 'My Computer' in src\Test measurements\LDO\LDO Load Transient\LDO Load Transient.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_78717.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : Cannot complete build because following VI loaded broken:
+
+C:\workspace\src\Test measurements\LDO\LDO Load Transient\main.vi
+
+Open the VI in LabVIEW and fix the listed errors. If the VI loads as expected 
+but errors are still detected during the build, contact National Instruments 
+technical support for assistance.
+
+Broken VIs:
+- LDO Load Transient.lvlib:Advance Settings UI.vi:
+- LDO Load Transient.lvlib:Check Scope on-board memory.vi:
+- LDO Load Transient.lvlib:Check Scope on-board 
+memory.vi:Instance:59f03915-b6bb-47a8-b10c-82860c18f887.vi:
+- LDO Load Transient.lvlib:Current Measurement.vi:
+- LDO Load Transient.lvlib:Current 
+Measurement.vi:Instance:90de16d1-2031-466e-9767-c62d8a014f4c.vi:
+- LDO Load Transient.lvlib:Generate load Current Sequence.vi:
+- LDO Load Transient.lvlib:Get Current Measurement Option.vi:
+- LDO Load Transient.lvlib:Get Current Measurement 
+Option.vi:Instance:8909a21a-1569-4915-98bc-16adc36bdd43.vi:
+- LDO Load Transient.lvlib:Get SMU Buffer Size.vi:
+- LDO Load Transient.lvlib:Get SMU Buffer 
+Size.vi:Instance:ea803309-b67d-47c3-a957-add2e4a95a09.vi:
+- LDO Load Transient.lvlib:Helper.vi:
+- LDO Load Transient.lvlib:main.vi:
+- LDO Load 
+Transient.lvlib:main.vi:Instance:217e438d-a1ad-49ce-9dcd-d015b5ab8206.vi:
+- LDO Load 
+Transient.lvlib:main.vi:Instance:29f2f23f-c0b0-483c-8177-98a50cbfcdf1.vi:
+- LDO Load 
+Transient.lvlib:main.vi:Instance:3210b59a-1980-40a2-8b26-190a43568d65.vi:
+- LDO Load 
+Transient.lvlib:main.vi:Instance:44f97677-0516-4608-8e28-d738a12fef77.vi:
+- LDO Load 
+Transient.lvlib:main.vi:Instance:49732470-67c5-4264-8b59-91d7a6bf13ef.vi:
+- LDO Load 
+Transient.lvlib:main.vi:Instance:63a61bec-041e-4365-831b-8165c1c311c6.vi:
+- LDO Load 
+Transient.lvlib:main.vi:Instance:98c31a9a-65c4-404a-8d29-5fef3c3d30dc.vi:
+- LDO Load 
+Transient.lvlib:main.vi:Instance:bb3e62c4-a2c2-4505-9438-f842dd651d6c.vi:
+- LDO Load 
+Transient.lvlib:main.vi:Instance:ce2ee1e5-697c-4608-b941-8c9b0f21ffd9.vi:
+- LDO Load 
+Transient.lvlib:main.vi:Instance:d648f1df-a8d9-4085-9eb0-24252e83c66e.vi:
+- LDO Load 
+Transient.lvlib:main.vi:Instance:e89c743e-5273-4ded-a4f4-1d44fefc8133.vi:
+- LDO Load 
+Transient.lvlib:main.vi:Instance:feeae9f6-ae23-4438-849e-34acdc15b747.vi:
+- LDO Load Transient.lvlib:Scope Measurement.vi:
+- LDO Load Transient.lvlib:Set Current Sequence.vi:
+
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1003 occurred at AB_Get_Detailed_BrokenVI_Message.vi -> 
+AB_Targetfile.lvclass:Open_Top_Level_VIs.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x3EB) The VI is not executable. This error may occur because 
+the VI is either broken or contains a subVI that LabVIEW cannot locate. Select 
+File>>Open to open the VI and verify that you can run it.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+=== ExecuteBuildSpec 'LDOLoadTransientPkg' [{E661DAE2-7517-431F-AC41-30807A3BDA38}] target 'My Computer' in src\Test measurements\LDO\LDO Load Transient\LDO Load Transient.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_514715.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : Cannot complete build because following VI loaded broken:
+
+C:\workspace\src\Test measurements\LDO\LDO Load Transient\main.vi
+
+Open the VI in LabVIEW and fix the listed errors. If the VI loads as expected 
+but errors are still detected during the build, contact National Instruments 
+technical support for assistance.
+
+Broken VIs:
+- LDO Load Transient.lvlib:Advance Settings UI.vi:
+- LDO Load Transient.lvlib:Check Scope on-board memory.vi:
+- LDO Load Transient.lvlib:Check Scope on-board 
+memory.vi:Instance:59f03915-b6bb-47a8-b10c-82860c18f887.vi:
+- LDO Load Transient.lvlib:Current Measurement.vi:
+- LDO Load Transient.lvlib:Current 
+Measurement.vi:Instance:90de16d1-2031-466e-9767-c62d8a014f4c.vi:
+- LDO Load Transient.lvlib:Generate load Current Sequence.vi:
+- LDO Load Transient.lvlib:Get Current Measurement Option.vi:
+- LDO Load Transient.lvlib:Get Current Measurement 
+Option.vi:Instance:8909a21a-1569-4915-98bc-16adc36bdd43.vi:
+- LDO Load Transient.lvlib:Get SMU Buffer Size.vi:
+- LDO Load Transient.lvlib:Get SMU Buffer 
+Size.vi:Instance:ea803309-b67d-47c3-a957-add2e4a95a09.vi:
+- LDO Load Transient.lvlib:Helper.vi:
+- LDO Load Transient.lvlib:main.vi:
+- LDO Load 
+Transient.lvlib:main.vi:Instance:217e438d-a1ad-49ce-9dcd-d015b5ab8206.vi:
+- LDO Load 
+Transient.lvlib:main.vi:Instance:29f2f23f-c0b0-483c-8177-98a50cbfcdf1.vi:
+- LDO Load 
+Transient.lvlib:main.vi:Instance:3210b59a-1980-40a2-8b26-190a43568d65.vi:
+- LDO Load 
+Transient.lvlib:main.vi:Instance:44f97677-0516-4608-8e28-d738a12fef77.vi:
+- LDO Load 
+Transient.lvlib:main.vi:Instance:49732470-67c5-4264-8b59-91d7a6bf13ef.vi:
+- LDO Load 
+Transient.lvlib:main.vi:Instance:63a61bec-041e-4365-831b-8165c1c311c6.vi:
+- LDO Load 
+Transient.lvlib:main.vi:Instance:98c31a9a-65c4-404a-8d29-5fef3c3d30dc.vi:
+- LDO Load 
+Transient.lvlib:main.vi:Instance:bb3e62c4-a2c2-4505-9438-f842dd651d6c.vi:
+- LDO Load 
+Transient.lvlib:main.vi:Instance:ce2ee1e5-697c-4608-b941-8c9b0f21ffd9.vi:
+- LDO Load 
+Transient.lvlib:main.vi:Instance:d648f1df-a8d9-4085-9eb0-24252e83c66e.vi:
+- LDO Load 
+Transient.lvlib:main.vi:Instance:e89c743e-5273-4ded-a4f4-1d44fefc8133.vi:
+- LDO Load 
+Transient.lvlib:main.vi:Instance:feeae9f6-ae23-4438-849e-34acdc15b747.vi:
+- LDO Load Transient.lvlib:Scope Measurement.vi:
+- LDO Load Transient.lvlib:Set Current Sequence.vi:
+
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1003 occurred at AB_Get_Detailed_BrokenVI_Message.vi -> 
+AB_Targetfile.lvclass:Open_Top_Level_VIs.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x3EB) The VI is not executable. This error may occur because 
+the VI is either broken or contains a subVI that LabVIEW cannot locate. Select 
+File>>Open to open the VI and verify that you can run it.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+=== ExecuteBuildSpec 'LDO Load Transient_AWG' [Packed Library] target 'My Computer' in src\Test measurements\LDO\LDO Load Transient_AWG\LDO Load Transient_AWG.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_242449.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : Cannot complete build because following VI loaded broken:
+
+C:\workspace\src\Test measurements\LDO\LDO Load Transient_AWG\main.vi
+
+Open the VI in LabVIEW and fix the listed errors. If the VI loads as expected 
+but errors are still detected during the build, contact National Instruments 
+technical support for assistance.
+
+Broken VIs:
+- LDO Load Transient_AWG.lvlib:Advance Settings UI.vi:
+- LDO Load Transient_AWG.lvlib:AWG Waveform Generator.vi:
+- LDO Load Transient_AWG.lvlib:Check Scope on-board memory.vi:
+- LDO Load Transient_AWG.lvlib:Check Scope on-board 
+memory.vi:Instance:59f03915-b6bb-47a8-b10c-82860c18f887.vi:
+- LDO Load Transient_AWG.lvlib:Get SMU Buffer Size.vi:
+- LDO Load Transient_AWG.lvlib:Get SMU Buffer 
+Size.vi:Instance:ea803309-b67d-47c3-a957-add2e4a95a09.vi:
+- LDO Load Transient_AWG.lvlib:Helper.vi:
+- LDO Load Transient_AWG.lvlib:main.vi:
+- LDO Load 
+Transient_AWG.lvlib:main.vi:Instance:217e438d-a1ad-49ce-9dcd-d015b5ab8206.vi:
+- LDO Load 
+Transient_AWG.lvlib:main.vi:Instance:293d3250-dd4c-4630-9c2a-ad0ba4e4c4de.vi:
+- LDO Load 
+Transient_AWG.lvlib:main.vi:Instance:29f2f23f-c0b0-483c-8177-98a50cbfcdf1.vi:
+- LDO Load 
+Transient_AWG.lvlib:main.vi:Instance:3210b59a-1980-40a2-8b26-190a43568d65.vi:
+- LDO Load 
+Transient_AWG.lvlib:main.vi:Instance:44f97677-0516-4608-8e28-d738a12fef77.vi:
+- LDO Load 
+Transient_AWG.lvlib:main.vi:Instance:49732470-67c5-4264-8b59-91d7a6bf13ef.vi:
+- LDO Load 
+Transient_AWG.lvlib:main.vi:Instance:98c31a9a-65c4-404a-8d29-5fef3c3d30dc.vi:
+- LDO Load 
+Transient_AWG.lvlib:main.vi:Instance:a7f9c5ee-455a-46a4-a79d-0a7db08c4ebb.vi:
+- LDO Load 
+Transient_AWG.lvlib:main.vi:Instance:bb3e62c4-a2c2-4505-9438-f842dd651d6c.vi:
+- LDO Load 
+Transient_AWG.lvlib:main.vi:Instance:c0d3c9e0-367a-4754-9b2e-773ed4fafa93.vi:
+- LDO Load 
+Transient_AWG.lvlib:main.vi:Instance:ce2ee1e5-697c-4608-b941-8c9b0f21ffd9.vi:
+- LDO Load 
+Transient_AWG.lvlib:main.vi:Instance:d648f1df-a8d9-4085-9eb0-24252e83c66e.vi:
+- LDO Load 
+Transient_AWG.lvlib:main.vi:Instance:e89c743e-5273-4ded-a4f4-1d44fefc8133.vi:
+- LDO Load 
+Transient_AWG.lvlib:main.vi:Instance:eadbd7cd-77f9-412a-9e87-0f7f53d679d4.vi:
+- LDO Load Transient_AWG.lvlib:Scope Measurement.vi:
+
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1003 occurred at AB_Get_Detailed_BrokenVI_Message.vi -> 
+AB_Targetfile.lvclass:Open_Top_Level_VIs.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x3EB) The VI is not executable. This error may occur because 
+the VI is either broken or contains a subVI that LabVIEW cannot locate. Select 
+File>>Open to open the VI and verify that you can run it.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+=== ExecuteBuildSpec 'LDOLoadTransient_AWGPkg' [{E661DAE2-7517-431F-AC41-30807A3BDA38}] target 'My Computer' in src\Test measurements\LDO\LDO Load Transient_AWG\LDO Load Transient_AWG.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_879334.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : Cannot complete build because following VI loaded broken:
+
+C:\workspace\src\Test measurements\LDO\LDO Load Transient_AWG\main.vi
+
+Open the VI in LabVIEW and fix the listed errors. If the VI loads as expected 
+but errors are still detected during the build, contact National Instruments 
+technical support for assistance.
+
+Broken VIs:
+- LDO Load Transient_AWG.lvlib:Advance Settings UI.vi:
+- LDO Load Transient_AWG.lvlib:AWG Waveform Generator.vi:
+- LDO Load Transient_AWG.lvlib:Check Scope on-board memory.vi:
+- LDO Load Transient_AWG.lvlib:Check Scope on-board 
+memory.vi:Instance:59f03915-b6bb-47a8-b10c-82860c18f887.vi:
+- LDO Load Transient_AWG.lvlib:Get SMU Buffer Size.vi:
+- LDO Load Transient_AWG.lvlib:Get SMU Buffer 
+Size.vi:Instance:ea803309-b67d-47c3-a957-add2e4a95a09.vi:
+- LDO Load Transient_AWG.lvlib:Helper.vi:
+- LDO Load Transient_AWG.lvlib:main.vi:
+- LDO Load 
+Transient_AWG.lvlib:main.vi:Instance:217e438d-a1ad-49ce-9dcd-d015b5ab8206.vi:
+- LDO Load 
+Transient_AWG.lvlib:main.vi:Instance:293d3250-dd4c-4630-9c2a-ad0ba4e4c4de.vi:
+- LDO Load 
+Transient_AWG.lvlib:main.vi:Instance:29f2f23f-c0b0-483c-8177-98a50cbfcdf1.vi:
+- LDO Load 
+Transient_AWG.lvlib:main.vi:Instance:3210b59a-1980-40a2-8b26-190a43568d65.vi:
+- LDO Load 
+Transient_AWG.lvlib:main.vi:Instance:44f97677-0516-4608-8e28-d738a12fef77.vi:
+- LDO Load 
+Transient_AWG.lvlib:main.vi:Instance:49732470-67c5-4264-8b59-91d7a6bf13ef.vi:
+- LDO Load 
+Transient_AWG.lvlib:main.vi:Instance:98c31a9a-65c4-404a-8d29-5fef3c3d30dc.vi:
+- LDO Load 
+Transient_AWG.lvlib:main.vi:Instance:a7f9c5ee-455a-46a4-a79d-0a7db08c4ebb.vi:
+- LDO Load 
+Transient_AWG.lvlib:main.vi:Instance:bb3e62c4-a2c2-4505-9438-f842dd651d6c.vi:
+- LDO Load 
+Transient_AWG.lvlib:main.vi:Instance:c0d3c9e0-367a-4754-9b2e-773ed4fafa93.vi:
+- LDO Load 
+Transient_AWG.lvlib:main.vi:Instance:ce2ee1e5-697c-4608-b941-8c9b0f21ffd9.vi:
+- LDO Load 
+Transient_AWG.lvlib:main.vi:Instance:d648f1df-a8d9-4085-9eb0-24252e83c66e.vi:
+- LDO Load 
+Transient_AWG.lvlib:main.vi:Instance:e89c743e-5273-4ded-a4f4-1d44fefc8133.vi:
+- LDO Load 
+Transient_AWG.lvlib:main.vi:Instance:eadbd7cd-77f9-412a-9e87-0f7f53d679d4.vi:
+- LDO Load Transient_AWG.lvlib:Scope Measurement.vi:
+
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1003 occurred at AB_Get_Detailed_BrokenVI_Message.vi -> 
+AB_Targetfile.lvclass:Open_Top_Level_VIs.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x3EB) The VI is not executable. This error may occur because 
+the VI is either broken or contains a subVI that LabVIEW cannot locate. Select 
+File>>Open to open the VI and verify that you can run it.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+=== ExecuteBuildSpec 'LDO PSRR' [Packed Library] target 'My Computer' in src\Test measurements\LDO\LDO PSRR\LDO PSRR.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_84398.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : Cannot complete build because following VI loaded broken:
+
+C:\workspace\src\Test measurements\LDO\LDO PSRR\main.vi
+
+Open the VI in LabVIEW and fix the listed errors. If the VI loads as expected 
+but errors are still detected during the build, contact National Instruments 
+technical support for assistance.
+
+Broken VIs:
+- LDO PSRR.lvlib:Advance Settings UI.vi:
+- LDO PSRR.lvlib:Advance Test Input.ctl:
+- LDO PSRR.lvlib:Check Sampling Rate and Record Length Support.vi:
+- LDO PSRR.lvlib:Configure Horizontal Timing.vi:
+- LDO PSRR.lvlib:Helper.vi:
+- LDO PSRR.lvlib:Limit Record Length.vi:
+- LDO PSRR.lvlib:Log Data.vi:
+- LDO PSRR.lvlib:main.vi:
+- LDO PSRR.lvlib:main.vi:Instance:00c9e72c-dc14-40c2-acfc-7b2698a37ca7.vi:
+- LDO PSRR.lvlib:main.vi:Instance:9f6bafd6-9b9c-4545-a9d9-e38da2077c76.vi:
+- LDO PSRR.lvlib:main.vi:Instance:b2eee2bd-4b89-4e54-a034-5f4da275eb34.vi:
+- LDO PSRR.lvlib:main.vi:Instance:bb3e62c4-a2c2-4505-9438-f842dd651d6c.vi:
+- LDO PSRR.lvlib:main.vi:Instance:c4032409-4502-45fd-bca3-2506d9579697.vi:
+- LDO PSRR.lvlib:main.vi:Instance:ce2ee1e5-697c-4608-b941-8c9b0f21ffd9.vi:
+- LDO PSRR.lvlib:main.vi:Instance:d9360132-6dee-4b9e-876e-39170c807331.vi:
+- LDO PSRR.lvlib:main.vi:Instance:ed717c1b-eec1-43b4-99c1-3d83852bef44.vi:
+- LDO PSRR.lvlib:main.vi:Instance:f5d431a0-41a8-4d91-8ed4-f3030fcb2f72.vi:
+- LDO PSRR.lvlib:Measure Voltage Waveform.vi:
+- LDO PSRR.lvlib:Test Inputs.ctl:
+
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1003 occurred at AB_Get_Detailed_BrokenVI_Message.vi -> 
+AB_Targetfile.lvclass:Open_Top_Level_VIs.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x3EB) The VI is not executable. This error may occur because 
+the VI is either broken or contains a subVI that LabVIEW cannot locate. Select 
+File>>Open to open the VI and verify that you can run it.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+=== ExecuteBuildSpec 'LDOPSRRPkg' [{E661DAE2-7517-431F-AC41-30807A3BDA38}] target 'My Computer' in src\Test measurements\LDO\LDO PSRR\LDO PSRR.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_726737.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : Cannot complete build because following VI loaded broken:
+
+C:\workspace\src\Test measurements\LDO\LDO PSRR\main.vi
+
+Open the VI in LabVIEW and fix the listed errors. If the VI loads as expected 
+but errors are still detected during the build, contact National Instruments 
+technical support for assistance.
+
+Broken VIs:
+- LDO PSRR.lvlib:Advance Settings UI.vi:
+- LDO PSRR.lvlib:Advance Test Input.ctl:
+- LDO PSRR.lvlib:Check Sampling Rate and Record Length Support.vi:
+- LDO PSRR.lvlib:Configure Horizontal Timing.vi:
+- LDO PSRR.lvlib:Helper.vi:
+- LDO PSRR.lvlib:Limit Record Length.vi:
+- LDO PSRR.lvlib:Log Data.vi:
+- LDO PSRR.lvlib:main.vi:
+- LDO PSRR.lvlib:main.vi:Instance:00c9e72c-dc14-40c2-acfc-7b2698a37ca7.vi:
+- LDO PSRR.lvlib:main.vi:Instance:9f6bafd6-9b9c-4545-a9d9-e38da2077c76.vi:
+- LDO PSRR.lvlib:main.vi:Instance:b2eee2bd-4b89-4e54-a034-5f4da275eb34.vi:
+- LDO PSRR.lvlib:main.vi:Instance:bb3e62c4-a2c2-4505-9438-f842dd651d6c.vi:
+- LDO PSRR.lvlib:main.vi:Instance:c4032409-4502-45fd-bca3-2506d9579697.vi:
+- LDO PSRR.lvlib:main.vi:Instance:ce2ee1e5-697c-4608-b941-8c9b0f21ffd9.vi:
+- LDO PSRR.lvlib:main.vi:Instance:d9360132-6dee-4b9e-876e-39170c807331.vi:
+- LDO PSRR.lvlib:main.vi:Instance:ed717c1b-eec1-43b4-99c1-3d83852bef44.vi:
+- LDO PSRR.lvlib:main.vi:Instance:f5d431a0-41a8-4d91-8ed4-f3030fcb2f72.vi:
+- LDO PSRR.lvlib:Measure Voltage Waveform.vi:
+- LDO PSRR.lvlib:Test Inputs.ctl:
+
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1003 occurred at AB_Get_Detailed_BrokenVI_Message.vi -> 
+AB_Targetfile.lvclass:Open_Top_Level_VIs.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x3EB) The VI is not executable. This error may occur because 
+the VI is either broken or contains a subVI that LabVIEW cannot locate. Select 
+File>>Open to open the VI and verify that you can run it.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+Project has no build specifications: src\Test measurements\One Session N Instrument\NI Instruments\DAQ + DCPower\Power Module.lvproj
+=== ExecuteBuildSpec 'Voltage Measurement' [EXE] target 'My Computer' in src\Test measurements\One Session One Instrument\Clusters\Vin Measurements.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_118600.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : You did not specify any startup VIs. Select a startup VI 
+before building the application.
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1 occurred at AB_Engine_Build.vi -> AB_Build_Invoke.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x1) An input parameter is invalid. For example if the input is 
+a path, the path might contain a character not allowed by the OS such as ? or 
+@.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+=== ExecuteBuildSpec 'Voltage Measurement' [EXE] target 'My Computer' in src\Test measurements\One Session One Instrument\Clusters Input\Vin Measurements.lvproj ===
+LabVIEWCLI started logging in file:  C:\Users\ContainerAdministrator\AppData\Local\Temp\lvtemporary_749478.log
+Using LabVIEW: "C:\Program Files\National Instruments\LabVIEW 2026\LabVIEW.exe"
+Connection established with LabVIEW at port number 3363.
+
+LabVIEWCLI.exe : Operation output: 
+At C:\workspace\.github\labview\build-binaries.ps1:252 char:12
++     $out = & $CliExe @cliArgs 2>&1 | Out-String
++            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Operation output: :String) [], Re 
+   moteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error Code : 1
+Error Message : You did not specify any startup VIs. Select a startup VI 
+before building the application.
+
+
+
+
+
+
+
+
+
+Click the link below to visit the Application Builder support page. Use the 
+following information as a reference:
+
+
+
+Error 1 occurred at AB_Engine_Build.vi -> AB_Build_Invoke.vi
+
+
+Possible reason(s):
+
+
+LabVIEW: (Hex 0x1) An input parameter is invalid. For example if the input is 
+a path, the path might contain a character not allowed by the OS such as ? or 
+@.
+An error occurred while running the ExecuteBuildSpec operation.
+
+ExecuteBuildSpec operation failed.
+
+
+Project has no build specifications: src\Test measurements\One Session One Instrument\DAQ\Power Module Assignment1\Power Module.lvproj
+Project has no build specifications: src\Test measurements\PMIC\labview\Argus Demo.lvproj
+Project has no build specifications: src\Test measurements\Shared Dependencies\Test measurement\Measurement A\Measurement A.lvproj
+Project has no build specifications: src\Test measurements\Shared Dependencies\Test measurement\Measurement B\Measurement B.lvproj
+Project has no build specifications: src\Test measurements\Shared Dependencies\Test measurement - with library\Measurement A\Measurement A.lvproj
+Project has no build specifications: src\Test measurements\Shared Dependencies\Test measurement - with library\Measurement B\Measurement B.lvproj
+Project has no build specifications: src\Test measurements\Shared Dependencies\Test measurement - with reusable library\Measurement A\Measurement A.lvproj
+Project has no build specifications: src\Test measurements\Shared Dependencies\Test measurement - with reusable library\Measurement B\Measurement B.lvproj
+Project has no build specifications: src\Test measurements\WiFi Team\VIs\viBank\Common\C2K_ADC.lvproj

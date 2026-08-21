@@ -1,0 +1,71 @@
+{
+ "meta": {
+  "sha": "07264de02e43ccc477ad4e4580e85186328884f9",
+  "short": "07264de",
+  "platform": "windows",
+  "repo": "elijah286/measurement-plugin-converter-labview",
+  "pages_url": "https://elijah286.github.io/measurement-plugin-converter-labview",
+  "snap_base": "https://elijah286.github.io/measurement-plugin-converter-labview/vi-snapshots/",
+  "dash_url": "https://elijah286.github.io/measurement-plugin-converter-labview/",
+  "labview_version": "2026",
+  "tools": [],
+  "commit": {
+   "message": "Migration Tool  (#4)",
+   "author": "sabthagiri6",
+   "date": "2024-09-04T18:13:04+05:30"
+  },
+  "generated_utc": "2026-08-21 01:24 UTC"
+ },
+ "summary": {
+  "tests": 0,
+  "passed": 0,
+  "failed": 0,
+  "errored": 0,
+  "skipped": 0,
+  "percent": 0,
+  "status": "empty",
+  "duration": 0.0
+ },
+ "status_order": [
+  "failed",
+  "error",
+  "skipped",
+  "passed"
+ ],
+ "status_meta": {
+  "failed": {
+   "label": "Failed",
+   "color": "#da3633",
+   "blurb": "An assertion failed."
+  },
+  "error": {
+   "label": "Errored",
+   "color": "#bb8009",
+   "blurb": "The test raised an unexpected error."
+  },
+  "skipped": {
+   "label": "Skipped",
+   "color": "#6e7681",
+   "blurb": "The test was skipped."
+  },
+  "passed": {
+   "label": "Passed",
+   "color": "#2ea043",
+   "blurb": "The test passed."
+  }
+ },
+ "platforms": [
+  {
+   "id": "windows",
+   "url": null
+  },
+  {
+   "id": "linux",
+   "url": "linux/results.json"
+  }
+ ],
+ "suites": [],
+ "tooling": {
+  "missing": []
+ }
+}

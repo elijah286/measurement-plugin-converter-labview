@@ -1,0 +1,411 @@
+{
+  "schema": 1,
+  "repo": "elijah286/measurement-plugin-converter-labview",
+  "sha": "9adeb5f8daa0fe0bba387f808df068f531d59d87",
+  "revisions": [
+    {
+      "sha": "9adeb5f8daa0fe0bba387f808df068f531d59d87",
+      "short": "9adeb5f",
+      "message": "Add LabVIEW CI pipeline",
+      "author": "Elijah Kerry",
+      "date": "2026-08-21T00:54:52Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "68d64d26cdc1add8a5817cd77dff4bcadab32e95",
+      "short": "68d64d2",
+      "message": "Update build specification version post-release (#21)",
+      "author": "Varshini Senthilkumar",
+      "date": "2025-08-19T10:00:34Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "0fc739c7f2c82747075f7d830f9044389a708872",
+      "short": "0fc739c",
+      "message": " Add Note on Partial Conversion in README (#22)",
+      "author": "Varshini Senthilkumar",
+      "date": "2025-08-19T09:19:48Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "7d2d817f3eeda26ab2240f8fa5b9abae30b86125",
+      "short": "7d2d817",
+      "message": "Cleanup for failure in Measurement Conversion (#20)",
+      "author": "Varshini Senthilkumar",
+      "date": "2025-08-14T12:38:36Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "556a0b9c29b4df46614595bb759498420ef04626",
+      "short": "556a0b9",
+      "message": "Update Build Specification (#19)",
+      "author": "Varshini Senthilkumar",
+      "date": "2025-08-14T09:57:08Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "13fb673646d25544ade85f262fe1c11827495a50",
+      "short": "13fb673",
+      "message": "Multiple Fixes and Enhancements for Measurement Conversion and Dependency Migration (#18)",
+      "author": "Varshini Senthilkumar",
+      "date": "2025-08-14T09:38:01Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "2cd159ce589c03cc5742beb4634005396e1e9dce",
+      "short": "2cd159c",
+      "message": "Update Documentation (#17)",
+      "author": "Varshini Senthilkumar",
+      "date": "2025-08-13T14:44:08Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "92f3d806ce5a582b7b281bfd5ed385054f690918",
+      "short": "92f3d80",
+      "message": "chore: Update CODEOWNERS",
+      "author": "Sneha Babu",
+      "date": "2025-08-08T14:17:23Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "6eec82f04906c98773e7f1686ab4823f186854cd",
+      "short": "6eec82f",
+      "message": "Folder Rename and Code Refactor Changes (#15)",
+      "author": "Varshini Senthilkumar",
+      "date": "2025-08-08T08:25:10Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "1925efd99e304fa46df4317f2eec99153e02fab6",
+      "short": "1925efd",
+      "message": "Add necessary Template Files and Update '.gitignore' File (#14)",
+      "author": "Varshini Senthilkumar",
+      "date": "2025-08-07T14:26:02Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "12024f7c3652304bbd9d9a4f3b268fd3ae534d4a",
+      "short": "12024f7",
+      "message": "Refactor VIs to Prevent Reference Leaks and Preserve Errors (#13)",
+      "author": "Varshini Senthilkumar",
+      "date": "2025-08-07T04:25:32Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "4b2e1eb8d96b8f3d0c2e68edb3e862d258abec26",
+      "short": "4b2e1eb",
+      "message": "Refactor Serializer and Deserializer vim files into Separate Package with Palette Support (#12)",
+      "author": "Varshini Senthilkumar",
+      "date": "2025-08-07T02:40:48Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "a07b50fad0e87c096c7813ad9be05ac4f29a75eb",
+      "short": "a07b50f",
+      "message": "refactor: Code cleanup and Improvements (#11)",
+      "author": "Varshini Senthilkumar",
+      "date": "2025-07-31T22:44:34Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "63e3c6e5cea4ab9c6e44d415facff6561f0445ed",
+      "short": "63e3c6e",
+      "message": "refactor: Clean up redundant folders and standardize naming (#10)",
+      "author": "Varshini Senthilkumar",
+      "date": "2025-07-24T05:34:21Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "6ba87486a0ea3e591124584afe8dda6d113f2b1c",
+      "short": "6ba8748",
+      "message": "Replace 'Migrate' Term in Converter Utility Files and Build Spec (#9)",
+      "author": "Varshini Senthilkumar",
+      "date": "2025-07-16T12:34:23Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "f4dfe076b7598a4bb50161019bcb57f74a2afe15",
+      "short": "f4dfe07",
+      "message": "Update folder names to align with the new repository name (#8)",
+      "author": "Varshini Senthilkumar",
+      "date": "2025-07-16T06:00:07Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "32a17dccdd0d3aa64eaeae900aac6667c970ab9f",
+      "short": "32a17dc",
+      "message": "documentation update for README (#7)",
+      "author": "AishwaryaLakshmiSS",
+      "date": "2024-10-07T04:28:39Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "d0917e1574d9033f110d801fa1ed365fbac9d21c",
+      "short": "d0917e1",
+      "message": "fix: bugfixes for multiple measurement migration tool (#6)",
+      "author": "AishwaryaLakshmiSS",
+      "date": "2024-09-27T04:08:24Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "5021a2234b6b347976e50263f08d9b7765a33ff8",
+      "short": "5021a22",
+      "message": "Cleaned up the VIs (#5)",
+      "author": "sabthagiri6",
+      "date": "2024-09-19T11:25:23Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "07264de02e43ccc477ad4e4580e85186328884f9",
+      "short": "07264de",
+      "message": "Migration Tool  (#4)",
+      "author": "sabthagiri6",
+      "date": "2024-09-04T12:43:04Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "9f988fa3bffad44fdc7d197f7f36c33c74be972c",
+      "short": "9f988fa",
+      "message": "Initial commit",
+      "author": "sabthagiri6",
+      "date": "2024-06-20T05:29:31Z",
+      "project": false,
+      "dep_only": false
+    }
+  ],
+  "config": {
+    "use": "",
+    "actions": {},
+    "vipc": [],
+    "dragon": [],
+    "hasVipcList": false,
+    "hasDragonList": false
+  },
+  "vipc": [
+    {
+      "path": ".github/labview/vipm/ci-tooling.vipc",
+      "role": "core",
+      "capability": "",
+      "tooling": true,
+      "configured": true,
+      "monitored": true,
+      "monitorOn": [
+        "windows",
+        "linux"
+      ],
+      "locked": true,
+      "packages": [
+        "astemes_lib_lunit-2.0.13.6",
+        "astemes_lib_lunit_cli-1.6.1.23",
+        "astemes_lib_lunit_coverage_analysis_add_on-1.0.0.2",
+        "astemes_lib_lunit_global_fixture_add_on-1.0.5.4",
+        "astemes_lib_lunit_parameterized_add_on-1.1.10.8",
+        "astemes_lib_lunit_test_inheritance_add_on-1.0.5.4",
+        "dataflow_g_lib_g_image-0.5.0.1",
+        "felipefoz_lib_lv_rainbow_terminal-1.1.1.5",
+        "jki_lib_caraya-1.4.4.148",
+        "jki_lib_state_machine-2024.0.3.23",
+        "jki_rsc_toolkits_palette-1.1-1",
+        "labview_open_source_lib_epoch_datetime-1.3.0.8",
+        "labview_open_source_project_lib_labview_open_source_palette-1.0.2.7",
+        "labview_open_source_project_lib_openuri-1.4.0.13",
+        "lvos_lib_caraya_cli_extension-2.0.0.7",
+        "ni_lib_junit_results_api-1.0.1.6",
+        "ni_lib_simple_xml-1.0.0.4",
+        "ni_lib_utf_junit_report-1.0.1.43",
+        "oglib_array-6.0.1.20",
+        "oglib_error-6.0.0.26",
+        "oglib_file-6.0.2.28",
+        "oglib_lvdata-6.0.0.45",
+        "oglib_string-6.0.2.35",
+        "pnr_lib_caraya_junit_for_azure_pipelines-1.2.0.11",
+        "pnr_lib_junit_xml-1.0.0.4",
+        "sas_workshops_lib_lunit_for_g_cli-1.2.1.85",
+        "wiresmith_technology_lib_g_cli-3.0.1.98"
+      ],
+      "error": ""
+    },
+    {
+      "path": "Build Specs/Measurement Plug-In Converter.vipc",
+      "role": "project",
+      "capability": "",
+      "tooling": false,
+      "configured": true,
+      "monitored": true,
+      "monitorOn": [
+        "windows",
+        "linux"
+      ],
+      "locked": false,
+      "packages": [
+        "ni_lib_labview_grpc_library-1.2.5.1",
+        "ni_lib_labview_grpc_servicer-1.2.5.1",
+        "ni_measurement_plugin_sdk_service-3.1.0.1",
+        "ni_protobuf_types-1.0.0.1"
+      ],
+      "error": ""
+    }
+  ],
+  "nipm": [
+    {
+      "name": "LabVIEW",
+      "source": "NI Package Manager",
+      "labview": true,
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "details": "LabVIEW runtime and development packages from the NI feeds."
+    },
+    {
+      "name": "VI Analyzer support",
+      "source": "NI Package Manager",
+      "packages": {
+        "windows": [
+          "ni-viawin-labview-support"
+        ],
+        "linux": [
+          "ni-vialin-labview-support"
+        ]
+      },
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "details": "NI VI Analyzer support package used by the analyzer runners."
+    },
+    {
+      "name": "NI Unit Test Framework",
+      "source": "NI Package Manager",
+      "packages": {
+        "windows": [
+          "ni-utf-labview-support"
+        ]
+      },
+      "platforms": [
+        "windows"
+      ],
+      "details": "NI UTF support package used by the Windows unit-test runner."
+    },
+    {
+      "name": "JKI Dragon",
+      "source": "NI Package Manager",
+      "packages": {
+        "windows": [
+          "jki-dragon"
+        ]
+      },
+      "platforms": [
+        "windows"
+      ],
+      "details": "JKI Dragon dependency-management tooling installed from the LabVIEW 2026 NI Package Manager feed."
+    },
+    {
+      "name": "VI Package Manager",
+      "source": "NI Package Manager",
+      "packages": {
+        "windows": [
+          "ni-vipm"
+        ]
+      },
+      "platforms": [
+        "windows"
+      ],
+      "details": "NI-published Windows VIPM package that enables VIPC application during worker builds. Linux installs VIPM from the native Debian package during its worker build."
+    }
+  ],
+  "dragon": {
+    "available": false,
+    "column": "windows",
+    "ready": false,
+    "health": "",
+    "manifest_version": "",
+    "files": [],
+    "install_set": [],
+    "conflicts": []
+  },
+  "system": [
+    {
+      "name": "VI Browser 2.0 toimages runner",
+      "source": "Repository Go code",
+      "path": ".github/labview/toimages/main.go",
+      "details": "Batch runner compiled from repo Go source; Linux uses the toimages GHCR image and Windows builds runner.exe in the workflow.",
+      "platforms": {
+        "windows": {
+          "present": true,
+          "label": "workflow-built"
+        },
+        "linux": {
+          "present": true,
+          "label": "toimages image"
+        }
+      }
+    },
+    {
+      "name": "lvctl render engine",
+      "source": "Repository Go code + embedded VIs",
+      "path": ".github/labview/toimages/_ni/labview/lvctl",
+      "details": "Renderer used by VI Browser 2.0 to drive LabVIEW and emit position-aware frame JSON.",
+      "platforms": {
+        "windows": {
+          "present": true,
+          "label": "workflow-built"
+        },
+        "linux": {
+          "present": true,
+          "label": "toimages image"
+        }
+      }
+    }
+  ],
+  "columns": [
+    {
+      "key": "windows",
+      "label": "Windows",
+      "platform": "windows",
+      "defaultTag": "latest",
+      "tag": "latest",
+      "ready": false,
+      "packages": [],
+      "failed_packages": [],
+      "nipkg_ready": false,
+      "nipkg_packages": [],
+      "labview_version": "",
+      "version": "latest"
+    },
+    {
+      "key": "linux",
+      "label": "Linux",
+      "platform": "linux",
+      "defaultTag": "latest",
+      "tag": "latest",
+      "ready": false,
+      "packages": [],
+      "failed_packages": [],
+      "nipkg_ready": false,
+      "nipkg_packages": [],
+      "labview_version": "",
+      "version": "latest"
+    }
+  ]
+}

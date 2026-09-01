@@ -1,7 +1,7 @@
 {
-  "version": "linux-4ce478ba9bb6",
+  "version": "linux-95b89bced16e",
   "platform": "linux",
-  "manifest_url": "https://elijah286.github.io/measurement-plugin-converter-labview/workers/linux/linux-4ce478ba9bb6/manifest.html",
-  "build_date": "2026-08-21T00:55:17Z",
+  "manifest_url": "https://elijah286.github.io/measurement-plugin-converter-labview/workers/linux/linux-95b89bced16e/manifest.html",
+  "build_date": "2026-09-01T09:11:53Z",
   "git_sha": "9adeb5f8daa0fe0bba387f808df068f531d59d87"
 }

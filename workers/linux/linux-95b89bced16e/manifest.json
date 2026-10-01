@@ -4,15 +4,15 @@
   "version": "linux-95b89bced16e",
   "labview_version": "2026",
   "base_image": "nationalinstruments/labview:latest-linux",
-  "base_digest": "ghcr.io/elijah286/measurement-plugin-converter-labview-labview@sha256:5e2071f9719b3748fab803939d9d59e0c7d1f7158e9c563851588bc9885cdae9",
+  "base_digest": "ghcr.io/elijah286/measurement-plugin-converter-labview-labview@sha256:fcd75369a9802beed87cf12632d05274e605433adbe8ad50d3400c193b46c0cc",
   "seed_image": "",
   "seed_digest": "",
   "worker_layer": "",
   "copied_from_base": false,
   "image_ref": "ghcr.io/elijah286/measurement-plugin-converter-labview-labview:linux-95b89bced16e",
-  "build_date": "2026-09-01T09:11:53Z",
+  "build_date": "2026-10-01T10:45:10Z",
   "git_sha": "9adeb5f8daa0fe0bba387f808df068f531d59d87",
-  "run_url": "https://github.com/elijah286/measurement-plugin-converter-labview/actions/runs/33489582326",
+  "run_url": "https://github.com/elijah286/measurement-plugin-converter-labview/actions/runs/36849450873",
   "vipc": [
     {
       "file": "Measurement Plug-In Converter.vipc",
